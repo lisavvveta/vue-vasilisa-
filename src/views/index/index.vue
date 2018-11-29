@@ -1,6 +1,7 @@
-<template>
+<template lang="html">
     <main>
-      <!-- здесь нужно добавить aside (боковое меню), а так же слайдер slider-index -->
+      <!-- здесь нужно добавить header -->
+      <!-- здесь нужно добавить aside (боковое меню), cлайдер slider-index и footer -->
     </main>
 </template>
 
@@ -11,8 +12,9 @@ export default {
 }
 </script>
 
+<style lang="scss">
 
- <style>
- 
- </style>
+/* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */ 
+
+</style>
  
