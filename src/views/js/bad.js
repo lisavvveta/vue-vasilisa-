@@ -1,0 +1,68 @@
+const Bad = {
+  massiv: [
+    {
+    id: 001 ,
+    picture:"/public/img/bed/bruno.jpg",
+    name: "Бруно" ,
+    type: "Кровати" ,
+    size: "Размеры: 1100х1452х2064",
+    description:" с ортопедическим основанием" ,
+    prise:" ₽",
+  },
+  {
+    id: 002 ,
+    picture:"/public/img/bed/Venera.png",
+    name: "Бруно" ,
+    type: "Кровати" ,
+    size: "Размеры: 2000x1400",
+    description:"" ,
+    prise:" ₽",
+  },
+  {
+    id: 003 ,
+    picture:"/public/img/bed/fortuna.jpg",
+    name: "Фортуна" ,
+    type: "Кровати" ,
+    size: "Размеры: 2000x1400",
+    description:"" ,
+    prise:" ₽",
+  },
+  {
+    id: 004 ,
+    picture:"/public/img/bed/sicilia.jpg",
+    name: "Сицилия" ,
+    type: "Кровати" ,
+    size: "Размеры: 1600-2000",
+    description:"" ,
+    prise:" ₽",
+  },
+  {
+    id: 005 ,
+    picture:"/public/img/bed/kapry.jpg",
+    name: "Капри" ,
+    type: "Кровати" ,
+    size: "Размеры: 1600-2000",
+    description:"" ,
+    prise:" ₽", 
+  },
+  {
+    id: 006 ,
+    picture:"/public/img/bed/selena.jpg",
+    name: "Селена" ,
+    type: "Кровати" ,
+    size: "Размеры: 1600-2000",
+    description:"" ,
+    prise:" ₽", 
+  },
+  {
+    id: 007 ,
+    picture:"/public/img/bed/SP-121-124.jpg",
+    name: "СП-121" ,
+    type: "Кровати" ,
+    size: "Размеры: 1600-2000 ",
+    description:"Цвет: венге-дуб беленый" ,
+    prise:" ₽", 
+  },
+
+]
+}
