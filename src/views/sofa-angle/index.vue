@@ -26,7 +26,7 @@ export default {
         picture:"/public/img/sofa-angle/brigantina.jpg",
         name: "Диван угловой Бригантина" ,
         type: "Диваны угловые" ,
-        size: " 3180x176x910",
+        size: "3180x176x910",
         description:"Cпальное место 2700x1300" ,
         prise:" от 55 500 ₽",
       },
