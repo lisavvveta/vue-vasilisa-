@@ -1,3 +1,4 @@
+
 <template>
   <main>
     <!-- здесь нужно добавить header-->
@@ -24,11 +25,12 @@
 
 <script>
 export default {
-
+  
 }
 </script>
 
 <style lang="scss">
 
-</style>
+/* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */ 
 
+</style>
