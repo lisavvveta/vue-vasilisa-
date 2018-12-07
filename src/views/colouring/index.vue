@@ -1,0 +1,100 @@
+<template lang="html">
+  <main>
+    <!-- здесь нужно добавить header-->
+    <!-- здесь нужно добавить aside (боковое меню)-->
+    <ul class="product">
+      <li v-for="item in colouring" class="product-item image-prod ">
+        <h6 class="product-item__title">{{ item.name }}</h6>
+        <img :src="item.picture" alt="" class="product-item__picture"/>
+        <span class="product-item__size">{{ item.size }}</span>
+        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__price">{{ item.price }}</span>
+        <button v-on:click="counter += 1" class="product-item__button">В корзину</button>
+      </li>
+    </ul>
+  <!-- здесь нужно добавить footer-->
+  </main>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      colouring: [
+      {
+        id: 01 ,
+        picture:"/public/img/colouring/pink.jpg",
+        name: "Розовый" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 02 ,
+        picture:"/public/img/colouring/blue.jpg",
+        name: "Синий" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 03 ,
+        picture:"/public/img/colouring/oal-sonoma.jpg",
+        name: "Дуб Сонома" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 04 ,
+        picture:"/public/img/colouring/oal- milk.jpg",
+        name: "Дуб Молочный или Дуб белый" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 05 ,
+        picture:"/public/img/colouring/venge.jpg",
+        name: "Венге" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 06 ,
+        picture:"/public/img/colouring/shimo-white.jpg",
+        name: "Шимо светлый" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+      {
+        id: 07 ,
+        picture:"/public/img/colouring/shimo-dark.jpg",
+        name: "Шимо темный" ,
+        type: "Цвета" ,
+        size: "",
+        description:"" ,
+        price:"",
+      },
+    ]
+    }
+  }
+}
+</script>
+
+
+<style lang="scss">
+
+ /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */
+
+</style>
+
+
