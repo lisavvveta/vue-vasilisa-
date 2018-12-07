@@ -3,7 +3,7 @@
       <div class="company"><img class="logotyp" src="../img/vasilisa.png" width="700" alt="logotyp"> </div>
       <div class="href-box">
           <section class="basket">
-              <p class="basket"> <img id="corner" src="../img/bascet.png" width="100" onclick="toggle(hidden_content)"> Корзина (<span class="count">0</span>)</p>
+              <p class="basket"> <img id="corner" src="../img/bascet.png" width="100" onclick="toggle(hidden_content)"> Корзина (<span class="count">{{ counter }}</span>)</p>
               <div class="hidden" id="hidden_content">
                   <p>Товаров:<span id="bascet" class="count"> {{ counter }} </span> </p>
                   <p>На сумму: <span price="0" id="price">0</span> </p>
@@ -12,9 +12,8 @@
           </section>
       </div>
       <nav class="navigation">
-          <a class="punct_menu" href="index.html"> Главная </a>
+          <a class="punct_menu" href="/src/views/index/index.vue"> Главная </a>
           <a class="punct_menu" href="order.html"> Как заказать</a>
-          <a class="punct_menu" href="servis.html">Наши услуги</a>
           <a class="punct_menu" href="comments.html">Отзывы</a>
           <a class="punct_menu" href="feedback.html">Контакты</a>
       </nav>

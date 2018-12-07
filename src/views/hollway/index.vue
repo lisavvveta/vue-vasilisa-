@@ -44,7 +44,7 @@ export default {
       {
         // здесь будет слайдер
         id: 03 ,
-        picture:"/public/img/hallway",
+        picture:"/public/img/hallway/nota-3-1.jpg",
         name: "Прихожая Нота 3" ,
         type: "Прихожая" ,
         size: "1823x400х2114",

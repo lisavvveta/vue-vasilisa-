@@ -114,7 +114,7 @@ export default {
       {
         // здесь должен быть слайдер?
         id: 09 ,
-        picture:"/public/img/table/",
+        picture:"/public/img/table/transformer.jpg",
         name: "Стол транформер" ,
         type: "Столы" ,
         size: "800х800 высота 500",

@@ -22,6 +22,7 @@ export default {
     return {
       commode: [
       {
+        //slide
         id: 01 ,
         picture:"/public/img/comod/comod-height.jpeg",
         name: "Комод высокий" ,
@@ -31,6 +32,7 @@ export default {
         priсe:" от 6 500 ₽",
       },
       {
+        //slide
         // здесь должен быть слайлер
         id: 02 ,
         picture:"/public/img/comod/br-10.png",
@@ -41,6 +43,7 @@ export default {
         priсe:" от 9 300 ₽",
       },
       {
+        //slide
         id: 03 ,
         picture:"/public/img/bed/SP-121-124.jpg",
         name: "Комод СП-123" ,
@@ -50,6 +53,7 @@ export default {
         priсe:" от 6 600 ₽",
       },
       {
+        //slide
         id: 04 ,
         picture:"/public/img/bed/SP-121-124.jpg",
         name: "Тумба прикроватная СП-124" ,
@@ -57,6 +61,61 @@ export default {
         size: "500х435х445",
         description:"Цвет венге-дуб беленый, шима светлый, шима светлый " ,
         priсe:" от 2 600 ₽",
+      },
+      {
+        //slide
+        id: 05 ,
+        picture:"/public/img/comod/penal-br-1.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Пенал БР-1" ,
+        type: "Комоды" ,
+        size: "2215x500x351",
+        description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 06 ,
+        picture:"/public/img/comod/penal-br-2.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Пенал БР-2" ,
+        type: "Комоды" ,
+        size: "2215x500x351",
+        description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 07 ,
+        picture:"/public/img/comod/penal-br-3.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Пенал БР-3" ,
+        type: "Комоды" ,
+        size: "2215x500x351",
+        description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 08 ,
+        picture:"/public/img/comod/br-7.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Стеллаж БР-7" ,
+        type: "Комоды" ,
+        size: "2215x351x351",
+        description:"Этот стеллаж относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 09 ,
+        picture:"/public/img/comod/penal-br-8.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Пенал БР-8" ,
+        type: "Комоды" ,
+        size: "2215x500x351",
+        description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
       },
     ]
     }
