@@ -33,7 +33,6 @@ export default {
       },
       {
         //slide
-        // здесь должен быть слайлер
         id: 02 ,
         picture:"/public/img/comod/br-10.png",
         name: "Комод БР-10" ,
@@ -115,6 +114,105 @@ export default {
         type: "Комоды" ,
         size: "2215x500x351",
         description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 10 ,
+        picture:"/public/img/comod/penal-br-9.png",
+        picture:"/public/img/modul-sistem/bravo.jpg",
+        name: "Пенал БР-9" ,
+        type: "Комоды" ,
+        size: "2215x560x400",
+        description:"Этот пенал относится к модульной системе Браво." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 11 ,
+        picture:"/public/img/comod/ms-2.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Пенал МС-2" ,
+        type: "Комоды" ,
+        size: "2220х450х450",
+        description:"Этот пенал относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 12 ,
+        picture:"/public/img/comod/ms-3.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Пенал МС-3" ,
+        type: "Комоды" ,
+        size: "2220х600х450",
+        description:"Этот пенал относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 13 ,
+        picture:"/public/img/comod/ms-4.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Пенал МС-4" ,
+        type: "Комоды" ,
+        size: "1675х450х450",
+        description:"Этот пенал относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 14 ,
+        picture:"/public/img/comod/ms-5.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Пенал МС-5" ,
+        type: "Комоды" ,
+        size: "1675х650х450",
+        description:"Этот пенал относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 15 ,
+        picture:"/public/img/comod/ms-6.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Комод МС-6" ,
+        type: "Комоды" ,
+        size: "1050х1255х4364",
+        description:"Этот комод относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 16 ,
+        picture:"/public/img/comod/ms-7.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "Комод МС-7" ,
+        type: "Комоды" ,
+        size: "1255х1200х364",
+        description:"Этот комод относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 17 ,
+        picture:"/public/img/comod/ms-9.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "МС-9" ,
+        type: "Комоды" ,
+        size: "1200х550х420",
+        description:"МС-9 относится к модульной системе Лион." ,
+        priсe:" от  ₽",
+      },
+      {
+        //slide
+        id: 18 ,
+        picture:"/public/img/comod/ms-10.png",
+        picture:"/public/img/modul-sistem/lion.png",
+        name: "МС-10" ,
+        type: "Комоды" ,
+        size: "1200х550х420",
+        description:"МС-10 относится к модульной системе Лион." ,
         priсe:" от  ₽",
       },
     ]
