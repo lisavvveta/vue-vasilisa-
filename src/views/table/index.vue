@@ -7,7 +7,7 @@
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture"/>
         <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__description">{{ item.description }} <a href="/src/views/foto-print/index.vue"> Фотопечать любая </a> </span>
         <span class="product-item__price">{{ item.price }}</span>
         <button v-on:click="counter += 1" class="product-item__button">В корзину</button>
       </li>
@@ -130,7 +130,8 @@ export default {
 
 <style lang="scss">
 
- /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
 
 </style>
 

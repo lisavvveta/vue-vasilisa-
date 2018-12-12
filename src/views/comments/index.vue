@@ -19,7 +19,17 @@ export default {
 }
 </script>
 
+
 <style lang="scss">
 
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
+
+fieldset {
+  display: flex;
+  align-items: center;
+}
+
 </style>
+
 

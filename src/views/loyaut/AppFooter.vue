@@ -24,5 +24,16 @@ export default {
 </script>
 
 <style lang="scss">
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/tell.scss";
 
+ footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.map {
+  margin-right: 150px;
+}
 </style>

@@ -6,7 +6,7 @@
               <p class="basket"> <img id="corner" src="../img/bascet.png" width="100" onclick="toggle(hidden_content)"> Корзина (<span class="count">{{ counter }}</span>)</p>
               <div class="hidden" id="hidden_content">
                   <p>Товаров:<span id="bascet" class="count"> {{ counter }} </span> </p>
-                  <p>На сумму: <span price="0" id="price">0</span> </p>
+                  <p>На сумму: <span price="0" id="price">{{ total }}</span> </p>
                   <a href="order.html"> <button> Заказать звонок</button></a>
               </div>
           </section>
@@ -33,6 +33,27 @@ export default {
 </script>
 
 <style lang="scss">
+ @import "../../stylesheets/layout.scss";
+@import "../../stylesheets/basket.scss";
+@import "../../stylesheets/menu.scss";
 
+ .header {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.logotyp {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  padding-left: 80px;
+}
 </style>
 
