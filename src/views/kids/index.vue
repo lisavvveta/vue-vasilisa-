@@ -34,7 +34,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 02 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/table-chair-4.jpg",
         name: "Стол детский ростущий" ,
         type: "Детская мебель" ,
         size: "1000х600",
@@ -44,7 +44,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 03 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/table-chair-5.jpg",
         name: "Стул детский ростущий" ,
         type: "Детская мебель" ,
         size: "",
@@ -54,7 +54,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 04 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/BR-116.jpg",
         name: "БР-116" ,
         type: "Детская мебель" ,
         size: "1932х880",
@@ -64,7 +64,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 05 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/junior.jpg",
         name: "Стол Юниор" ,
         type: "Детская мебель" ,
         size: "1050х580х750",
@@ -74,7 +74,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 06 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/",
         name: "Книжный стеллаж" ,
         type: "Детская мебель" ,
         size: "2000х800х200",
@@ -84,7 +84,7 @@ export default {
       {
         // Здесь должен быть слайдер
         id: 07 ,
-        picture:"/public/img/",
+        picture:"/public/img/kids/table-rack.jpg",
         name: "Стол стеллаж" ,
         type: "Детская мебель" ,
         size: "1200х680",
@@ -120,7 +120,8 @@ export default {
 
 <style lang="scss">
 
- /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
 
 </style>
 

@@ -3,7 +3,7 @@
     <!-- здесь нужно добавить header-->
     <!-- здесь нужно добавить aside (боковое меню)-->
     <ul class="product">
-      <li v-for="item in commode" class="product-item image-prod ">
+      <li v-for="item in cupboardAngle" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture"/>
         <span class="product-item__size">{{ item.size }}</span>
@@ -20,25 +20,38 @@
 export default {
   data () {
     return {
-      commode: [
+      cupboardAngle: [
       {
+        // slider
         id: 01 ,
+        picture:"/public/img/cupboard-angle/br-6.png",
         picture:"/public/img/modul-sistem/bravo.jpg",
-        name: "Модульная система Браво" ,
-        type: "Модульная система" ,
-        size: "1200х4300",
-        description:"" ,
-        price:" от 61 500 ₽",
-      },
+        name: "БР-6" ,
+        type: "Шкафы" ,
+        size: "2215x904x904",
+        description:"Этот шкаф относится к модульной системе Браво." ,
+        priсe:" от ₽",
+      },,
       {
+        // здесь должен быть слайлер
         id: 02 ,
         picture:"/public/img/comod/br-10.png",
-        name: "Модульная система Лион" ,
+        name: "Комод БР-10" ,
         type: "Комоды" ,
         size: "1182x1116x355",
-        description:"Без стекла. это относится к модульной системе Браво." ,
-        price:" от 42 300 ₽",
+        description:"Без стекла.В рамке. Этот комод относится к модульной системе Браво." ,
+        priсe:" от 9 300 ₽",
       },
+      {
+        id: 03 ,
+        picture:"/public/img/bed/SP-121-124.jpg",
+        name: "Комод СП-123" ,
+        type: "Комоды" ,
+        size: "1000х810х435",
+        description:"Цвет венге-дуб белый, шима светлый, шима светлый" ,
+        priсe:" от 6 600 ₽",
+      },
+
     ]
     }
   }
@@ -52,5 +65,4 @@ export default {
  @import "../../stylesheets/product.scss";
 
 </style>
-
 

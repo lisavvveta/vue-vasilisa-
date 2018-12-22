@@ -28,9 +28,9 @@ export default {
 
 
 <style lang="scss">
- 
- /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */ 
+
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
 
 </style>
 
- 

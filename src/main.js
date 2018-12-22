@@ -9,9 +9,3 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-var bascet = new Vue({
-  el: '#bascet ',
-  data: {
-    counter: 0
-  }
-})

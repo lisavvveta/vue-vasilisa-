@@ -7,7 +7,7 @@
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture"/>
         <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__description">{{ item.description }} <a href="/src/views/foto-print/index.vue"> Фотопечать любая </a> </span>
         <span class="product-item__price">{{ item.price }}</span>
         <button v-on:click="counter += 1" class="product-item__button">В корзину</button>
       </li>
@@ -114,12 +114,22 @@ export default {
       {
         // здесь должен быть слайдер?
         id: 09 ,
-        picture:"/public/img/table/",
+        picture:"/public/img/table/transformer.jpg",
         name: "Стол транформер" ,
         type: "Столы" ,
         size: "800х800 высота 500",
         description:"Вид собраный. Выполнен из ЛДСП, механизм металлический. Расскладывается из журнального столика в обеденный стол. Цвет: венге, шима темный" ,
         price:" от 13 200 ₽",
+      },
+      {
+        // здесь должен быть слайдер
+        id: 10 ,
+        picture:"/public/img/kitchen/bariton-1100-1.jpg",
+        name: "Баритон" ,
+        type: "Кухни" ,
+        size: "Размеры 1100х700+300 ",
+        description:"Он может быть раздвижным и не раздвижным механизм бабочка" ,
+        price:"от 15 000 ₽",
       },
     ]
     }
@@ -130,7 +140,8 @@ export default {
 
 <style lang="scss">
 
- /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
 
 </style>
 

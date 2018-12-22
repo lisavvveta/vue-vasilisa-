@@ -28,7 +28,7 @@ export default {
         type: "Шкафы-купе" ,
         size: "1435x550x2100",
         description:"Цвета: венге, дуб беленый" ,
-        prise:" от 16 000 ₽",
+        price:" от 16 000 ₽",
       },
     ]
     }
@@ -39,7 +39,8 @@ export default {
 
 <style lang="scss">
 
- /* сюда импортировать файлы для слайдера а так же loyaut и для хедера и футера */
+ @import "../../stylesheets/layout.scss";
+ @import "../../stylesheets/product.scss";
 
 </style>
 
