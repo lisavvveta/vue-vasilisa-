@@ -28,7 +28,24 @@
 
 <script>
 export default {
+const bascet = new Vue({
+  el: "#bascet",
+  data: {
+    counter: 0
+  }
+});
 
+methods: {
+  total = function () {
+     const total = 0;
+      this.item.forEach(function(){
+        if (s.active){
+          total+= s.price;
+        }
+      });
+     return total;
+    }
+}
 }
 </script>
 

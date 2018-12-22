@@ -9,21 +9,81 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+body {
+  max-width: 1300px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  color: #2c3e50;
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  background: #FFFACD;
+  box-sizing: border-box;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+.kontent {
+  width: auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+
+p {
+  text-align: left;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+}
+
+div {
+  margin: 20px;
+}
+
+.konteiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_img{
+  height: 350px;
+  width: 550px;
+  padding: 10px;
+}
+
+.block {
+  display: block;
+  justify-content: flex-end;
+  position: relative;
+  position: 50%;
+  float: right;
+  position: inherit;
+  width: 30%;
+}
+
+
 </style>

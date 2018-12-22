@@ -6,7 +6,7 @@
             <form>
                 <p>Напишите ваш отзыв о магазине.</p>
                 <textarea name="comments" cols="120" rows="30"> Введите свой комментарий</textarea>
-                <input type="submit" name="send" value="отправить">
+                <button class="product-item__button">Отправить</button>
             </form>
         </fieldset>
     </div>
