@@ -83,7 +83,7 @@ export default {
       {
         // здесь должен быть слайдер
         id: 07 ,
-        picture:"/public/img/sofa/kvadrat-1.jpg",
+        picture:"/public/img/sofa/uyut.jpg",
         name: "Уют" ,
         type: "Диваны" ,
         size: "2300х800х900",
@@ -93,7 +93,7 @@ export default {
       {
         // здесь должен быть слайдер
         id: 08 ,
-        picture:"/public/img/sofa/volna-1.jpg",
+        picture:"/public/img/sofa/2mdf.jpg",
         name: "2МДФ" ,
         type: "Диваны" ,
         size: "2140х920х920",
