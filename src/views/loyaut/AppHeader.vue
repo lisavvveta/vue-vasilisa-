@@ -28,7 +28,7 @@
 
 <script>
 export default {
-const bascet = new Vue({
+const bascet ()({
   el: "#bascet",
   data: {
     counter: 0
