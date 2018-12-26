@@ -45,7 +45,7 @@ export default {
         name: "ЛДСП" ,
         type: "Кухни" ,
         size: "Размеры: 2м",
-        description:"Комплектация: сушка белая, круглая мойка (0,6), ручки пластиковые. Большая цветовая политра." ,
+        description:"Комплектация: сушка белая, круглая мойка (0,6), ручки пластиковые. Большая цветовая палитра." ,
         price:"от 27 700 ₽",
       },
       {
@@ -55,7 +55,7 @@ export default {
         name: "ЛДСП" ,
         type: "Кухни" ,
         size: "Размеры: 1,5 м",
-        description:"Комплектация: сушка белая, мойка круглая (0,6), ручки пластиковые, фасады ЛДСП и большая цветовая политра." ,
+        description:"Комплектация: сушка белая, мойка круглая (0,6), ручки пластиковые, фасады ЛДСП и большая цветовая палитра." ,
         price:"от 21 900 ₽",
       },
       {
@@ -63,7 +63,7 @@ export default {
         picture:"/public/img/kitchen/ariana.jpg",
         name: "Ариана" ,
         type: "Кухни" ,
-        size: "Размеры: от 1м до 2м",
+        size: "Размеры: от 1м ",
         description:"" ,
         price:"от 27 850 ₽",
       },
@@ -81,7 +81,7 @@ export default {
         picture:"/public/img/kitchen/dub-loa.jpg",
         name: "Дуб Лоа" ,
         type: "Кухни" ,
-        size: "Размеры: от 1м до 2м",
+        size: "Размеры: от 1м ",
         description:"" ,
         price:"от 30 000 ₽",
       },
@@ -90,7 +90,7 @@ export default {
         picture:"/public/img/kitchen/sandra.jpg",
         name: "Сандра" ,
         type: "Кухни" ,
-        size: "Размеры: от 1м до 2м",
+        size: "Размеры: от 1м",
         description:"" ,
         price:" от 30 000 ₽",
       },
@@ -107,7 +107,7 @@ export default {
        {
          //здесь сделать слайдер
         id: 11 ,
-        picture:"/public/img/kitchen/mdf - 1.jpg",
+        picture:"/public/img/kitchen/mdf - 2.jpg",
         name: "Кухни модульные ЛДСП и МДФ глянец" ,
         type: "Кухни" ,
         size: "",

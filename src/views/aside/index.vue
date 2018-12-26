@@ -7,15 +7,6 @@
           <li class="">
             <a href="sofa.html">Диваны</a>
           </li>
-          <li class="">
-            <a href="">Кресла</a>
-          </li>
-          <li class="">
-            <a href="">Кресло-кравати</a>
-          </li>
-          <li class="">
-            <a href="kids.html">Детская</a>
-          </li>
         </ul>
       </li>
       <li class="">
@@ -27,6 +18,9 @@
       <li class="katalog_li">
         <a href="Comod.html"> Комод </a>
       </li>
+      <li class="">
+        <a href="">Детская</a>
+      </li>
       <li class="katalog_li">
         <a href=""> Корпусная </a>
         <ul class="katalog_li_elem">
@@ -37,15 +31,9 @@
             <a href="/Vasilisa/html/hollway.html">Прихожая</a>
           </li>
           <li class="">
-            <a href="">Детская</a>
-          </li>
-          <li class="">
             <a href="">Спальня</a>
           </li>
         </ul>
-      </li>
-      <li class="katalog_li">
-        <a href="kitchen.html">Кухни</a>
       </li>
       <li class="katalog_li">
         <a class="katalog_li"
@@ -58,16 +46,7 @@
             <a href="">Стулья</a>
           </li>
           <li class="">
-            <a href="">Углы</a>
-          </li>
-          <li class="">
-            <a href="">Обувницы</a>
-          </li>
-          <li class="">
-            <a href="">Банкетки</a>
-          </li>
-          <li class="">
-            <a href="">Вешалки</a>
+            <a href="">Скамьи, банкетки</a>
           </li>
           <li class="">
             <a href="">Фотопечать материалы</a>
