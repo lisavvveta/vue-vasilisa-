@@ -54,7 +54,7 @@ export default new Router({
         },
         {
           path: "/commode",
-          name: "commods",
+          name: "commode",
           component: Commode
         },
         {
