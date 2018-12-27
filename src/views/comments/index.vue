@@ -1,35 +1,30 @@
 <template>
   <section>
     <div>
-        <fieldset>
-            <legend> Отзыв</legend>
-            <form>
-                <p>Напишите ваш отзыв о магазине.</p>
-                <textarea name="comments" cols="120" rows="30"> Введите свой комментарий</textarea>
-                <button class="product-item__button">Отправить</button>
-            </form>
-        </fieldset>
+      <fieldset>
+        <legend>Отзыв</legend>
+        <form>
+          <p>Напишите ваш отзыв о магазине.</p>
+          <textarea name="comments" cols="120" rows="30">
+ Введите свой комментарий</textarea
+          >
+          <button class="product-item__button">Отправить</button>
+        </form>
+      </fieldset>
     </div>
   </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-
 <style lang="scss">
-
- @import "../../stylesheets/layout.scss";
- @import "../../stylesheets/product.scss";
+@import "../../stylesheets/layout.scss";
+@import "../../stylesheets/product.scss";
 
 fieldset {
   display: flex;
   align-items: center;
 }
-
 </style>
-
-
