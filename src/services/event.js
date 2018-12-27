@@ -1,22 +1,25 @@
 class EventEmitter {
-  constructor () {
+  constructor() {
     this.events = {
-      'authorization-error': [],
-      'change-language': [],
-      'phone-confirm-error': [],
-      'token-auth-state': [],
-      'change-api-version': [],
-      'internal-server-error': []
+      "authorization-error": [],
+      "change-language": [],
+      "phone-confirm-error": [],
+      "token-auth-state": [],
+      "change-api-version": [],
+      "internal-server-error": []
     };
   }
-  emit ( eventName , data ) {
+  emit(eventName, data) {
     const event = this.events[eventName];
-    if (event) event.forEach( fn => fn.call( null , data ) );
+    if (event) event.forEach(fn => fn.call(null, data));
   }
-  subscribe ( eventName , fn ) {
-    if ( !this.events[eventName] ) this.events[eventName] = [];
+  subscribe(eventName, fn) {
+    if (!this.events[eventName]) this.events[eventName] = [];
     this.events[eventName].push(fn);
-    return () => this.events[eventName] = this.events[eventName].filter( eventFn => fn !== eventFn );
+    return () =>
+      (this.events[eventName] = this.events[eventName].filter(
+        eventFn => fn !== eventFn
+      ));
   }
 }
 

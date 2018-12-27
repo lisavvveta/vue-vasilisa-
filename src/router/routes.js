@@ -1,20 +1,19 @@
-import Home from '../views/Home.vue';
+import Home from "../views/Home.vue";
 
 export default [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
     component: Home
   },
   {
-    path: '/about',
-    name: 'about',
+    path: "/about",
+    name: "about",
     component: About
   },
   {
-    path: '/beds',
-    name: 'bed',
+    path: "/beds",
+    name: "bed",
     component: beds
-  },
-
+  }
 ];

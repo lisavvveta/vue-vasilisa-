@@ -3,7 +3,7 @@
     <!-- здесь нужно добавить header-->
     <!-- здесь нужно добавить aside (боковое меню)-->
     <ul class="product">
-      <li v-for="item in cupboard" class="product-item image-prod ">
+      <li v-for="item in kupe" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span>
@@ -22,28 +22,15 @@
 export default {
   data() {
     return {
-      cupboard: [
+      kupe: [
         {
-          // slider
           id: "01",
-          picture: "/public/img/cupboard/br-4.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
-          name: "БР-4",
-          type: "Шкафы",
-          size: "2215x800x560",
-          description: "Этот шкаф относится к модульной системе Браво.",
-          priсe: " от ₽"
-        },
-        {
-          // slider
-          id: "02",
-          picture: "/public/img/cupboard/br-5.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
-          name: "БР-5",
-          type: "Шкафы",
-          size: "2215x800x560",
-          description: "Этот шкаф относится к модульной системе Браво.",
-          priсe: " от ₽"
+          picture: "/public/img/bed/SP-121-124.jpg",
+          name: "СП-121",
+          type: "Шкафы-купе",
+          size: "1435x550x2100",
+          description: "Цвета: венге, дуб беленый",
+          price: " от 16 000 ₽"
         }
       ]
     };

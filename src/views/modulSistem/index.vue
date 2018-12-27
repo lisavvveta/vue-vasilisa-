@@ -3,7 +3,7 @@
     <!-- здесь нужно добавить header-->
     <!-- здесь нужно добавить aside (боковое меню)-->
     <ul class="product">
-      <li v-for="item in cupboard" class="product-item image-prod ">
+      <li v-for="item in commode" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span>
@@ -22,28 +22,24 @@
 export default {
   data() {
     return {
-      cupboard: [
+      commode: [
         {
-          // slider
           id: "01",
-          picture: "/public/img/cupboard/br-4.png",
           picture: "/public/img/modul-sistem/bravo.jpg",
-          name: "БР-4",
-          type: "Шкафы",
-          size: "2215x800x560",
-          description: "Этот шкаф относится к модульной системе Браво.",
-          priсe: " от ₽"
+          name: "Модульная система Браво",
+          type: "Модульная система",
+          size: "1200х4300",
+          description: "",
+          price: " от 61 500 ₽"
         },
         {
-          // slider
           id: "02",
-          picture: "/public/img/cupboard/br-5.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
-          name: "БР-5",
-          type: "Шкафы",
-          size: "2215x800x560",
-          description: "Этот шкаф относится к модульной системе Браво.",
-          priсe: " от ₽"
+          picture: "/public/img/comod/br-10.png",
+          name: "Модульная система Лион",
+          type: "Комоды",
+          size: "1182x1116x355",
+          description: "Без стекла. это относится к модульной системе Браво.",
+          price: " от 42 300 ₽"
         }
       ]
     };

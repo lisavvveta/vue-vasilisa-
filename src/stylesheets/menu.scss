@@ -1,4 +1,4 @@
-.menu {
+.navigation {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7,10 +7,9 @@
   text-shadow: 1px 1px 40px #4682B4;
 }
 
-.menu a {
+.navigation a {
   text-decoration: underline #228B22;
   font-weight: bold;
   font-size: 25px;
   margin: 15px;
-
 }
