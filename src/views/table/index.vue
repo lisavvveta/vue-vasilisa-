@@ -1,7 +1,5 @@
 <template lang="html">
   <main>
-    <!-- здесь нужно добавить header-->
-    <!-- здесь нужно добавить aside (боковое меню)-->
     <ul class="product">
       <li v-for="item in table" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
@@ -17,7 +15,6 @@
         </button>
       </li>
     </ul>
-    <!-- здесь нужно добавить footer-->
   </main>
 </template>
 

@@ -1,7 +1,5 @@
 <template>
   <main>
-    <!-- здесь нужно добавить header-->
-    <!-- здесь нужно добавить aside (боковое меню)-->
     <section>
       <div class="slide">
         <input type="radio" name="slider2" id="slider2_1" checked="checked" />
@@ -18,7 +16,6 @@
         <label for="slider2_4"></label>
       </div>
     </section>
-    <!-- здесь нужно добавить footer-->
   </main>
 </template>
 

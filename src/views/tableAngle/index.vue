@@ -1,15 +1,9 @@
 <template lang="html">
   <main>
-    <!-- здесь нужно добавить header-->
-    <!-- здесь нужно добавить aside (боковое меню)-->
     <ul id="v-for-massiv" class="product">
       <li class="product-item image-prod ">
         <h6 class="product-item__title">{{ name }}</h6>
-        <img
-          v-lazy="'/public/img/' + picture"
-          :alt="type + ' ' + name"
-          class="product-item__image"
-        />
+        <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size"> {{ size }} </span>
         <span class="product-item__description"> {{ description }} </span>
         <span class="product-item__price"> {{ price }} </span>
@@ -18,7 +12,6 @@
         </button>
       </li>
     </ul>
-    <!-- здесь нужно добавить footer-->
   </main>
 </template>
 

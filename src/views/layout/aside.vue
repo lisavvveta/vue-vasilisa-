@@ -2,9 +2,10 @@
   <aside class="сatalog">
     <ul class="punct_сatalog">
       <li class="сatalog_li">
-        <a href="sofa.html"> Мягкая </a>
+        <a href=""> Диваны </a>
         <ul class="catalog_li_elem">
-          <li class=""><a href="sofa.html">Диваны</a></li>
+          <li class=""><a href="./sofa/index.vue">Диваны</a></li>
+          <li class=""><a href="./sofaAngle/index.vue">Диваны угловые</a></li>
         </ul>
       </li>
       <li class=""><a href="modul sistem.html">Модульная система</a></li>
@@ -46,8 +47,7 @@
 export default {};
 </script>
 
-<style lang="sass">
-
+<style lang="scss">
 @import "../../stylesheets/layout.scss";
 @import "../../stylesheets/catalog.scss";
 </style>
