@@ -2,6 +2,20 @@
   <router-view />
 </template>
 
+<script>
+export default {
+ 	data: {
+		counter: 0
+	},
+	methods: {
+		increase: function() {
+			this.counter++;
+		}
+  }
+}
+</script>
+
+
 <style lang="scss">
 html,
 body {

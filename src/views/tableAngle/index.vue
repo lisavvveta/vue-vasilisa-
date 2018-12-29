@@ -7,7 +7,7 @@
         <span class="product-item__size"> {{ size }} </span>
         <span class="product-item__description"> {{ description }} </span>
         <span class="product-item__price"> {{ price }} </span>
-        <button @click="toCart()" class="product-item__button">
+        <button v-on:click="increase" class="product-item__button">
           В корзину
         </button>
       </li>

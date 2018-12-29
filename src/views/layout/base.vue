@@ -13,14 +13,13 @@
 <script>
 import AppHeader from "./AppHeader.vue";
 import AppFooter from "./AppFooter.vue";
-import Aside from './aside.vue';
+import aside from "./aside.vue";
 
 export default {
   name: "Base",
-  components: { AppHeader, aside, AppFooter }
+  components: { AppHeader, Aside, AppFooter }
 };
 </script>
 
 <style lang="scss">
-
 </style>

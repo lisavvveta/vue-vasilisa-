@@ -5,14 +5,11 @@
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description"
-          >{{ item.description }}
-          <a href="/src/views/foto-print/index.vue"> Фотопечать любая </a>
+        <span class="product-item__description">{{ item.description }}
+          <a href="/src/views/print/index.vue"> Фотопечать любая </a>
         </span>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="counter += 1" class="product-item__button">
-          В корзину
-        </button>
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -117,7 +114,7 @@ export default {
           // здесь должен быть слайдер?
           id: "09",
           picture: "/public/img/table/transformer.jpg",
-          name: "Стол транформер",
+          name: "Стол трансформер",
           type: "Столы",
           size: "800х800 высота 500",
           description:
