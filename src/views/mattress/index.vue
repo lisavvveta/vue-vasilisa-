@@ -7,7 +7,7 @@
         <span class="product-item__size">{{ item.size }}</span>
         <span class="product-item__description">{{ item.description }}</span>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -26,7 +26,7 @@ export default {
           size: " ",
           description: " ",
           price: "от "
-        },
+        }
       ]
     };
   }

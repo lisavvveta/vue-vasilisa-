@@ -24,7 +24,6 @@ export default {
           // slider
           id: "01",
           picture: "/public/img/cupboard/br-4.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
           name: "БР-4",
           type: "Шкафы",
           size: "2215x800x560",

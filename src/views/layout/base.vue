@@ -2,7 +2,7 @@
   <div id="wrapper" class="wrapper">
     <App-Header />
 
-    <aside />
+    <App-Sidebar />
 
     <router-view />
 
@@ -13,11 +13,11 @@
 <script>
 import AppHeader from "./AppHeader.vue";
 import AppFooter from "./AppFooter.vue";
-import aside from "./aside.vue";
+import AppSidebar from "./AppSidebar.vue";
 
 export default {
   name: "Base",
-  components: { AppHeader, Aside, AppFooter }
+  components: { AppHeader, AppSidebar, AppFooter }
 };
 </script>
 

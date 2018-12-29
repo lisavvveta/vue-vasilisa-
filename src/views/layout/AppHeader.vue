@@ -10,8 +10,7 @@
             id="corner"
             src="/img/bascet.png"
             width="100"
-            onclick="toggle(hidden_content)"
-          />
+            onclick="toggle(hidden_content)"/>
           Корзина (<span class="count">{{ counter }}</span
           >)
         </p>
