@@ -4,12 +4,10 @@
       <li v-for="item in foto" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">
-          В корзину
-        </button>
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -22,7 +20,7 @@ export default {
       foto: [
         {
           id: "01",
-          picture: "img/foto-print/1.jpg",
+          picture: "/img/foto-print/01.jpg",
           name: "1",
           type: "Фотопечать",
           size: "",
@@ -31,7 +29,7 @@ export default {
         },
         {
           id: "02",
-          picture: "img/foto-print/2.jpg",
+          picture: "/img/foto-print/02.jpg",
           name: "2",
           type: "Фотопечать",
           size: "",
@@ -40,7 +38,7 @@ export default {
         },
         {
           id: "03",
-          picture: "img/foto-print/3.jpg",
+          picture: "/img/foto-print/03.jpg",
           name: "3",
           type: "Фотопечать",
           size: "",
@@ -49,7 +47,7 @@ export default {
         },
         {
           id: "04",
-          picture: "img/foto-print/4.jpg",
+          picture: "/img/foto-print/04.jpg",
           name: "4",
           type: "Фотопечать",
           size: "",
@@ -58,7 +56,7 @@ export default {
         },
         {
           id: "05",
-          picture: "img/foto-print/5.jpg",
+          picture: "/img/foto-print/05.jpg",
           name: "5",
           type: "Фотопечать",
           size: "",
@@ -67,7 +65,7 @@ export default {
         },
         {
           id: "06",
-          picture: "img/foto-print/6.jpg",
+          picture: "/img/foto-print/06.jpg",
           name: "6",
           type: "Фотопечать",
           size: "",
@@ -76,7 +74,7 @@ export default {
         },
         {
           id: "07",
-          picture: "img/foto-print/7.jpg",
+          picture: "/img/foto-print/07.jpg",
           name: "7",
           type: "Фотопечать",
           size: "",
@@ -85,7 +83,7 @@ export default {
         },
         {
           id: "08",
-          picture: "img/foto-print/8.jpg",
+          picture: "/img/foto-print/08.jpg",
           name: "8",
           type: "Фотопечать",
           size: "",
@@ -94,7 +92,7 @@ export default {
         },
         {
           id: "09",
-          picture: "img/foto-print/9.jpg",
+          picture: "/img/foto-print/09.jpg",
           name: "9",
           type: "Фотопечать",
           size: "",
@@ -103,7 +101,7 @@ export default {
         },
         {
           id: "10",
-          picture: "img/foto-print/10.jpg",
+          picture: "/img/foto-print/10.jpg",
           name: "10",
           type: "Фотопечать",
           size: "",
@@ -112,7 +110,7 @@ export default {
         },
         {
           id: "11",
-          picture: "img/foto-print/11.jpg",
+          picture: "/img/foto-print/11.jpg",
           name: "11",
           type: "Фотопечать",
           size: "",
@@ -121,7 +119,7 @@ export default {
         },
         {
           id: "12",
-          picture: "img/foto-print/12.jpg",
+          picture: "/img/foto-print/12.jpg",
           name: "12",
           type: "Фотопечать",
           size: "",
@@ -130,7 +128,7 @@ export default {
         },
         {
           id: "13",
-          picture: "img/foto-print/13.jpg",
+          picture: "/img/foto-print/13.jpg",
           name: "13",
           type: "Фотопечать",
           size: "",
@@ -139,7 +137,7 @@ export default {
         },
         {
           id: "14",
-          picture: "img/foto-print/14.jpg",
+          picture: "/img/foto-print/14.jpg",
           name: "14",
           type: "Фотопечать",
           size: "",
@@ -148,7 +146,7 @@ export default {
         },
         {
           id: "15",
-          picture: "img/foto-print/15.jpg",
+          picture: "/img/foto-print/15.jpg",
           name: "15",
           type: "Фотопечать",
           size: "",
@@ -157,7 +155,7 @@ export default {
         },
         {
           id: "16",
-          picture: "img/foto-print/16.jpg",
+          picture: "/img/foto-print/16.jpg",
           name: "16",
           type: "Фотопечать",
           size: "",
@@ -166,7 +164,7 @@ export default {
         },
         {
           id: "17",
-          picture: "img/foto-print/17.jpg",
+          picture: "/img/foto-print/17.jpg",
           name: "17",
           type: "Фотопечать",
           size: "",
@@ -175,7 +173,7 @@ export default {
         },
         {
           id: "18",
-          picture: "img/foto-print/18.jpg",
+          picture: "/img/foto-print/18.jpg",
           name: "18",
           type: "Фотопечать",
           size: "",
@@ -184,7 +182,7 @@ export default {
         },
         {
           id: "19",
-          picture: "img/foto-print/19.jpg",
+          picture: "/img/foto-print/19.jpg",
           name: "19",
           type: "Фотопечать",
           size: "",
@@ -193,7 +191,7 @@ export default {
         },
         {
           id: "20",
-          picture: "img/foto-print/20.jpg",
+          picture: "/img/foto-print/20.jpg",
           name: "20",
           type: "Фотопечать",
           size: "",
@@ -202,7 +200,7 @@ export default {
         },
         {
           id: "21",
-          picture: "img/foto-print/21.jpg",
+          picture: "/img/foto-print/21.jpg",
           name: "21",
           type: "Фотопечать",
           size: "",
@@ -211,7 +209,7 @@ export default {
         },
         {
           id: "22",
-          picture: "img/foto-print/22.jpg",
+          picture: "/img/foto-print/22.jpg",
           name: "22",
           type: "Фотопечать",
           size: "",
@@ -220,7 +218,7 @@ export default {
         },
         {
           id: "23",
-          picture: "img/foto-print/23.jpg",
+          picture: "/img/foto-print/23.jpg",
           name: "23",
           type: "Фотопечать",
           size: "",
@@ -229,7 +227,7 @@ export default {
         },
         {
           id: "24",
-          picture: "img/foto-print/24.jpg",
+          picture: "/img/foto-print/24.jpg",
           name: "24",
           type: "Фотопечать",
           size: "",
@@ -238,7 +236,7 @@ export default {
         },
         {
           id: "25",
-          picture: "img/foto-print/25.jpg",
+          picture: "/img/foto-print/25.jpg",
           name: "25",
           type: "Фотопечать",
           size: "",
@@ -247,7 +245,7 @@ export default {
         },
         {
           id: "26",
-          picture: "img/foto-print/26.jpg",
+          picture: "/img/foto-print/26.jpg",
           name: "26",
           type: "Фотопечать",
           size: "",
@@ -256,7 +254,7 @@ export default {
         },
         {
           id: "27",
-          picture: "img/foto-print/27.jpg",
+          picture: "/img/foto-print/27.jpg",
           name: "27",
           type: "Фотопечать",
           size: "",
@@ -265,7 +263,7 @@ export default {
         },
         {
           id: "28",
-          picture: "img/foto-print/28.jpg",
+          picture: "/img/foto-print/28.jpg",
           name: "28",
           type: "Фотопечать",
           size: "",
@@ -274,7 +272,7 @@ export default {
         },
         {
           id: "29",
-          picture: "img/foto-print/29.jpg",
+          picture: "/img/foto-print/29.jpg",
           name: "29",
           type: "Фотопечать",
           size: "",
@@ -283,7 +281,7 @@ export default {
         },
         {
           id: "30",
-          picture: "img/foto-print/30.jpg",
+          picture: "/img/foto-print/30.jpg",
           name: "30",
           type: "Фотопечать",
           size: "",
@@ -292,7 +290,7 @@ export default {
         },
         {
           id: "31",
-          picture: "img/foto-print/31.jpg",
+          picture: "/img/foto-print/31.jpg",
           name: "31",
           type: "Фотопечать",
           size: "",
@@ -301,7 +299,7 @@ export default {
         },
         {
           id: "32",
-          picture: "img/foto-print/32.jpg",
+          picture: "/img/foto-print/32.jpg",
           name: "32",
           type: "Фотопечать",
           size: "",
@@ -310,7 +308,7 @@ export default {
         },
         {
           id: "33",
-          picture: "img/foto-print/33.jpg",
+          picture: "/img/foto-print/33.jpg",
           name: "33",
           type: "Фотопечать",
           size: "",
@@ -319,7 +317,7 @@ export default {
         },
         {
           id: "34",
-          picture: "img/foto-print/34.jpg",
+          picture: "/img/foto-print/34.jpg",
           name: "34",
           type: "Фотопечать",
           size: "",
@@ -328,7 +326,7 @@ export default {
         },
         {
           id: "35",
-          picture: "img/foto-print/35.jpg",
+          picture: "/img/foto-print/35.jpg",
           name: "35",
           type: "Фотопечать",
           size: "",
@@ -337,7 +335,7 @@ export default {
         },
         {
           id: "36",
-          picture: "img/foto-print/36.jpg",
+          picture: "/img/foto-print/36.jpg",
           name: "36",
           type: "Фотопечать",
           size: "",
@@ -346,7 +344,7 @@ export default {
         },
         {
           id: "37",
-          picture: "img/foto-print/37.jpg",
+          picture: "/img/foto-print/37.jpg",
           name: "37",
           type: "Фотопечать",
           size: "",

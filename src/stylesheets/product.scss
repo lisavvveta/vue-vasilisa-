@@ -72,14 +72,16 @@
   display: flex;
   align-items: center;
 }
+
   .product-item__price {
   color: #373535;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 1;
+  margin-right: 15px;
 }
-  .product-item__favorite-button {}
-  .product-item__buy-button {
+
+  .product-item__button {
   padding: 13px 16px 11px;
   margin-left: auto;
   font-size: 14px;

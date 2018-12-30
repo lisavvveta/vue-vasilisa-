@@ -4,7 +4,7 @@ import Base from "./views/layout/base.vue";
 
 import Bed from "./views/bed";
 import Chair from "./views/chair";
-import Coloring from "./views/colouring";
+import Colouring from "./views/colouring";
 import Comments from "./views/comments";
 import Commode from "./views/commode";
 import Cupboard from "./views/cupboard";
@@ -44,9 +44,9 @@ export default new Router({
           component: Chair
         },
         {
-          path: "/coloring",
-          name: "colorings",
-          component: Coloring
+          path: "/colouring",
+          name: "colouring",
+          component: Colouring
         },
         {
           path: "/comments",

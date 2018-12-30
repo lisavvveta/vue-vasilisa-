@@ -4,8 +4,8 @@
       <li v-for="item in commode" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
         <button v-on:click="increase" class="product-item__button">
           В корзину
@@ -22,7 +22,7 @@ export default {
       commode: [
         {
           id: "01",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/modul-sistem/bravo.jpg",
           name: "Модульная система Браво",
           type: "Модульная система",
           size: "1200х4300",
@@ -31,7 +31,7 @@ export default {
         },
         {
           id: "02",
-          picture: "/public/img/comod/br-10.png",
+          picture: "/img/comod/br-10.png",
           name: "Модульная система Лион",
           type: "Комоды",
           size: "1182x1116x355",

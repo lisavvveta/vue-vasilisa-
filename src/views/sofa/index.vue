@@ -4,8 +4,8 @@
       <li v-for="item in sofa" class="product-item image-prod">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
         <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
@@ -21,7 +21,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "01",
-          picture: "/public/img/sofa/veronica-1.jpg",
+          picture: "/img/sofa/veronica-1.jpg",
           name: "Вероника",
           type: "Диваны",
           size: "2220х1050х1010 ",
@@ -32,7 +32,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "02",
-          picture: "/public/img/sofa/kalipso-1.jpg",
+          picture: "/img/sofa/kalipso-1.jpg",
           name: "Колипсио на металлокарксе",
           type: "Диваны",
           size: "1740х1120х940",
@@ -43,7 +43,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "03",
-          picture: "/public/img/sofa/brigantina-1.jpg",
+          picture: "/img/sofa/brigantina-1.jpg",
           name: "Бригантина",
           type: "Диваны",
           size: "1970х850х920",
@@ -54,7 +54,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "04",
-          picture: "/public/img/sofa/tahta-1.jpg",
+          picture: "/img/sofa/tahta-1.jpg",
           name: "Тахта",
           type: "Диваны",
           size: "2010х950х1000",
@@ -65,7 +65,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "05",
-          picture: "/public/img/sofa/mango-1.jpg",
+          picture: "/img/sofa/mango-1.jpg",
           name: "Манго на металлокаркасе",
           type: "Диваны",
           size: "2020x1080x970",
@@ -75,7 +75,7 @@ export default {
         },
         {
           id: "06",
-          picture: "/public/img/sofa/melisa.jpg",
+          picture: "/img/sofa/melisa.jpg",
           name: "Мелиса",
           type: "Диваны",
           size: "2320х1100х930",
@@ -86,7 +86,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "07",
-          picture: "/public/img/sofa/uyut.jpg",
+          picture: "/img/sofa/uyut.jpg",
           name: "Уют",
           type: "Диваны",
           size: "2300х800х900",
@@ -97,7 +97,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "08",
-          picture: "/public/img/sofa/2mdf.jpg",
+          picture: "/img/sofa/2mdf.jpg",
           name: "2МДФ",
           type: "Диваны",
           size: "2140х920х920",
@@ -107,7 +107,7 @@ export default {
         },
         {
           id: "08",
-          picture: "/public/img/sofa/elvira-1.jpg",
+          picture: "/img/sofa/elvira-1.jpg",
           name: "Эльвира 4",
           type: "Диваны",
           size: "2300х1600",
