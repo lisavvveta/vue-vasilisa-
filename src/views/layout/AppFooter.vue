@@ -40,6 +40,7 @@ export default {};
 @import "../../stylesheets/tell.scss";
 
 footer {
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   margin-left: 150px;

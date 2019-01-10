@@ -1,5 +1,5 @@
 <template lang="html">
-  <main>
+  <main class="content">
     <ul class="product">
       <li v-for="item in cupboard" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>

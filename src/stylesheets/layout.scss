@@ -1,7 +1,6 @@
 html,
 body {
   max-width: 1300px;
-  margin: 0;
   padding: 0;
   text-align: center;
   font-family: "Calibri", sans-serif;
@@ -12,7 +11,7 @@ body {
   box-sizing: border-box;
 }
 
-.kontent {
+.content {
   width: auto;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -63,3 +62,4 @@ div {
   width: 550px;
   padding: 10px;
 }
+
