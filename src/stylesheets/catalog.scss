@@ -1,4 +1,4 @@
-.сatalog {
+.catalog{
   margin-top: 5px;
   margin-left: 10px;
   float: left;
@@ -9,7 +9,7 @@
   z-index: 3;
 }
 
-.сatalog a {
+.catalog_li a {
   display: block;
   background-color: #228B22;
   padding: 10px 10px;
@@ -23,7 +23,7 @@
   min-height: 55px;
 }
 
-.сatalog a:hover {
+.catalog_li a:hover {
   background: #1E90FF;
   height: 20px;
   top: 0;
@@ -32,7 +32,7 @@
   min-height: 60px;
 }
 
-.сatalog_li {
+.catalog_li {
   position: relative;
   margin-top: -5px;
   min-height: inherit;
@@ -40,7 +40,7 @@
   min-height: 70px;
 }
 
-.сatalog_li_elem {
+.catalog_li_elem {
   position: absolute;
   width: 100%;
   left: 100%;
@@ -51,7 +51,7 @@
   z-index: 3;
 }
 
-.сatalog_li:hover .сatalog_li_elem {
+.catalog_li:hover .catalog_li_elem {
   opacity: 1;
   visibility: visible;
   top: 0;

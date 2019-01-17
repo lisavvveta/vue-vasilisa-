@@ -109,18 +109,8 @@ export default {
           price: " от 13 400 ₽"
         },
         {
-          // здесь должен быть слайдер
-          id: "08",
-          picture: "/img/table/",
-          name: "Былина",
-          type: "Столы",
-          size: "900x600",
-          description: "не раздвижной",
-          price: " от 8 300 ₽"
-        },
-        {
           // здесь должен быть слайдер?
-          id: "09",
+          id: "08",
           picture: "/img/table/transformer.jpg",
           name: "Стол трансформер",
           type: "Столы",
@@ -131,7 +121,7 @@ export default {
         },
         {
           // здесь должен быть слайдер
-          id: "10",
+          id: "09",
           picture: "/img/table/bariton-1100-1.jpg",
           name: "Баритон",
           type: "Кухни",

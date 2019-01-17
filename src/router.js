@@ -21,6 +21,7 @@ import SofaAngle from "./views/sofaAngle";
 import Table from "./views/table";
 import TableAngle from "./views/tableAngle";
 import Mattress from "./views/mattress";
+import Order from "./views/order";
 
 Vue.use(Router);
 
@@ -127,6 +128,11 @@ export default new Router({
           path: "/mattress",
           name: "mattress",
           component: Mattress
+        },
+        {
+          path: "/order",
+          name: "orders",
+          component: Order
         }
       ]
     }

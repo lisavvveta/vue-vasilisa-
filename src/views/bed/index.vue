@@ -167,7 +167,7 @@ export default {
         },
         {
           id: "13",
-          picture: "/img/bed/muza.jpg.jpg",
+          picture: "/img/bed/muza.jpg",
           name: "Муза",
           type: "Кровати",
           size: "1,6",
@@ -177,7 +177,7 @@ export default {
         },
         {
           id: "14",
-          picture: "/img/bed/lion.jpg.jpg",
+          picture: "/img/bed/lion.jpg",
           name: "Лион",
           type: "Кровати",
           size: "1,4",
@@ -187,7 +187,7 @@ export default {
         },
         {
           id: "15",
-          picture: "/img/bed/lion.jpg.jpg",
+          picture: "/img/bed/lion.jpg",
           name: "Лион",
           type: "Кровати",
           size: "1,6",
@@ -197,7 +197,7 @@ export default {
         },
         {
           id: "16",
-          picture: "/img/bed/lion.jpg.jpg",
+          picture: "/img/bed/lion.jpg",
           name: "Лион",
           type: "Кровати",
           size: "0,9",
@@ -207,7 +207,7 @@ export default {
         },
         {
           id: "17",
-          picture: "/img/bed/lion.jpg.jpg",
+          picture: "/img/bed/lion.jpg",
           name: "Лион",
           type: "Кровати",
           size: "1,2",

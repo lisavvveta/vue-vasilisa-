@@ -8,7 +8,7 @@ export default {
 		counter: 0
 	},
 	methods: {
-		increase: function() {
+    increase: function() {
       this.counter++;
     }
   }

@@ -3,11 +3,11 @@
   vertical-align: top;
   border: solid 5px #29a329;
   width: 400px;
-  height: 460px;
+  height: 50%;
   text-align: center;
   margin: 0, 5px;
   padding: 1px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .image-prod p {
@@ -15,18 +15,19 @@
   margin: 2px;
 }
 
-.product{
-  max-width: 60%;
-}
-
-.product-list {
+.product {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
   align-items: center;
   min-height: 300px;
+  width: 60%;
+  box-sizing: border-box;
+  margin-left: 25%;
+  position: relative;
 }
+
   .product-item {
   flex: 1 1;
   min-width: 300px;
@@ -40,27 +41,32 @@
     0 2px 20px 0 rgba(0, 0, 0, 0.5),
     0 2px 20px 0px rgba(40, 140, 220, 0.5)
 }
+
   .product-item._fill {
   flex-basis: 48.4%;
   width: auto;
 }
+
   .product-item:hover {
   box-shadow:
     0 2px 20px 0 rgba(0, 0, 0, 1),
     0 2px 20px 0px rgba(40, 140, 220, 1)
 }
+
   .product-item__picture {
   width: 100%;
-  max-height: 270px;
+  max-height: 250px;
   object-fit: cover;
   object-position: top;
 }
+
 .product-item__title {
   margin-bottom: 5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
+
 .product-item__description {
   margin-bottom: 12px;
   font-family: 'Montserrat', sans-serif;
@@ -68,6 +74,7 @@
   font-weight: normal;
   line-height: 1.8;
 }
+
   .product-item__actions {
   display: flex;
   align-items: center;
@@ -96,12 +103,11 @@
   transition: all 0.15s ease;
 }
 
-.furnitere {
-  width: 375px;
-  height: 255px;
-}
-
 #template_product {
   padding: 3%;
   border: solid 3px green;
+}
+
+h6{
+  margin-top: 2px;
 }
