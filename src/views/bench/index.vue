@@ -1,12 +1,11 @@
 <template lang="html">
-  <main>
-    <section class="navigatiion">
-     <ul class="navigation">
-       <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
-       <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
-       <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
-       <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
-     </ul>
+ <section class="navigatiion">
+      <ul class="navigation">
+        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+      </ul>
       <form>
         <p>
           <input
@@ -19,8 +18,9 @@
         </p>
       </form>
     </section>
+  <main class="content">
     <ul class="product">
-      <li v-for="item in mattress" class="product-item image-prod">
+      <li v-for="item in bench" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span><br>
@@ -36,15 +36,16 @@
 export default {
   data() {
     return {
-      mattress: [
+      bench: [
         {
+          // slider
           id: "01",
-          picture: "",
-          name: "",
-          type: "Матрасы",
-          size: " ",
-          description: " ",
-          price: "от "
+          picture: "/img/bench/trio.jpg",
+          name: "Диванчик трио плюс",
+          type: "Скамьи",
+          size: "РАЗМЕРЫ: ДЛИНА-1000, ШИРИНА-680, ВЫСОТА-600",
+          description: "",
+          priсe: " от 12 000 ₽"
         }
       ]
     };

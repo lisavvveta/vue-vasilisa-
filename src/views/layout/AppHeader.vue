@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="company">
-     <a href="index.vue"> <img class="logotyp" src="/img/vasilisa.png"  alt="logotyp" /></a>
+      <router-link to="index"> <img class="logotyp" src="/img/vasilisa.png"  alt="logotyp" /> </router-link>
     </div>
     <div class="href-box">
       <section class="basket">
@@ -15,7 +15,7 @@
         <div class="hidden">
           <p>Товаров:<span class="count"> {{ counter }} </span></p>
           <p>На сумму: <span id="price">{{ total }}</span></p>
-          <a href="order.html"> <button>Заказать звонок</button></a>
+          <router-link to="order"> <button>Заказать звонок</button></router-link>
         </div>
       </section>
     </div>

@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Base from "./views/layout/base.vue";
 
 import Bed from "./views/bed";
+import Bench from "./views/bench";
 import Chair from "./views/chair";
 import Colouring from "./views/colouring";
 import Comments from "./views/comments";
@@ -22,6 +23,8 @@ import Table from "./views/table";
 import TableAngle from "./views/tableAngle";
 import Mattress from "./views/mattress";
 import Order from "./views/order";
+import Feedback from "./views/feedback";
+import Politick from "./views/politick";
 
 Vue.use(Router);
 
@@ -38,6 +41,11 @@ export default new Router({
           path: "/bed",
           name: "beds",
           component: Bed
+        },
+        {
+          path: "/bench",
+          name: "bench",
+          component: Bench
         },
         {
           path: "/chair",
@@ -133,6 +141,16 @@ export default new Router({
           path: "/order",
           name: "orders",
           component: Order
+        },
+        {
+          path: "/feedback",
+          name: "feedback",
+          component: Feedback
+        },
+        {
+          path: "/politick",
+          name: "politick",
+          component: Politick
         }
       ]
     }

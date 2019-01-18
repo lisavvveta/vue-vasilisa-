@@ -1,4 +1,23 @@
 <template lang="html">
+<section class="navigatiion">
+      <ul class="navigation">
+        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+      </ul>
+      <form>
+        <p>
+          <input
+            class="search"
+            type="search"
+            name="q"
+            placeholder="Поиск по сайту"
+          />
+          <input class="search" type="submit" value="Найти" />
+        </p>
+      </form>
+    </section>
   <main class="content">
     <ul class="product">
       <li v-for="item in cupboard" class="product-item image-prod ">

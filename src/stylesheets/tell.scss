@@ -7,23 +7,19 @@
   padding-left: 80px;
 }
 
-.tellBlock {
+.contacts__block{
   margin: auto;
   display: flex;
   flex-direction: column;
-  color: #fff;
 }
 
-.tellBlock a {
-  color: #fff
-}
 
-.tell {
+.contacts {
   width: auto;
   font-size: 14px;
   margin: 10px;
   background-color: #228B22;
   border: 7px solid #008000;
-  color: #32CD32;
+  color: #fff;
   padding: 10px;
 }

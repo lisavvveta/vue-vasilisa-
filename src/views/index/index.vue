@@ -1,12 +1,12 @@
 <template>
   <main>
     <section class="navigatiion">
-      <nav class="navigation">
-        <a class="punct_menu" href="/src/views/index/index.vue"> Главная </a>
-        <a class="punct_menu" href="order.html"> Как заказать</a>
-        <a class="punct_menu" href="comments.html">Отзывы</a>
-        <a class="punct_menu" href="feedback.html">Контакты</a>
-      </nav>
+      <ul class="navigation">
+        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+      </ul>
       <form>
         <p>
           <input

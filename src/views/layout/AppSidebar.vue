@@ -2,44 +2,46 @@
   <aside class="catalog">
     <ul class="punct_catalog">
       <li class="catalog_li">
-        <a href=""> Диваны </a>
+        <router-link to=""> Диваны </router-link>
         <ul class="catalog_li_elem">
           <li class="">
-            <a href="./sofa/index.vue">Диваны</a></li>
-          <li class=""><a href="./sofaAngle/index.vue">Диваны угловые</a></li>
+            <router-link to="sofa">Диваны</router-link></li>
+          <li class=""><router-link to="sofaAngle">Диваны угловые</router-link></li>
         </ul>
       </li>
-      <li class="catalog_li"><a href="modul sistem.html">Модульная система</a></li>
-      <li class="catalog_li"><a href="bed.html">Кровати</a></li>
-      <li class="catalog_li"><a href="сomod.html"> Комод </a></li>
-      <li class="catalog_li"><a href="">Детская</a></li>
+      <li class="catalog_li"><router-link to="modulSistem">Модульная система</router-link></li>
+      <li class="catalog_li"><router-link to="bed">Кровати</router-link></li>
+      <li class="catalog_li"><router-link to="commode"> Комод</router-link> </li>
+      <li class="catalog_li"><router-link to="kids">Детская</router-link></li>
+      <li class="catalog_li"><router-link to="kitchen">Кухни</router-link></li>
+      <li class="catalog_li"><router-link to="print">Фотопечать </router-link></li>
+      <li class="catalog_li"><router-link to="colouring">Цвета </router-link></li>
+
       <li class="catalog_li">
-        <a href=""> Корпусная </a>
+        <router-link to=""> Корпусная</router-link>
         <ul class="catalog_li_elem">
-          <li class=""><a href="">Гостинная</a></li>
-          <li class=""><a href="hollway.html">Прихожая</a></li>
-          <li class=""><a href="">Спальня</a></li>
+          <li class=""><router-link to="">Гостинная</router-link></li>
+          <li class=""><router-link to="hollway">Прихожая</router-link></li>
         </ul>
       </li>
       <li class="catalog_li">
-        <a class="catalog_li" href=""> Хромированная </a>
+        <router-link to=""> Хромированная </router-link>
         <ul class="catalog_li_elem">
-          <li class=""><a href="table.html">Столы</a></li>
-          <li class=""><a href="chair.html">Стулья</a></li>
-          <li class=""><a href="">Скамьи, банкетки</a></li>
-          <li class=""><a href="print">Фотопечать материалы</a></li>
+          <li class=""><router-link to="table">Столы</router-link></li>
+          <li class=""><router-link to="chair">Стулья</router-link></li>
+          <li class=""><router-link to="bench">Скамьи, банкетки</router-link></li>
         </ul>
       </li>
-      <li class="catalog_li"><a href=""> Матрасы</a></li>
+      <li class="catalog_li"><router-link to="mattress"> Матрасы</router-link></li>
       <li class="catalog_li">
-        <a href=""> Шкафы</a>
+        <router-link to="">Шкафы</router-link>
         <ul class="catalog_li_elem">
-          <li class=""><a href="shkaf-kupe.html">Шкафы купе</a></li>
-          <li class=""><a href="">Шкафы 2-створчатые</a></li>
-          <li class=""><a href="">Шкафы 3-створчатые</a></li>
+          <li class=""><router-link to="cupboard">Шкафы </router-link></li>
+          <li class=""><router-link to="cupboardCoupe">Шкафы купе</router-link></li>
+          <li class=""><router-link to="cupboardAngle">Шкафы угловые</router-link></li>
         </ul>
       </li>
-      <li class="catalog_li"><a href=""> Акции </a></li>
+      <li class="catalog_li"><router-link to=""> Акции</router-link></li>
     </ul>
   </aside>
 </template>
