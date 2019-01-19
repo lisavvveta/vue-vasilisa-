@@ -2,11 +2,11 @@
   <main>
     <section class="navigatiion">
      <ul class="navigation">
-        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
-        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
-        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
-        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
-      </ul>
+       <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+       <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+       <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+       <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+     </ul>
       <form>
         <p>
           <input
@@ -20,15 +20,13 @@
       </form>
     </section>
     <ul class="product">
-      <li v-for="item in coupe" class="product-item image-prod ">
+      <li v-for="item in mattress" class="product-item image-prod">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span><br>
         <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">
-          В корзину
-        </button>
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -38,15 +36,15 @@
 export default {
   data() {
     return {
-      coupe: [
+      mattress: [
         {
           id: "01",
-          picture: "/img/bed/SP-121-124.jpg",
-          name: "СП-121",
-          type: "Шкафы-купе",
-          size: "1435x550x2100",
-          description: "Цвета: венге, дуб беленый",
-          price: " от 16 000 ₽"
+          picture: "",
+          name: "",
+          type: "Матрасы",
+          size: " ",
+          description: " ",
+          price: "от "
         }
       ]
     };

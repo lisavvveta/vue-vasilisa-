@@ -1,15 +1,32 @@
 <template lang="html">
   <main>
+    <section class="navigatiion">
+      <ul class="navigation">
+        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+      </ul>
+      <form>
+        <p>
+          <input
+            class="search"
+            type="search"
+            name="q"
+            placeholder="Поиск по сайту"
+          />
+          <input class="search" type="submit" value="Найти" />
+        </p>
+      </form>
+    </section>
     <ul class="product">
       <li v-for="item in kitchen" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="counter += 1" class="product-item__button">
-          В корзину
-        </button>
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -22,7 +39,7 @@ export default {
       kitchen: [
         {
           id: "01",
-          picture: "/public/img/kitchen/marta.jpg",
+          picture: "/img/kitchen/marta.jpg",
           name: "Марта ",
           type: "Кухни",
           size: "Размеры: 1,2м 1,6м 2м",
@@ -31,7 +48,7 @@ export default {
         },
         {
           id: "02",
-          picture: "/public/img/kitchen/verona.jpg",
+          picture: "/img/kitchen/verona.jpg",
           name: "Верона ",
           type: "Кухни",
           size: "Размеры 1,5м 1,7м 2м угловой 1,2 х 1,4",
@@ -40,7 +57,7 @@ export default {
         },
         {
           id: "03",
-          picture: "/public/img/kitchen/ldsp-3.jpg",
+          picture: "/img/kitchen/ldsp-3.jpg",
           name: "ЛДСП",
           type: "Кухни",
           size: "Размеры: 2м",
@@ -51,7 +68,7 @@ export default {
         {
           // сюда добавить слайдер с остальными кухнями
           id: "04",
-          picture: "/public/img/kitchen/ldsp-4.jpg",
+          picture: "/img/kitchen/ldsp-4.jpg",
           name: "ЛДСП",
           type: "Кухни",
           size: "Размеры: 1,5 м",
@@ -61,7 +78,7 @@ export default {
         },
         {
           id: "06",
-          picture: "/public/img/kitchen/ariana.jpg",
+          picture: "/img/kitchen/ariana-2.jpg",
           name: "Ариана",
           type: "Кухни",
           size: "Размеры: от 1м ",
@@ -70,7 +87,7 @@ export default {
         },
         {
           id: "07",
-          picture: "/public/img/kitchen/kleo-3.jpg",
+          picture: "/img/kitchen/kleo-3.jpg",
           name: "Калео",
           type: "Кухни",
           size: "",
@@ -79,7 +96,7 @@ export default {
         },
         {
           id: "08",
-          picture: "/public/img/kitchen/dub-loa.jpg",
+          picture: "/img/kitchen/dub-loa.jpg",
           name: "Дуб Лоа",
           type: "Кухни",
           size: "Размеры: от 1м ",
@@ -88,7 +105,7 @@ export default {
         },
         {
           id: "09",
-          picture: "/public/img/kitchen/sandra.jpg",
+          picture: "/img/kitchen/sandra.jpg",
           name: "Сандра",
           type: "Кухни",
           size: "Размеры: от 1м",
@@ -98,7 +115,7 @@ export default {
         {
           //здесь сделать слайдер
           id: "10",
-          picture: "/public/img/kitchen/ldsp-zacaz - 1.jpg",
+          picture: "/img/kitchen/ldsp-zacaz - 1.jpg",
           name: "ЛДСП на заказ",
           type: "Кухни",
           size: "",
@@ -109,7 +126,7 @@ export default {
         {
           //здесь сделать слайдер
           id: "11",
-          picture: "/public/img/kitchen/mdf - 2.jpg",
+          picture: "/img/kitchen/mdf - 2.jpg",
           name: "Кухни модульные ЛДСП и МДФ глянец",
           type: "Кухни",
           size: "",
@@ -120,7 +137,7 @@ export default {
         {
           //здесь сделать слайдер
           id: "12",
-          picture: "/public/img/kitchen/mdf-ramka -3.jpg",
+          picture: "/img/kitchen/mdf-ramka -3.jpg",
           name: "Кухня фасад рамка МДФ",
           type: "Кухни",
           size: "",
@@ -130,7 +147,7 @@ export default {
         {
           //здесь сделать слайдер
           id: "13",
-          picture: "/public/img/kitchen/kosa-1.jpg",
+          picture: "/img/kitchen/kosa-1.jpg",
           name: "Кухня Коса патина рамка",
           type: "Кухни",
           size: "",

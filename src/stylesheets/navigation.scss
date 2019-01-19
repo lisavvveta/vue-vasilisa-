@@ -2,9 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10px;
-  text-shadow: 1px 1px 40px #4682B4;
+  margin-left: -18%;
+  margin-right: -260px;
 }
 
 .navigation a {
@@ -12,4 +11,9 @@
   font-weight: bold;
   font-size: 25px;
   margin: 15px;
+}
+
+.search {
+  font-size: 20px;
+  margin: -19px;
 }

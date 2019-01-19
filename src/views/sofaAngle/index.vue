@@ -1,13 +1,32 @@
 <template lang="html">
   <main>
+    <section class="navigatiion">
+       <ul class="navigation">
+      <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+      <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+      <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+      <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+    </ul>
+      <form>
+        <p>
+          <input
+            class="search"
+            type="search"
+            name="q"
+            placeholder="Поиск по сайту"
+          />
+          <input class="search" type="submit" value="Найти" />
+        </p>
+      </form>
+    </section>
     <ul class="product">
       <li v-for="item in sofaAngle" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="counter += 1" class="product-item__button">
+        <button v-on:click="increase" class="product-item__button">
           В корзину
         </button>
       </li>
@@ -22,7 +41,7 @@ export default {
       sofaAngle: [
         {
           id: "01",
-          picture: "/public/img/sofa-angle/brigantina.jpg",
+          picture: "/img/sofa-angle/brigantina.jpg",
           name: "Диван угловой Бригантина",
           type: "Диваны угловые",
           size: "3180x176x910",
@@ -32,7 +51,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "02",
-          picture: "/public/img/sofa-angle/elvira4-1.jpg",
+          picture: "/img/sofa-angle/elvira4-1.jpg",
           name: "Диван угловой Эльвира",
           type: "Диваны угловые",
           size: "1740х1120х940",
@@ -43,7 +62,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "03",
-          picture: "/public/img/sofa-angle/melisa.jpg",
+          picture: "/img/sofa-angle/melisa.jpg",
           name: "Диван угловой Мелиса",
           type: "Диваны угловые",
           size: "1970х850х920",
@@ -54,7 +73,7 @@ export default {
         {
           // здесь должен быть слайдер
           id: "04",
-          picture: "/public/img/sofa-angle/veronica.jpg",
+          picture: "/img/sofa-angle/veronica.jpg",
           name: "Диван угловой Вероника",
           type: "Диваны угловые",
           size: "2900х1050х1500",

@@ -2,10 +2,23 @@
   <router-view />
 </template>
 
+<script>
+export default {
+  data: {
+		counter: 0
+	},
+	methods: {
+    increase: function() {
+      this.counter++;
+    }
+  }
+};
+</script>
+
+
 <style lang="scss">
 html,
 body {
-  max-width: 1300px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -18,7 +31,7 @@ body {
 }
 
 .content {
-  width: auto;
+  width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
   align-content: center;

@@ -5,6 +5,7 @@
   position: relative;
   text-align: center;
   margin-left: 50px;
+  margin-bottom: 7%;
   z-index: 1;
 }
 
@@ -37,10 +38,10 @@
 
 .slide div {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 0;
 }
 
@@ -66,9 +67,9 @@
 .slide div p {
   position: absolute;
   font-size: 20px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   color: #000;
   text-shadow: 4px 4px 6px #222;

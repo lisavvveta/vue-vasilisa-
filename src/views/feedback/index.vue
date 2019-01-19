@@ -20,19 +20,19 @@
       </form>
     </section>
     <section>
-      <div class="slide">
-        <input type="radio" name="slider2" id="slider2_1" checked="checked" />
-        <label for="slider2_1"></label>
-        <div><img class="img1" src="/img/slider/1.jpg" /></div>
-        <label for="slider2_2"></label>
-        <input type="radio" name="slider2" id="slider2_2" />
-        <label for="slider2_2"></label>
-        <div><img class="img1" src="/img/slider/2.jpg" /></div>
-        <label for="slider2_3"></label>
-        <input type="radio" name="slider2" id="slider2_3" />
-        <label for="slider2_3"></label>
-        <div><img class="img1" src="" /></div>
-        <label for="slider2_4"></label>
+      <div class="contact">
+        <h3>Общество с ограниченной ответственностью «Король Лев» </h3>
+        <h3>Иркутская обл. г Черемхово ул Ленина дом 5 первый этаж</h3>
+        <h3>Тел 8(395) 2 .744-208</h3>
+
+        <h3>Ген Директор 8 (904)150-41-41 Александр Геннадьевич ,</h3>
+
+        <h3>Директор по сбыту и развитию 8 (964)800-56-45 Александра Семеновна ,</h3>
+
+        <h3>Mенеджер по работе с клиентами 8(952)614-15-15 Анна , Елена</h3>
+
+        <h3>Время работы с 10:00 до 19:00 по Иркутской обл .</h3>
+        <img class="contact_img" src="/img/adress.jpg" alt="">
       </div>
     </section>
   </main>
@@ -44,6 +44,13 @@ export default {};
 
 <style lang="scss">
 @import "../../stylesheets/layout.scss";
-@import "../../stylesheets/product.scss";
-@import "../../stylesheets/slide_index.scss";
+
+.contact {
+  width: 90%;
+  width: 800px;
+  position: relative;
+  text-align: center;
+  margin-left: 80px;
+  z-index: 1;
+}
 </style>

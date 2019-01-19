@@ -1,13 +1,32 @@
 <template lang="html">
   <main>
+    <section class="navigatiion">
+      <ul class="navigation">
+        <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
+        <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
+        <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
+        <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
+      </ul>
+      <form>
+        <p>
+          <input
+            class="search"
+            type="search"
+            name="q"
+            placeholder="Поиск по сайту"
+          />
+          <input class="search" type="submit" value="Найти" />
+        </p>
+      </form>
+    </section>
     <ul class="product">
       <li v-for="item in commode" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span>
-        <span class="product-item__description">{{ item.description }}</span>
+        <span class="product-item__size">{{ item.size }}</span><br>
+        <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="counter += 1" class="product-item__button">
+        <button v-on:click="increase" class="product-item__button">
           В корзину
         </button>
       </li>
@@ -23,7 +42,7 @@ export default {
         {
           //slide
           id: "01",
-          picture: "/public/img/comod/comod-height.jpeg",
+          picture: "/img/comod/comod-height.jpeg",
           name: "Комод высокий",
           type: "Комоды",
           size: "1336x500x370",
@@ -34,7 +53,7 @@ export default {
         {
           //slide
           id: "02",
-          picture: "/public/img/comod/br-10.png",
+          picture: "/img/comod/br-10.png",
           name: "Комод БР-10",
           type: "Комоды",
           size: "1182x1116x355",
@@ -45,7 +64,7 @@ export default {
         {
           //slide
           id: "03",
-          picture: "/public/img/bed/SP-121-124.jpg",
+          picture: "/img/bed/SP-121-124.jpg",
           name: "Комод СП-123",
           type: "Комоды",
           size: "1000х810х435",
@@ -55,7 +74,7 @@ export default {
         {
           //slide
           id: "04",
-          picture: "/public/img/bed/SP-121-124.jpg",
+          picture: "/img/bed/SP-121-124.jpg",
           name: "Тумба прикроватная СП-124",
           type: "Комоды",
           size: "500х435х445",
@@ -65,8 +84,7 @@ export default {
         {
           //slide
           id: "05",
-          picture: "/public/img/comod/penal-br-1.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/penal-br-1.png",
           name: "Пенал БР-1",
           type: "Комоды",
           size: "2215x500x351",
@@ -76,8 +94,7 @@ export default {
         {
           //slide
           id: "06",
-          picture: "/public/img/comod/penal-br-2.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/penal-br-2.png",
           name: "Пенал БР-2",
           type: "Комоды",
           size: "2215x500x351",
@@ -87,8 +104,8 @@ export default {
         {
           //slide
           id: "07",
-          picture: "/public/img/comod/penal-br-3.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/penal-br-3.png",
+
           name: "Пенал БР-3",
           type: "Комоды",
           size: "2215x500x351",
@@ -98,8 +115,8 @@ export default {
         {
           //slide
           id: "08",
-          picture: "/public/img/comod/br-7.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/br-7.png",
+
           name: "Стеллаж БР-7",
           type: "Комоды",
           size: "2215x351x351",
@@ -109,8 +126,8 @@ export default {
         {
           //slide
           id: "09",
-          picture: "/public/img/comod/penal-br-8.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/penal-br-8.png",
+
           name: "Пенал БР-8",
           type: "Комоды",
           size: "2215x500x351",
@@ -120,8 +137,8 @@ export default {
         {
           //slide
           id: "10",
-          picture: "/public/img/comod/penal-br-9.png",
-          picture: "/public/img/modul-sistem/bravo.jpg",
+          picture: "/img/comod/penal-br-9.png",
+
           name: "Пенал БР-9",
           type: "Комоды",
           size: "2215x560x400",
@@ -131,8 +148,7 @@ export default {
         {
           //slide
           id: "11",
-          picture: "/public/img/comod/ms-2.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-2.png",
           name: "Пенал МС-2",
           type: "Комоды",
           size: "2220х450х450",
@@ -142,8 +158,7 @@ export default {
         {
           //slide
           id: "12",
-          picture: "/public/img/comod/ms-3.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-3.png",
           name: "Пенал МС-3",
           type: "Комоды",
           size: "2220х600х450",
@@ -153,8 +168,7 @@ export default {
         {
           //slide
           id: "13",
-          picture: "/public/img/comod/ms-4.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-4.png",
           name: "Пенал МС-4",
           type: "Комоды",
           size: "1675х450х450",
@@ -164,8 +178,7 @@ export default {
         {
           //slide
           id: "14",
-          picture: "/public/img/comod/ms-5.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-5.png",
           name: "Пенал МС-5",
           type: "Комоды",
           size: "1675х650х450",
@@ -175,8 +188,7 @@ export default {
         {
           //slide
           id: "15",
-          picture: "/public/img/comod/ms-6.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-6.png",
           name: "Комод МС-6",
           type: "Комоды",
           size: "1050х1255х4364",
@@ -186,8 +198,7 @@ export default {
         {
           //slide
           id: "16",
-          picture: "/public/img/comod/ms-7.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-7.png",
           name: "Комод МС-7",
           type: "Комоды",
           size: "1255х1200х364",
@@ -197,8 +208,7 @@ export default {
         {
           //slide
           id: "17",
-          picture: "/public/img/comod/ms-9.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-9.png",
           name: "МС-9",
           type: "Комоды",
           size: "1200х550х420",
@@ -208,8 +218,7 @@ export default {
         {
           //slide
           id: "18",
-          picture: "/public/img/comod/ms-10.png",
-          picture: "/public/img/modul-sistem/lion.png",
+          picture: "/img/comod/ms-10.png",
           name: "МС-10",
           type: "Комоды",
           size: "1200х550х420",

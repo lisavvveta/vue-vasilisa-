@@ -3,8 +3,9 @@ import Router from "vue-router";
 import Base from "./views/layout/base.vue";
 
 import Bed from "./views/bed";
+import Bench from "./views/bench";
 import Chair from "./views/chair";
-import Coloring from "./views/colouring";
+import Colouring from "./views/colouring";
 import Comments from "./views/comments";
 import Commode from "./views/commode";
 import Cupboard from "./views/cupboard";
@@ -20,6 +21,10 @@ import Sofa from "./views/sofa";
 import SofaAngle from "./views/sofaAngle";
 import Table from "./views/table";
 import TableAngle from "./views/tableAngle";
+import Mattress from "./views/mattress";
+import Order from "./views/order";
+import Feedback from "./views/feedback";
+import Politick from "./views/politick";
 
 Vue.use(Router);
 
@@ -38,14 +43,19 @@ export default new Router({
           component: Bed
         },
         {
+          path: "/bench",
+          name: "bench",
+          component: Bench
+        },
+        {
           path: "/chair",
           name: "chairs",
           component: Chair
         },
         {
-          path: "/coloring",
-          name: "colorings",
-          component: Coloring
+          path: "/colouring",
+          name: "colouring",
+          component: Colouring
         },
         {
           path: "/comments",
@@ -121,6 +131,26 @@ export default new Router({
           path: "/tableAngle",
           name: "tableAngle",
           component: TableAngle
+        },
+        {
+          path: "/mattress",
+          name: "mattress",
+          component: Mattress
+        },
+        {
+          path: "/order",
+          name: "orders",
+          component: Order
+        },
+        {
+          path: "/feedback",
+          name: "feedback",
+          component: Feedback
+        },
+        {
+          path: "/politick",
+          name: "politick",
+          component: Politick
         }
       ]
     }

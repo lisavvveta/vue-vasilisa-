@@ -1,6 +1,5 @@
 <template lang="html">
-  <main>
-    <section class="navigatiion">
+ <section class="navigatiion">
       <ul class="navigation">
         <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
         <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
@@ -19,16 +18,15 @@
         </p>
       </form>
     </section>
+  <main class="content">
     <ul class="product">
-      <li v-for="item in cupboardAngle" class="product-item image-prod ">
+      <li v-for="item in bench" class="product-item image-prod ">
         <h6 class="product-item__title">{{ item.name }}</h6>
         <img :src="item.picture" alt="" class="product-item__picture" />
         <span class="product-item__size">{{ item.size }}</span><br>
         <span class="product-item__description">{{ item.description }}</span><br>
         <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">
-          В корзину
-        </button>
+        <button v-on:click="increase" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -38,37 +36,16 @@
 export default {
   data() {
     return {
-      cupboardAngle: [
+      bench: [
         {
           // slider
           id: "01",
-          picture: "/img/cupboard-angle/br-6.png",
-          name: "БР-6",
-          type: "Шкафы",
-          size: "2215x904x904",
-          description: "Этот шкаф относится к модульной системе Браво.",
-          priсe: " от ₽"
-        },
-        ,
-        {
-          // здесь должен быть слайлер
-          id: "02",
-          picture: "/img/comod/br-10.png",
-          name: "Комод БР-10",
-          type: "Комоды",
-          size: "1182x1116x355",
-          description:
-            "Без стекла.В рамке. Этот комод относится к модульной системе Браво.",
-          priсe: " от 9 300 ₽"
-        },
-        {
-          id: "03",
-          picture: "/img/bed/SP-121-124.jpg",
-          name: "Комод СП-123",
-          type: "Комоды",
-          size: "1000х810х435",
-          description: "Цвет венге-дуб белый, шима светлый, шима светлый",
-          priсe: " от 6 600 ₽"
+          picture: "/img/bench/trio.jpg",
+          name: "Диванчик трио плюс",
+          type: "Скамьи",
+          size: "РАЗМЕРЫ: ДЛИНА-1000, ШИРИНА-680, ВЫСОТА-600",
+          description: "",
+          priсe: " от 12 000 ₽"
         }
       ]
     };

@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="company">
-      <img class="logotyp" src="/img/vasilisa.png" width="700" alt="logotyp" />
+      <router-link to="index"> <img class="logotyp" src="/img/vasilisa.png"  alt="logotyp" /> </router-link>
     </div>
     <div class="href-box">
       <section class="basket">
@@ -10,70 +10,40 @@
             id="corner"
             src="/img/bascet.png"
             width="100"
-            onclick="toggle(hidden_content)"
-          />
-          Корзина (<span class="count">{{ counter }}</span
-          >)
+            onclick="toggle(hidden_content)"/>Корзина (<span class="count">{{ counter }}</span>)
         </p>
-        <div class="hidden" id="hidden_content">
-          <p>
-            Товаров:<span id="bascet" class="count"> {{ counter }} </span>
-          </p>
-          <p>
-            На сумму: <span id="price">{{ total }}</span>
-          </p>
-          <a href="order.html"> <button>Заказать звонок</button></a>
+        <div class="hidden">
+          <p>Товаров:<span class="count"> {{ counter }} </span></p>
+          <p>На сумму: <span id="price">{{ total }}</span></p>
+          <router-link to="order"> <button>Заказать звонок</button></router-link>
         </div>
       </section>
-    </div>
-    <nav class="navigation">
-      <a class="punct_menu" href="/src/views/index/index.vue"> Главная </a>
-      <a class="punct_menu" href="order.html"> Как заказать</a>
-      <a class="punct_menu" href="comments.html">Отзывы</a>
-      <a class="punct_menu" href="feedback.html">Контакты</a>
-    </nav>
-    <div>
-      <form>
-        <p>
-          <input
-            class="search"
-            type="search"
-            name="q"
-            placeholder="Поиск по сайту"
-          />
-          <input class="search" type="submit" value="Найти" />
-        </p>
-      </form>
     </div>
   </header>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="scss">
 @import "../../stylesheets/layout.scss";
 @import "../../stylesheets/basket.scss";
-@import "../../stylesheets/menu.scss";
+@import "../../stylesheets/navigation.scss";
 
 .header {
+  max-width: 1300px;
+  // margin-left: 200px;
   display: flex;
-  justify-content: center;
-}
-
-.search {
-  font-size: 20px;
-  margin: 15px;
+  // justify-content: center;
 }
 
 .logotyp {
-  width: 500px;
+  width: 700px;
   height: auto;
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin-left: 100px;
   padding-left: 80px;
 }
 </style>
