@@ -25,6 +25,8 @@ import Mattress from "./views/mattress";
 import Order from "./views/order";
 import Feedback from "./views/feedback";
 import Politick from "./views/politick";
+import Cart from "./views/cart";
+
 
 Vue.use(Router);
 
@@ -149,8 +151,13 @@ export default new Router({
         },
         {
           path: "/politick",
-          name: "politick",
+          name: "politicks",
           component: Politick
+        },
+        {
+          path: "/cart",
+          name: "carts",
+          component: Cart
         }
       ]
     }

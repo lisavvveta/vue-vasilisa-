@@ -5,16 +5,15 @@
     </div>
     <div class="href-box">
       <section class="basket">
-        <p class="basket">
+        <h2 class="basket">
           <img
             id="corner"
             src="/img/bascet.png"
-            width="100"
-            onclick="toggle(hidden_content)"/>Корзина (<span class="count">{{ counter }}</span>)
-        </p>
+            width="100"/>Корзина {{ count }}
+        </h2>
         <div class="hidden">
-          <p>Товаров:<span class="count"> {{ counter }} </span></p>
-          <p>На сумму: <span id="price">{{ total }}</span></p>
+          <p>Товаров: {{ count }} </p>
+          <p>На сумму: <span id="price">{{  }}</span></p>
           <router-link to="order"> <button>Заказать звонок</button></router-link>
         </div>
       </section>
@@ -23,7 +22,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+   data: {
+		count: 0
+	},
+};
 </script>
 
 <style lang="scss">
@@ -33,9 +36,7 @@ export default {};
 
 .header {
   max-width: 1300px;
-  // margin-left: 200px;
   display: flex;
-  // justify-content: center;
 }
 
 .logotyp {

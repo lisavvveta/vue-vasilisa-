@@ -21,12 +21,12 @@
     </section>
     <ul class="product">
       <li v-for="item in sofa" class="product-item image-prod">
-        <h6 class="product-item__title">{{ item.name }}</h6>
-        <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span><br>
-        <span class="product-item__description">{{ item.description }}</span><br>
-        <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">В корзину</button>
+        <h6 class="product-item__title">{{ product.name }}</h6>
+        <img :src="product.picture" alt="" class="product-item__picture" />
+        <p class="product-item__size">{{ product.size }}</p><br>
+        <p class="product-item__description">{{ product.description }}</p><br>
+        <p class="product-item__price">{{ product.price }} ₽ </p>
+        <button @click="addToCart" type="button" class="product-item__button">В корзину</button>
       </li>
     </ul>
   </main>
@@ -34,6 +34,12 @@
 
 <script>
 export default {
+   methods: {
+    addToCart () {
+      const { product } = this;
+      this.$bus.emit('add-product' , product);
+    }
+  },
   data() {
     return {
       sofa: [
@@ -46,18 +52,19 @@ export default {
           size: "2220х1050х1010 ",
           description:
             "Спальное место 1500х2000. Механизм раскладывания тик-так. Подлокотники из МДФ, в комплекте 3 подушки",
-          prise: " от 34 300 ₽"
+          price: " от 34 300",
+          quantity: 1,
         },
         {
-          // здесь должен быть слайдер
           id: "02",
-          picture: "/img/sofa/kalipso-1.jpg",
-          name: "Колипсио на металлокарксе",
+          picture: "/img/sofa/melisa.jpg",
+          name: "Мелиса",
           type: "Диваны",
-          size: "1740х1120х940",
+          size: "2320х1100х930",
           description:
-            " Спальное место 1400x2100. Диван разработан на металлокарксе с ортопедическим основанием, механизм раскладывания аккардион.Наполения может быть как зависимый пружинный блок, так и независимый пружинный блок. Внутри есть ящик.",
-          prise: "от 46 000 ₽"
+            "Спальное место 1500х2000. Механизм раскладки тик-так. ПРужинны  блок, деревянный каркас.",
+          price: " от 32 200",
+          quantity: 1,
         },
         {
           // здесь должен быть слайдер
@@ -68,7 +75,8 @@ export default {
           size: "1970х850х920",
           description:
             "Спальное место 1450х1970. Механизм раскладки еврокнижка.",
-          prise: " от 18 000 ₽"
+          price: " от 18 000",
+          quantity: 1,
         },
         {
           // здесь должен быть слайдер
@@ -79,7 +87,8 @@ export default {
           size: "2010х950х1000",
           description:
             "Спальное место 1950х900. Подъемный механизм, внизу большой ящик.",
-          prise: " от 19 000 ₽"
+          price: " от 19 000",
+          quantity: 1,
         },
         {
           // здесь должен быть слайдер
@@ -90,17 +99,20 @@ export default {
           size: "2020x1080x970",
           description:
             "Cпальное место 1400x2020. Cверху дивана идет съемный чехол, который очень удобно снять и постирать. Разработан на металлокаркасе с ортопедическим основанием.Имеет три положения. Наполнения дивана независимый пружинный блок",
-          prise: " от 31 000 ₽"
+          price: " от 31 000",
+          quantity: 1,
         },
         {
+          // здесь должен быть слайдер
           id: "06",
-          picture: "/img/sofa/melisa.jpg",
-          name: "Мелиса",
+          picture: "/img/sofa/kalipso-1.jpg",
+          name: "Колипсио на металлокарксе",
           type: "Диваны",
-          size: "2320х1100х930",
+          size: "1740х1120х940",
           description:
-            "Спальное место 1500х2000. Механизм раскладки тик-так. ПРужинны  блок, деревянный каркас.",
-          prise: " от 32 200 ₽"
+            " Спальное место 1400x2100. Диван разработан на металлокарксе с ортопедическим основанием, механизм раскладывания аккардион.Наполения может быть как зависимый пружинный блок, так и независимый пружинный блок. Внутри есть ящик.",
+          price: "от 46 000",
+          quantity: 1,
         },
         {
           // здесь должен быть слайдер
@@ -111,7 +123,8 @@ export default {
           size: "2300х800х900",
           description:
             "Спальное место 1300x1900. Механизм раскладки книжка. К нему могут быть кресла.",
-          prise: " от 19 450 ₽"
+          price: " от 19 450",
+          quantity: 1,
         },
         {
           // здесь должен быть слайдер
@@ -122,17 +135,19 @@ export default {
           size: "2140х920х920",
           description:
             "Спальное место 1200x1900. Механизм раскладки книжка. К нему могут быть кресла.",
-          prise: " от 19 450 ₽"
+          price: " от 19 450",
+          quantity: 1,
         },
         {
-          id: "08",
+          id: "09",
           picture: "/img/sofa/elvira-1.jpg",
           name: "Эльвира 4",
           type: "Диваны",
           size: "2300х1600",
           description:
             "Спальное место 2000х1400. Деревянный каркас, зависимый пружинный блок, механизм трансформации венеция. Угол не меняется. Внутри очень болшой ящик для хранения белья.",
-          prise: " от 32 200 ₽"
+          price: " от 32 200",
+          quantity: 1,
         }
       ]
     };
