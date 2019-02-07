@@ -1,382 +1,377 @@
 <template lang="html">
   <main>
     <section class="navigatiion">
-       <ul class="navigation">
-      <li class="punct_menu"><router-link to="index"> Главная </router-link></li>
-      <li class="punct_menu"><router-link to="order">Как заказать</router-link></li>
-      <li class="punct_menu"><router-link to="comments">Отзывы </router-link></li>
-      <li class="punct_menu"><router-link to="feedback">Контакты </router-link></li>
-    </ul>
-      <form>
-        <p>
-          <input
-            class="search"
-            type="search"
-            name="q"
-            placeholder="Поиск по сайту"
-          />
-          <input class="search" type="submit" value="Найти" />
-        </p>
-      </form>
+      <ul class="navigation">
+        <li class="ItemMenu">
+          <router-link to="index"> Главная </router-link>
+        </li>
+        <li class="ItemMenu">
+          <router-link to="order">Как заказать</router-link>
+        </li>
+        <li class="ItemMenu">
+          <router-link to="comments">Отзывы </router-link>
+        </li>
+        <li class="ItemMenu">
+          <router-link to="feedback">Контакты </router-link>
+        </li>
+      </ul>
     </section>
     <ul class="product">
-      <li v-for="item in foto" class="product-item image-prod ">
-        <h6 class="product-item__title">{{ item.name }}</h6>
-        <img :src="item.picture" alt="" class="product-item__picture" />
-        <span class="product-item__size">{{ item.size }}</span><br>
-        <span class="product-item__description">{{ item.description }}</span><br>
-        <span class="product-item__price">{{ item.price }}</span>
-        <button v-on:click="increase" class="product-item__button">В корзину</button>
-      </li>
+      <Product-Item v-for="product in foto" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      foto: [
-        {
-          id: "01",
-          picture: "/img/foto-print/01.jpg",
-          name: "1",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "02",
-          picture: "/img/foto-print/02.jpg",
-          name: "2",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "03",
-          picture: "/img/foto-print/03.jpg",
-          name: "3",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "04",
-          picture: "/img/foto-print/04.jpg",
-          name: "4",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "05",
-          picture: "/img/foto-print/05.jpg",
-          name: "5",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "06",
-          picture: "/img/foto-print/06.jpg",
-          name: "6",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "07",
-          picture: "/img/foto-print/07.jpg",
-          name: "7",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "08",
-          picture: "/img/foto-print/08.jpg",
-          name: "8",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "09",
-          picture: "/img/foto-print/09.jpg",
-          name: "9",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "10",
-          picture: "/img/foto-print/10.jpg",
-          name: "10",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "11",
-          picture: "/img/foto-print/11.jpg",
-          name: "11",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "12",
-          picture: "/img/foto-print/12.jpg",
-          name: "12",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "13",
-          picture: "/img/foto-print/13.jpg",
-          name: "13",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "14",
-          picture: "/img/foto-print/14.jpg",
-          name: "14",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "15",
-          picture: "/img/foto-print/15.jpg",
-          name: "15",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "16",
-          picture: "/img/foto-print/16.jpg",
-          name: "16",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "17",
-          picture: "/img/foto-print/17.jpg",
-          name: "17",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "18",
-          picture: "/img/foto-print/18.jpg",
-          name: "18",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "19",
-          picture: "/img/foto-print/19.jpg",
-          name: "19",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "20",
-          picture: "/img/foto-print/20.jpg",
-          name: "20",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "21",
-          picture: "/img/foto-print/21.jpg",
-          name: "21",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "22",
-          picture: "/img/foto-print/22.jpg",
-          name: "22",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "23",
-          picture: "/img/foto-print/23.jpg",
-          name: "23",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "24",
-          picture: "/img/foto-print/24.jpg",
-          name: "24",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "25",
-          picture: "/img/foto-print/25.jpg",
-          name: "25",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "26",
-          picture: "/img/foto-print/26.jpg",
-          name: "26",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "27",
-          picture: "/img/foto-print/27.jpg",
-          name: "27",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "28",
-          picture: "/img/foto-print/28.jpg",
-          name: "28",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "29",
-          picture: "/img/foto-print/29.jpg",
-          name: "29",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "30",
-          picture: "/img/foto-print/30.jpg",
-          name: "30",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "31",
-          picture: "/img/foto-print/31.jpg",
-          name: "31",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "32",
-          picture: "/img/foto-print/32.jpg",
-          name: "32",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "33",
-          picture: "/img/foto-print/33.jpg",
-          name: "33",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "34",
-          picture: "/img/foto-print/34.jpg",
-          name: "34",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "35",
-          picture: "/img/foto-print/35.jpg",
-          name: "35",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "36",
-          picture: "/img/foto-print/36.jpg",
-          name: "36",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        },
-        {
-          id: "37",
-          picture: "/img/foto-print/37.jpg",
-          name: "37",
-          type: "Фотопечать",
-          size: "",
-          description: " ",
-          price: ""
-        }
-      ]
-    };
-  }
-};
+
+  import ProductItem from "../components/ProductItem.vue";
+
+  export default {
+    components: {
+      ProductItem
+    },
+    data() {
+      return {
+        foto: [{
+            id: "01",
+            picture: "/img/foto-print/01.jpg",
+            name: "Фотопечать №1",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "02",
+            picture: "/img/foto-print/02.jpg",
+            name: "Фотопечать №2",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "03",
+            picture: "/img/foto-print/03.jpg",
+            name: "Фотопечать №3",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "04",
+            picture: "/img/foto-print/04.jpg",
+            name: "Фотопечать №4",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "05",
+            picture: "/img/foto-print/05.jpg",
+            name: "Фотопечать №5",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "06",
+            picture: "/img/foto-print/06.jpg",
+            name: "Фотопечать №6",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "07",
+            picture: "/img/foto-print/07.jpg",
+            name: "Фотопечать №7",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "08",
+            picture: "/img/foto-print/08.jpg",
+            name: "Фотопечать №8",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "09",
+            picture: "/img/foto-print/09.jpg",
+            name: "Фотопечать №9",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "10",
+            picture: "/img/foto-print/10.jpg",
+            name: "Фотопечать №10",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "11",
+            picture: "/img/foto-print/11.jpg",
+            name: "Фотопечать №11",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "12",
+            picture: "/img/foto-print/12.jpg",
+            name: "Фотопечать №12",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "13",
+            picture: "/img/foto-print/13.jpg",
+            name: "Фотопечать №13",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "14",
+            picture: "/img/foto-print/14.jpg",
+            name: "Фотопечать №14",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "15",
+            picture: "/img/foto-print/15.jpg",
+            name: "Фотопечать №15",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "16",
+            picture: "/img/foto-print/16.jpg",
+            name: "Фотопечать №16",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "17",
+            picture: "/img/foto-print/17.jpg",
+            name: "Фотопечать №17",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "18",
+            picture: "/img/foto-print/18.jpg",
+            name: "Фотопечать №18",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "19",
+            picture: "/img/foto-print/19.jpg",
+            name: "Фотопечать №19",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "20",
+            picture: "/img/foto-print/20.jpg",
+            name: "Фотопечать №20",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "21",
+            picture: "/img/foto-print/21.jpg",
+            name: "Фотопечать №21",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "22",
+            picture: "/img/foto-print/22.jpg",
+            name: "Фотопечать №22",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "23",
+            picture: "/img/foto-print/23.jpg",
+            name: "Фотопечать №23",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "24",
+            picture: "/img/foto-print/24.jpg",
+            name: "Фотопечать №24",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "25",
+            picture: "/img/foto-print/25.jpg",
+            name: "Фотопечать №25",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "26",
+            picture: "/img/foto-print/26.jpg",
+            name: "Фотопечать №26",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "27",
+            picture: "/img/foto-print/27.jpg",
+            name: "Фотопечать №27",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "28",
+            picture: "/img/foto-print/28.jpg",
+            name: "Фотопечать №28",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "29",
+            picture: "/img/foto-print/29.jpg",
+            name: "Фотопечать №29",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "30",
+            picture: "/img/foto-print/30.jpg",
+            name: "Фотопечать №30",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "31",
+            picture: "/img/foto-print/31.jpg",
+            name: "Фотопечать №31",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "32",
+            picture: "/img/foto-print/32.jpg",
+            name: "Фотопечать №32",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "33",
+            picture: "/img/foto-print/33.jpg",
+            name: "Фотопечать №33",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "34",
+            picture: "/img/foto-print/34.jpg",
+            name: "Фотопечать №34",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "35",
+            picture: "/img/foto-print/35.jpg",
+            name: "Фотопечать №35",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "36",
+            picture: "/img/foto-print/36.jpg",
+            name: "Фотопечать №36",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          },
+          {
+            id: "37",
+            picture: "/img/foto-print/37.jpg",
+            name: "Фотопечать №37",
+            type: "Фотопечать",
+            size: "",
+            description: " ",
+            quantity: 1
+          }
+        ]
+      };
+    }
+  };
 </script>
 
 <style lang="scss">
-@import "../../stylesheets/layout.scss";
-@import "../../stylesheets/product.scss";
+  @import "../../stylesheets/layout.scss";
+  @import "../../stylesheets/product.scss";
 </style>

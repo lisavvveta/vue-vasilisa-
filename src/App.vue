@@ -3,16 +3,6 @@
 </template>
 
 <script>
-export default {
-  data: {
-		counter: 0
-	},
-	methods: {
-    increase: function() {
-      this.counter++;
-    }
-  }
-};
 </script>
 
 
