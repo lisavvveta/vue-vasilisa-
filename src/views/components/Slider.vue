@@ -18,30 +18,30 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      'title': {
-        type: String,
-        default: '',
-      },
-      'slides': {
-        type: Array,
-        required: true,
-      },
+export default {
+  props: {
+    title: {
+      type: String,
+      default: ""
     },
-    data: () => ({
-      swiperOption: {
-        grabCursor: true,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
+    slides: {
+      type: Array,
+      required: true
+    }
+  },
+  data: () => ({
+    swiperOption: {
+      grabCursor: true,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
       },
-    }),
-  };
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    }
+  })
+};
 </script>

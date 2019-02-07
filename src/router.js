@@ -27,7 +27,6 @@ import Feedback from "./views/feedback";
 import Politick from "./views/politick";
 import Cart from "./views/cart";
 
-
 Vue.use(Router);
 
 export default new Router({
