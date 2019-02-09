@@ -34,7 +34,7 @@
       return {
         bench: [{
           // slider
-          id: "01",
+          id: "0001",
           picture: "/img/bench/trio.jpg",
           name: "Диванчик трио плюс",
           type: "Скамьи",

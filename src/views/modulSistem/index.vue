@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         ModulSistem: [{
-            id: "01",
+            id: "010000",
             picture: "/img/modul-sistem/bravo.jpg",
             name: "Модульная система Браво",
             type: "Модульная система",
@@ -43,7 +42,7 @@
             quantity: 1
           },
           {
-            id: "02",
+            id: "020000",
             picture: "/img/modul-sistem/lion.png",
             name: "Модульная система Лион",
             type: "Комоды",

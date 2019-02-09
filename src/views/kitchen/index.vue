@@ -17,13 +17,12 @@
       </ul>
     </section>
     <ul class="product">
-          <Product-Item v-for="product in kitchen" :key="product.id" :product="product" />
+      <Product-Item v-for="product in kitchen" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         kitchen: [{
-            id: "01",
+            id: "0100",
             picture: "/img/kitchen/marta.jpg",
             name: "Марта ",
             type: "Кухни",
@@ -43,7 +42,7 @@
             quantity: 1
           },
           {
-            id: "02",
+            id: "0200",
             picture: "/img/kitchen/verona.jpg",
             name: "Верона ",
             type: "Кухни",
@@ -53,7 +52,7 @@
             quantity: 1
           },
           {
-            id: "03",
+            id: "0300",
             picture: "/img/kitchen/ldsp-3.jpg",
             name: "ЛДСП",
             type: "Кухни",
@@ -64,7 +63,7 @@
           },
           {
             // сюда добавить слайдер с остальными кухнями
-            id: "04",
+            id: "0400",
             picture: "/img/kitchen/ldsp-4.jpg",
             name: "ЛДСП",
             type: "Кухни",
@@ -74,7 +73,7 @@
             quantity: 1
           },
           {
-            id: "06",
+            id: "0500",
             picture: "/img/kitchen/ariana-2.jpg",
             name: "Ариана",
             type: "Кухни",
@@ -84,7 +83,7 @@
             quantity: 1
           },
           {
-            id: "07",
+            id: "0600",
             picture: "/img/kitchen/kleo-3.jpg",
             name: "Калео",
             type: "Кухни",
@@ -94,7 +93,7 @@
             quantity: 1
           },
           {
-            id: "08",
+            id: "0700",
             picture: "/img/kitchen/dub-loa.jpg",
             name: "Дуб Лоа",
             type: "Кухни",
@@ -104,7 +103,7 @@
             quantity: 1
           },
           {
-            id: "09",
+            id: "0800",
             picture: "/img/kitchen/sandra.jpg",
             name: "Сандра",
             type: "Кухни",
@@ -115,7 +114,7 @@
           },
           {
             //здесь сделать слайдер
-            id: "10",
+            id: "0900",
             picture: "/img/kitchen/ldsp-zacaz - 1.jpg",
             name: "ЛДСП на заказ",
             type: "Кухни",
@@ -126,7 +125,7 @@
           },
           {
             //здесь сделать слайдер
-            id: "11",
+            id: "1000",
             picture: "/img/kitchen/mdf - 2.jpg",
             name: "Кухни модульные ЛДСП и МДФ глянец",
             type: "Кухни",
@@ -137,7 +136,7 @@
           },
           {
             //здесь сделать слайдер
-            id: "12",
+            id: "1100",
             picture: "/img/kitchen/mdf-ramka -3.jpg",
             name: "Кухня фасад рамка МДФ",
             type: "Кухни",
@@ -148,7 +147,7 @@
           },
           {
             //здесь сделать слайдер
-            id: "13",
+            id: "1200",
             picture: "/img/kitchen/kosa-1.jpg",
             name: "Кухня Коса патина рамка",
             type: "Кухни",

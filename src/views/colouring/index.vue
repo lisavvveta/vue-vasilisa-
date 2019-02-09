@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         colouring: [{
-            id: "01",
+            id: "000001",
             picture: "/img/colouring/pink.jpg",
             name: "Розовый",
             type: "Цвета",
@@ -43,7 +42,7 @@
             quantity: 1
           },
           {
-            id: "02",
+            id: "000002",
             picture: "/img/colouring/blue.jpg",
             name: "Синий",
             type: "Цвета",
@@ -53,7 +52,7 @@
             quantity: 1
           },
           {
-            id: "03",
+            id: "000003",
             picture: "/img/colouring/oal-sonoma.jpg",
             name: "Дуб Сонома",
             type: "Цвета",
@@ -63,7 +62,7 @@
             quantity: 1
           },
           {
-            id: "04",
+            id: "000004",
             picture: "/img/colouring/oal- milk.jpg",
             name: "Дуб Молочный или Дуб белый",
             type: "Цвета",
@@ -73,7 +72,7 @@
             quantity: 1
           },
           {
-            id: "05",
+            id: "000005",
             picture: "/img/colouring/venge.jpg",
             name: "Венге",
             type: "Цвета",
@@ -83,7 +82,7 @@
             quantity: 1
           },
           {
-            id: "06",
+            id: "000006",
             picture: "/img/colouring/shimo-white.jpg",
             name: "Шимо светлый",
             type: "Цвета",
@@ -93,7 +92,7 @@
             quantity: 1
           },
           {
-            id: "07",
+            id: "000007",
             picture: "/img/colouring/shimo-dark.jpg",
             name: "Шимо темный",
             type: "Цвета",

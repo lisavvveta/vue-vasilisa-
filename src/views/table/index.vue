@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -34,7 +33,7 @@
       return {
         table: [{
             // здесь должен быть слайдер
-            id: "02",
+            id: "010000000",
             picture: "/img/table/table-1.jpg",
             name: "Столы из массивного дерева",
             type: "Столы",
@@ -45,7 +44,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "03",
+            id: "020000000",
             picture: "/img/table/pauk.jpg",
             name: "Паук",
             type: "Столы",
@@ -56,7 +55,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "04",
+            id: "030000000",
             picture: "/img/table/salut-d-800.jpg",
             name: "Салют d-800",
             type: "Столы",
@@ -67,7 +66,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "05",
+            id: "040000000",
             picture: "/img/table/bariton-1.jpg",
             name: "Баритон",
             type: "Столы",
@@ -78,7 +77,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "06",
+            id: "050000000",
             picture: "/img/table/oda-s-1.jpg",
             name: "Ода-С",
             type: "Столы",
@@ -89,7 +88,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "07",
+            id: "060000000",
             picture: "/img/table/bariton-900-1.jpg",
             name: "Баритон",
             type: "Столы",
@@ -100,7 +99,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "08",
+            id: "070000000",
             picture: "/img/table/oda-s-900-1.jpg",
             name: "Ода-С",
             type: "Столы",
@@ -111,7 +110,7 @@
           },
           {
             // здесь должен быть слайдер?
-            id: "08",
+            id: "080000000",
             picture: "/img/table/transformer.jpg",
             name: "Стол трансформер",
             type: "Столы",
@@ -122,7 +121,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "09",
+            id: "090000000",
             picture: "/img/table/bariton-1100-1.jpg",
             name: "Баритон",
             type: "Кухни",

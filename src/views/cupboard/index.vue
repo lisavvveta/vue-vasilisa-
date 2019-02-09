@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -34,7 +33,7 @@
       return {
         cupboard: [{
             // slider
-            id: "01",
+            id: "00000001",
             picture: "/img/cupboard/br-4.png",
             name: "БР-4",
             type: "Шкафы",
@@ -45,7 +44,7 @@
           },
           {
             // slider
-            id: "02",
+            id: "00000002",
             picture: "/img/cupboard/br-5.png",
             name: "БР-5",
             type: "Шкафы",

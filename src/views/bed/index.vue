@@ -33,7 +33,7 @@ export default {
     data() {
       return {
         bed: [{
-            id: "01",
+            id: "001",
             picture: "/img/bed/bruno.jpg",
             name: "Бруно 1,4",
             type: "Кровати",
@@ -43,7 +43,7 @@ export default {
             quantity: 1
           },
           {
-            id: "02",
+            id: "002",
             picture: "/img/bed/Venera.png",
             name: "Бруно 1,6",
             type: "Кровати",
@@ -53,7 +53,7 @@ export default {
             quantity: 1
           },
           {
-            id: "03",
+            id: "003",
             picture: "/img/bed/bruno.jpg",
             name: "Бруно 1,8",
             type: "Кровати",
@@ -64,7 +64,7 @@ export default {
           },
           {
             // слайдер
-            id: "04",
+            id: "004",
             picture: "/img/bed/fortuna.jpg",
             name: "Фортуна 1,4",
             type: "Кровати",
@@ -75,7 +75,7 @@ export default {
           },
           {
             // слайдер
-            id: "05",
+            id: "005",
             picture: "/img/bed/fortuna.jpg",
             name: "Фортуна 1,6",
             type: "Кровати",
@@ -85,7 +85,7 @@ export default {
             quantity: 1
           },
           {
-            id: "06",
+            id: "006",
             picture: "/img/bed/sicilia.jpg",
             name: "Сицилия",
             type: "Кровати",
@@ -95,7 +95,7 @@ export default {
             quantity: 1
           },
           {
-            id: "07",
+            id: "007",
             picture: "/img/bed/kapry.jpg",
             name: "Капри",
             type: "Кровати",
@@ -105,7 +105,7 @@ export default {
             quantity: 1
           },
           {
-            id: "08",
+            id: "008",
             picture: "/img/bed/selena.jpg",
             name: "Селена",
             type: "Кровати",
@@ -115,7 +115,7 @@ export default {
             quantity: 1
           },
           {
-            id: "09",
+            id: "009",
             picture: "/img/bed/selena2.jpg",
             name: "Селена",
             type: "Кровати",
@@ -125,7 +125,7 @@ export default {
             quantity: 1
           },
           {
-            id: "18",
+            id: "010",
             picture: "/img/bed/SP-121-124.jpg",
             name: "СП-122",
             type: "Кровати",
@@ -135,7 +135,7 @@ export default {
             quantity: 1
           },
           {
-            id: "10",
+            id: "011",
             picture: "/img/bed/venera.jpg",
             name: "Венера",
             type: "Кровати",
@@ -145,7 +145,7 @@ export default {
             quantity: 1
           },
           {
-            id: "11",
+            id: "012",
             picture: "/img/bed/venera.jpg",
             name: "Венера",
             type: "Кровати",
@@ -155,7 +155,7 @@ export default {
             quantity: 1
           },
           {
-            id: "12",
+            id: "013",
             picture: "/img/bed/muza.jpg",
             name: "Муза",
             type: "Кровати",
@@ -165,7 +165,7 @@ export default {
             quantity: 1
           },
           {
-            id: "13",
+            id: "014",
             picture: "/img/bed/muza.jpg",
             name: "Муза",
             type: "Кровати",
@@ -175,7 +175,7 @@ export default {
             quantity: 1
           },
           {
-            id: "14",
+            id: "015",
             picture: "/img/bed/lion.jpg",
             name: "Лион",
             type: "Кровати",
@@ -185,7 +185,7 @@ export default {
             quantity: 1
           },
           {
-            id: "15",
+            id: "016",
             picture: "/img/bed/lion.jpg",
             name: "Лион",
             type: "Кровати",
@@ -195,7 +195,7 @@ export default {
             quantity: 1
           },
           {
-            id: "16",
+            id: "017",
             picture: "/img/bed/lion.jpg",
             name: "Лион",
             type: "Кровати",
@@ -205,7 +205,7 @@ export default {
             quantity: 1
           },
           {
-            id: "17",
+            id: "018",
             picture: "/img/bed/lion.jpg",
             name: "Лион",
             type: "Кровати",

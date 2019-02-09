@@ -17,13 +17,12 @@
       </ul>
     </section>
     <ul class="product">
-     <Product-Item v-for="product in commode" :key="product.id" :product="product" />
+      <Product-Item v-for="product in commode" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -34,7 +33,7 @@
       return {
         commode: [{
             //slide
-            id: "01",
+            id: "0000001",
             picture: "/img/comod/comod-height.jpeg",
             name: "Комод высокий",
             type: "Комоды",
@@ -45,7 +44,7 @@
           },
           {
             //slide
-            id: "02",
+            id: "0000002",
             picture: "/img/comod/br-10.png",
             name: "Комод БР-10",
             type: "Комоды",
@@ -56,7 +55,7 @@
           },
           {
             //slide
-            id: "03",
+            id: "0000003",
             picture: "/img/bed/SP-121-124.jpg",
             name: "Комод СП-123",
             type: "Комоды",
@@ -67,7 +66,7 @@
           },
           {
             //slide
-            id: "04",
+            id: "0000004",
             picture: "/img/bed/SP-121-124.jpg",
             name: "Тумба прикроватная СП-124",
             type: "Комоды",
@@ -78,18 +77,18 @@
           },
           {
             //slide
-            id: "05",
+            id: "0000005",
             picture: "/img/comod/penal-br-1.png",
             name: "Пенал БР-1",
             type: "Комоды",
             size: "2215x500x351",
             description: "Этот пенал относится к модульной системе Браво.",
-            price: '' ,
+            price: '',
             quantity: 1
           },
           {
             //slide
-            id: "06",
+            id: "0000006",
             picture: "/img/comod/penal-br-2.png",
             name: "Пенал БР-2",
             type: "Комоды",
@@ -100,7 +99,7 @@
           },
           {
             //slide
-            id: "07",
+            id: "0000007",
             picture: "/img/comod/penal-br-3.png",
             name: "Пенал БР-3",
             type: "Комоды",
@@ -111,7 +110,7 @@
           },
           {
             //slide
-            id: "08",
+            id: "0000008",
             picture: "/img/comod/br-7.png",
             name: "Стеллаж БР-7",
             type: "Комоды",
@@ -122,7 +121,7 @@
           },
           {
             //slide
-            id: "09",
+            id: "0000009",
             picture: "/img/comod/penal-br-8.png",
             name: "Пенал БР-8",
             type: "Комоды",
@@ -133,7 +132,7 @@
           },
           {
             //slide
-            id: "10",
+            id: "0000010",
             picture: "/img/comod/penal-br-9.png",
             name: "Пенал БР-9",
             type: "Комоды",
@@ -144,7 +143,7 @@
           },
           {
             //slide
-            id: "11",
+            id: "0000011",
             picture: "/img/comod/ms-2.png",
             name: "Пенал МС-2",
             type: "Комоды",
@@ -155,7 +154,7 @@
           },
           {
             //slide
-            id: "12",
+            id: "0000012",
             picture: "/img/comod/ms-3.png",
             name: "Пенал МС-3",
             type: "Комоды",
@@ -166,7 +165,7 @@
           },
           {
             //slide
-            id: "13",
+            id: "0000013",
             picture: "/img/comod/ms-4.png",
             name: "Пенал МС-4",
             type: "Комоды",
@@ -177,7 +176,7 @@
           },
           {
             //slide
-            id: "14",
+            id: "0000014",
             picture: "/img/comod/ms-5.png",
             name: "Пенал МС-5",
             type: "Комоды",
@@ -188,7 +187,7 @@
           },
           {
             //slide
-            id: "15",
+            id: "0000015",
             picture: "/img/comod/ms-6.png",
             name: "Комод МС-6",
             type: "Комоды",
@@ -199,7 +198,7 @@
           },
           {
             //slide
-            id: "16",
+            id: "0000016",
             picture: "/img/comod/ms-7.png",
             name: "Комод МС-7",
             type: "Комоды",
@@ -210,7 +209,7 @@
           },
           {
             //slide
-            id: "17",
+            id: "0000017",
             picture: "/img/comod/ms-9.png",
             name: "МС-9",
             type: "Комоды",
@@ -221,7 +220,7 @@
           },
           {
             //slide
-            id: "18",
+            id: "0000018",
             picture: "/img/comod/ms-10.png",
             name: "МС-10",
             type: "Комоды",

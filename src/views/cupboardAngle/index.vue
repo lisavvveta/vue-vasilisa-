@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -34,7 +33,7 @@
       return {
         cupboardAngle: [{
             // slider
-            id: "01",
+            id: "000000001",
             picture: "/img/cupboard-angle/br-6.png",
             name: "БР-6",
             type: "Шкафы",
@@ -45,7 +44,7 @@
           }, ,
           {
             // здесь должен быть слайлер
-            id: "02",
+            id: "000000002",
             picture: "/img/comod/br-10.png",
             name: "Комод БР-10",
             type: "Комоды",
@@ -55,7 +54,7 @@
             quantity: 1
           },
           {
-            id: "03",
+            id: "000000003",
             picture: "/img/bed/SP-121-124.jpg",
             name: "Комод СП-123",
             type: "Комоды",

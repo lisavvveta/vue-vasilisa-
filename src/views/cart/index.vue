@@ -29,20 +29,20 @@
     <button @click="show = !show" type="button">Заказать</button>
     <transition name="fade">
       <div class="hidden" id="hidden_content">
-        <form class="hidden" v-if="show">
+        <form class="hidden" v-if="show" action="mail.php" method="POST">
           <fieldset>
             <legend>Имя *</legend>
-            <input id="form_name" v-model="form.name" name="name" type="text" placeholder="Имя" required>
+            <input id="form_name" v-model="form.name" name="user_name" type="text" placeholder="Имя" required>
           </fieldset>
 
           <fieldset>
             <legend>E-mail *</legend>
-            <input v-model="form.email" name="email" type="email" placeholder="E-mail *" required>
+            <input v-model="form.email" name="user_email" type="email" placeholder="E-mail *" required>
           </fieldset>
 
           <fieldset>
             <legend>Телефон *</legend>
-            <input v-model="form.phone" name="phone" type="tel" placeholder="Телефон *" required>
+            <input v-model="form.phone" name="user_phone" type="tel" placeholder="Телефон *" required>
           </fieldset>
           <br>
 

@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         mattress: [{
-          id: "01",
+          id: "01000",
           picture: "",
           name: "",
           type: "Матрасы",

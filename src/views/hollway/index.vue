@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -35,7 +34,7 @@
         hollway: [{
             // Здесь должен быть слайдер
             //Сюда запихнуть все рамиры, так как это один рамир, а не несколько
-            id: "01",
+            id: "000000000001",
             picture: "/img/hallway/ramir.jpg",
             name: "Пpихожая со шкафом Рамир",
             type: "Прихожая",
@@ -45,7 +44,7 @@
             quantity: 1
           },
           {
-            id: "02",
+            id: "000000000002",
             picture: "/img/hallway/nota-4.jpg",
             name: "Прихожая Нота 4",
             type: "Прихожая",
@@ -56,7 +55,7 @@
           },
           {
             // здесь будет слайдер
-            id: "03",
+            id: "000000000003",
             picture: "/img/hallway/nota-3-1.jpg",
             name: "Прихожая Нота 3",
             type: "Прихожая",

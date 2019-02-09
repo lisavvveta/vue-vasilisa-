@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         chair: [{
-            id: "01",
+            id: "00001",
             picture: "/img/chair/solo-ru.jpg",
             name: "Соло Ру",
             type: "Стулья",
@@ -43,7 +42,7 @@
             quantity: 1
           },
           {
-            id: "02",
+            id: "00002",
             picture: "/img/chair/sonata-t.jpg",
             name: "Соната Т",
             type: "Стулья",
@@ -51,9 +50,9 @@
             description: "",
             price: 2150,
             quantity: 1
-           },
+          },
           {
-            id: "03",
+            id: "00003",
             picture: "/img/chair/trilogiya-ru.jpg",
             name: "Трилогия Ру",
             type: "Стулья",
@@ -63,7 +62,7 @@
             quantity: 1
           },
           {
-            id: "04",
+            id: "00004",
             picture: "/img/chair/unison.jpg",
             name: "Унисон Ру",
             type: "Стулья",
@@ -73,7 +72,7 @@
             quantity: 1
           },
           {
-            id: "05",
+            id: "00005",
             picture: "/img/chair/fagot-mru.jpg",
             name: "Фагот МРу",
             type: "Стулья",
@@ -83,7 +82,7 @@
             quantity: 1
           },
           {
-            id: "06",
+            id: "00006",
             picture: "/img/chair/fagot-mt.jpg",
             name: "Фагот МТ",
             type: "Стулья",
@@ -93,7 +92,7 @@
             quantity: 1
           },
           {
-            id: "07",
+            id: "00007",
             picture: "/img/chair/furiant-ru.jpg",
             name: "Фуриант Ру",
             type: "Стулья",
@@ -103,7 +102,7 @@
             quantity: 1
           },
           {
-            id: "08",
+            id: "00008",
             picture: "/img/chair/centurion-mru.jpg",
             name: "Центурион МРУ",
             type: "Стулья",
@@ -113,7 +112,7 @@
             quantity: 1
           },
           {
-            id: "09",
+            id: "00009",
             picture: "/img/chair/alfa-mru.jpg",
             name: "Альфа МРУ",
             type: "Стулья",
@@ -123,7 +122,7 @@
             quantity: 1
           },
           {
-            id: "10",
+            id: "00010",
             picture: "/img/chair/arietta-ru.jpg",
             name: "Ариетта РУ",
             type: "Стулья",
@@ -133,7 +132,7 @@
             quantity: 1
           },
           {
-            id: "11",
+            id: "00011",
             picture: "/img/chair/arfa-ru.jpg",
             name: "Арфа Ру",
             type: "Стулья",
@@ -143,7 +142,7 @@
             quantity: 1
           },
           {
-            id: "12",
+            id: "00012",
             picture: "/img/chair/bar-vr.jpg",
             name: "Барный врощающийся стул",
             type: "Стулья",
@@ -153,7 +152,7 @@
             quantity: 1
           },
           {
-            id: "13",
+            id: "00013",
             picture: "/img/chair/volna.jpg",
             name: "Волна ",
             type: "Стулья",
@@ -161,9 +160,9 @@
             description: "",
             price: 4200,
             quantity: 1
-         },
+          },
           {
-            id: "14",
+            id: "00014",
             picture: "/img/chair/volna2.jpg",
             name: "Волна 2",
             type: "Стулья",
@@ -173,7 +172,7 @@
             quantity: 1
           },
           {
-            id: "15",
+            id: "00015",
             picture: "/img/chair/volna4.jpg",
             name: "Волна 4",
             type: "Стулья",
@@ -183,7 +182,7 @@
             quantity: 1
           },
           {
-            id: "16",
+            id: "00016",
             picture: "/img/chair/gamma-ru.jpg",
             name: "Гамма Ру",
             type: "Стулья",
@@ -193,7 +192,7 @@
             quantity: 1
           },
           {
-            id: "17",
+            id: "00017",
             picture: "/img/chair/gamma-t.jpg",
             name: "Гамма Т",
             type: "Стулья",
@@ -203,7 +202,7 @@
             quantity: 1
           },
           {
-            id: "18",
+            id: "00018",
             picture: "/img/chair/grazia-2t.jpg",
             name: "Грация 2Т",
             type: "Стулья",
@@ -213,7 +212,7 @@
             quantity: 1
           },
           {
-            id: "19",
+            id: "00019",
             picture: "/img/chair/gracia-ru.jpg",
             name: "Грация Ру ",
             type: "Стулья",
@@ -223,7 +222,7 @@
             quantity: 1
           },
           {
-            id: "20",
+            id: "00020",
             picture: "/img/chair/gracia-t.jpg",
             name: "Грация Т ",
             type: "Стулья",
@@ -233,7 +232,7 @@
             quantity: 1
           },
           {
-            id: "21",
+            id: "00021",
             picture: "/img/chair/damask.jpg",
             name: "Дамаск ",
             type: "Стулья",
@@ -243,7 +242,7 @@
             quantity: 1
           },
           {
-            id: "22",
+            id: "00022",
             picture: "/img/chair/jacozo-mt.jpg",
             name: "Джакозо МТ",
             type: "Стулья",
@@ -253,7 +252,7 @@
             quantity: 1
           },
           {
-            id: "23",
+            id: "00023",
             picture: "/img/chair/diva-mt.jpg",
             name: "Дива МТ ",
             type: "Стулья",
@@ -263,7 +262,7 @@
             quantity: 1
           },
           {
-            id: "24",
+            id: "00024",
             picture: "/img/chair/diez-ru.jpg",
             name: "Диез РУ",
             type: "Стулья",
@@ -273,7 +272,7 @@
             quantity: 1
           },
           {
-            id: "25",
+            id: "00025",
             picture: "/img/chair/diez-t.jpg",
             name: "Диез Т",
             type: "Стулья",
@@ -283,7 +282,7 @@
             quantity: 1
           },
           {
-            id: "26",
+            id: "00026",
             picture: "/img/chair/dolche-mru.jpg",
             name: "Дольче МРУ",
             type: "Стулья",
@@ -293,7 +292,7 @@
             quantity: 1
           },
           {
-            id: "27",
+            id: "00027",
             picture: "/img/chair/kvartet-mt.jpg",
             name: "Квартет МТ",
             type: "Стулья",
@@ -303,7 +302,7 @@
             quantity: 1
           },
           {
-            id: "28",
+            id: "00028",
             picture: "/img/chair/kvartet-ru.jpg",
             name: "Квартет РУ",
             type: "Стулья",
@@ -313,7 +312,7 @@
             quantity: 1
           },
           {
-            id: "29",
+            id: "00029",
             picture: "/img/chair/kvintet-2t.jpg",
             name: "Квинтет 2Т",
             type: "Стулья",
@@ -323,7 +322,7 @@
             quantity: 1
           },
           {
-            id: "30",
+            id: "00030",
             picture: "/img/chair/kvintet-t.jpg",
             name: "Квинтет Т",
             type: "Стулья",
@@ -333,7 +332,7 @@
             quantity: 1
           },
           {
-            id: "31",
+            id: "00031",
             picture: "/img/chair/libretto-ru.jpg",
             name: "Либретто РУ",
             type: "Стулья",
@@ -343,7 +342,7 @@
             quantity: 1
           },
           {
-            id: "32",
+            id: "00032",
             picture: "/img/chair/lotos-t.jpg",
             name: "Лотос Т",
             type: "Стулья",
@@ -353,7 +352,7 @@
             quantity: 1
           },
           {
-            id: "33",
+            id: "00033",
             picture: "/img/chair/luch-t.jpg",
             name: "Луч Т",
             type: "Стулья",
@@ -363,7 +362,7 @@
             quantity: 1
           },
           {
-            id: "34",
+            id: "00034",
             picture: "/img/chair/mayamy.jpg",
             name: "Маями",
             type: "Стулья",
@@ -373,7 +372,7 @@
             quantity: 1
           },
           {
-            id: "35",
+            id: "00035",
             picture: "/img/chair/marsel.jpg",
             name: "Марсель",
             type: "Стулья",
@@ -383,7 +382,7 @@
             quantity: 1
           },
           {
-            id: "36",
+            id: "00036",
             picture: "/img/chair/octava-t.jpg",
             name: "Октава Т",
             type: "Стулья",
@@ -393,7 +392,7 @@
             quantity: 1
           },
           {
-            id: "37",
+            id: "00037",
             picture: "/img/chair/onda-ru.jpg",
             name: "Онда РУ",
             type: "Стулья",
@@ -403,7 +402,7 @@
             quantity: 1
           },
           {
-            id: "38",
+            id: "00038",
             picture: "/img/chair/pavlin-t.jpg",
             name: "Павлин Т",
             type: "Стулья",
@@ -413,7 +412,7 @@
             quantity: 1
           },
           {
-            id: "39",
+            id: "00039",
             picture: "/img/chair/silver1.jpg",
             name: "Сильвер 1",
             type: "Стулья",
@@ -423,7 +422,7 @@
             quantity: 1
           },
           {
-            id: "40",
+            id: "00040",
             picture: "/img/chair/silver2.jpg",
             name: "Сильвер 2",
             type: "Стулья",
@@ -433,7 +432,7 @@
             quantity: 1
           },
           {
-            id: "41",
+            id: "00041",
             picture: "/img/chair/sclad-toburet.jpg",
             name: "Складной табурет",
             type: "Стулья",
@@ -443,7 +442,7 @@
             quantity: 1
           },
           {
-            id: "42",
+            id: "00042",
             picture: "/img/chair/soprano-ru.jpg",
             name: "Сопрано РУ",
             type: "Стулья",
@@ -453,7 +452,7 @@
             quantity: 1
           },
           {
-            id: "43",
+            id: "00043",
             picture: "/img/chair/tenor-ru.jpg",
             name: "Тенор РУ",
             type: "Стулья",
@@ -463,7 +462,7 @@
             quantity: 1
           },
           {
-            id: "44",
+            id: "00044",
             picture: "/img/chair/tetris.jpg",
             name: "Тетрис",
             type: "Стулья",
@@ -473,7 +472,7 @@
             quantity: 1
           },
           {
-            id: "45",
+            id: "00045",
             picture: "/img/chair/triol-k.jpg",
             name: "Триоль К",
             type: "Стулья",
@@ -483,7 +482,7 @@
             quantity: 1
           },
           {
-            id: "46",
+            id: "00046",
             picture: "/img/chair/falcet-k.jpg",
             name: "Фальцет К",
             type: "Стулья",
@@ -493,7 +492,7 @@
             quantity: 1
           },
           {
-            id: "47",
+            id: "00047",
             picture: "/img/chair/fuga-k.jpg",
             name: "Фуга К",
             type: "Стулья",
@@ -503,7 +502,7 @@
             quantity: 1
           },
           {
-            id: "48",
+            id: "00048",
             picture: "/img/chair/canon-ru.jpg",
             name: "Канон РУ",
             type: "Стулья",
@@ -513,7 +512,7 @@
             quantity: 1
           },
           {
-            id: "49",
+            id: "00049",
             picture: "/img/chair/kvatrol.jpg",
             name: "Кватроль",
             type: "Стулья",
@@ -523,7 +522,7 @@
             quantity: 1
           },
           {
-            id: "50",
+            id: "00050",
             picture: "/img/chair/cobra-ru.jpg",
             name: "Кобра РУ",
             type: "Стулья",
@@ -533,7 +532,7 @@
             quantity: 1
           },
           {
-            id: "51",
+            id: "00051",
             picture: "/img/chair/krest-k.jpg",
             name: "Крест К",
             type: "Стулья",
@@ -543,7 +542,7 @@
             quantity: 1
           },
           {
-            id: "52",
+            id: "00052",
             picture: "/img/chair/Lira-n-ru.jpg",
             name: "Лира Н РУ",
             type: "Стулья",
@@ -553,7 +552,7 @@
             quantity: 1
           },
           {
-            id: "53",
+            id: "00053",
             picture: "/img/chair/lira-ru.jpg",
             name: "Лира РУ",
             type: "Стулья",
@@ -563,7 +562,7 @@
             quantity: 1
           },
           {
-            id: "54",
+            id: "00054",
             picture: "/img/chair/pauk-ru.jpg",
             name: "Паук Ру",
             type: "Стулья",
@@ -573,7 +572,7 @@
             quantity: 1
           },
           {
-            id: "55",
+            id: "00055",
             picture: "/img/chair/rondo-ru.jpg",
             name: "Рондо РУ",
             type: "Стулья",
@@ -583,7 +582,7 @@
             quantity: 1
           },
           {
-            id: "56",
+            id: "00056",
             picture: "/img/chair/boston.jpg",
             name: "Бостон",
             type: "Стулья",

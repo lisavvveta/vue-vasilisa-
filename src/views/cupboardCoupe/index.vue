@@ -33,7 +33,7 @@
     data() {
       return {
         coupe: [{
-          id: "01",
+          id: "00000000001",
           picture: "/img/bed/SP-121-124.jpg",
           name: "СП-121",
           type: "Шкафы-купе",

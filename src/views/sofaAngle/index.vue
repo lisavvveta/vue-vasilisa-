@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,7 +32,7 @@
     data() {
       return {
         sofaAngle: [{
-            id: "01",
+            id: "01000000",
             picture: "/img/sofa-angle/brigantina.jpg",
             name: "Диван угловой Бригантина",
             type: "Диваны угловые",
@@ -44,7 +43,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "02",
+            id: "02000000",
             picture: "/img/sofa-angle/elvira4-1.jpg",
             name: "Диван угловой Эльвира",
             type: "Диваны угловые",
@@ -55,7 +54,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "03",
+            id: "03000000",
             picture: "/img/sofa-angle/melisa.jpg",
             name: "Диван угловой Мелиса",
             type: "Диваны угловые",
@@ -66,7 +65,7 @@
           },
           {
             // здесь должен быть слайдер
-            id: "04",
+            id: "04000000",
             picture: "/img/sofa-angle/veronica.jpg",
             name: "Диван угловой Вероника",
             type: "Диваны угловые",
