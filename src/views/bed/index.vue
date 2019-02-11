@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in bed" :key="product.id" :product="product" />
+      <Product-Item v-for="product in bed" :key="product.id" :product="product" :Line="bed" />
     </ul>
   </main>
 </template>
@@ -25,16 +25,21 @@
 <script>
 
   import ProductItem from "../components/ProductItem.vue";
+  import Slider from "../components/Slider.vue";
 
 export default {
-    components: {
-      ProductItem
-    },
+  name: 'ProdItem',
+  components: {
+    ProductItem
+  },
     data() {
       return {
         bed: [{
             id: "001",
-            picture: "/img/bed/bruno.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/bruno.jpg",
+            ],
             name: "Бруно 1,4",
             type: "Кровати",
             size: "1100х1652х2064",
@@ -44,7 +49,10 @@ export default {
           },
           {
             id: "002",
-            picture: "/img/bed/Venera.png",
+            picture: null,
+            pictures: [
+              "/img/bed/Venera.png"
+            ],
             name: "Бруно 1,6",
             type: "Кровати",
             size: "1100x1852x2064",
@@ -54,7 +62,10 @@ export default {
           },
           {
             id: "003",
-            picture: "/img/bed/bruno.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/bruno.jpg"
+            ],
             name: "Бруно 1,8",
             type: "Кровати",
             size: "1100х2052х2064",
@@ -63,9 +74,11 @@ export default {
             quantity: 1
           },
           {
-            // слайдер
             id: "004",
-            picture: "/img/bed/fortuna.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/fortuna.jpg"
+            ],
             name: "Фортуна 1,4",
             type: "Кровати",
             size: "2000x1400",
@@ -74,9 +87,11 @@ export default {
             quantity: 1
           },
           {
-            // слайдер
             id: "005",
-            picture: "/img/bed/fortuna.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/fortuna.jpg"
+            ],
             name: "Фортуна 1,6",
             type: "Кровати",
             size: "2000x1600",
@@ -86,7 +101,10 @@ export default {
           },
           {
             id: "006",
-            picture: "/img/bed/sicilia.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/sicilia.jpg"
+            ],
             name: "Сицилия",
             type: "Кровати",
             size: "1820х2480х1210",
@@ -96,7 +114,10 @@ export default {
           },
           {
             id: "007",
-            picture: "/img/bed/kapry.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/kapry.jpg"
+            ],
             name: "Капри",
             type: "Кровати",
             size: "1720х2120х1060",
@@ -106,7 +127,10 @@ export default {
           },
           {
             id: "008",
-            picture: "/img/bed/selena.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/selena.jpg"
+            ],
             name: "Селена",
             type: "Кровати",
             size: "2000х900",
@@ -116,7 +140,10 @@ export default {
           },
           {
             id: "009",
-            picture: "/img/bed/selena2.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/selena2.jpg"
+            ],
             name: "Селена",
             type: "Кровати",
             size: "2000х900",
@@ -126,7 +153,10 @@ export default {
           },
           {
             id: "010",
-            picture: "/img/bed/SP-121-124.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/SP-121-124.jpg"
+            ],
             name: "СП-122",
             type: "Кровати",
             size: "2032х1435х750",
@@ -136,7 +166,10 @@ export default {
           },
           {
             id: "011",
-            picture: "/img/bed/venera.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/venera.jpg"
+            ],
             name: "Венера",
             type: "Кровати",
             size: "1,4",
@@ -146,7 +179,10 @@ export default {
           },
           {
             id: "012",
-            picture: "/img/bed/venera.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/venera.jpg"
+            ],
             name: "Венера",
             type: "Кровати",
             size: "1,6",
@@ -156,7 +192,10 @@ export default {
           },
           {
             id: "013",
-            picture: "/img/bed/muza.jpg",
+            picture: null,
+            picture: [
+              "/img/bed/muza.jpg"
+            ],
             name: "Муза",
             type: "Кровати",
             size: "1,4",
@@ -166,7 +205,10 @@ export default {
           },
           {
             id: "014",
-            picture: "/img/bed/muza.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/muza.jpg"
+            ],
             name: "Муза",
             type: "Кровати",
             size: "1,6",
@@ -176,7 +218,10 @@ export default {
           },
           {
             id: "015",
-            picture: "/img/bed/lion.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/lion.jpg"
+            ],
             name: "Лион",
             type: "Кровати",
             size: "1,4",
@@ -186,7 +231,10 @@ export default {
           },
           {
             id: "016",
-            picture: "/img/bed/lion.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/lion.jpg"
+            ],
             name: "Лион",
             type: "Кровати",
             size: "1,6",
@@ -196,7 +244,10 @@ export default {
           },
           {
             id: "017",
-            picture: "/img/bed/lion.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/lion.jpg"
+            ],
             name: "Лион",
             type: "Кровати",
             size: "0,9",
@@ -206,12 +257,41 @@ export default {
           },
           {
             id: "018",
-            picture: "/img/bed/lion.jpg",
+            picture: null,
+            pictures: [
+              "/img/bed/lion.jpg"
+            ],
             name: "Лион",
             type: "Кровати",
             size: "1,2",
             description: "2000х1200. Ортопедическое основание, металлические ножки, спинки металлические.",
             price: 12250,
+            quantity: 1
+          },
+          {
+            id: "019",
+            picture: null,
+            pictures: [
+              "/public/img/bed/Avrora.png"
+            ],
+            name: "Спальный гарнитур Аврора",
+            type: "Кровати",
+            size: "",
+            description: "шкаф (800х2800)х2200х500. Трюмо 1200*1600*400. Прикроватная тумбочка 400х500х400. Кровать 1450х1900. Огромный выбор цветовых решений. Полностью гарнитур 88 400Р. Цена с матрасом.",
+            price: 88400,
+            quantity: 1
+          },
+          {
+            id: "020",
+            picture: null,
+            pictures: [
+              "/public/img/bed/helga.jpg"
+            ],
+            name: "Спальный гарнитур Хельга",
+            type: "Кровати",
+            size: "",
+            description: "шкаф  1200х2200х500. Комод 900х800х400. Тумбочка прикроватная 400х500х400. Кровать  1450х1900. Огромный выбор цветовых решений. Полностью гарнитур 48 100Р. Цена с матрасом.",
+            price: 48100,
             quantity: 1
           }
         ]

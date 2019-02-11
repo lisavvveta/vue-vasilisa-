@@ -155,6 +155,39 @@
             description: "",
             price: 23100,
             quantity: 1
+          },
+          {
+            //здесь сделать слайдер
+            id: "1300",
+            picture: "/public/img/kitchen/MDF+fotoprint.jpg",
+            name: "Кухня МДФ+фотопечать",
+            type: "Кухни",
+            size: "",
+            description: "Цена зависит от комплектации",
+            price: 30000,
+            quantity: 1
+          },
+          {
+            //здесь сделать слайдер
+            id: "1400",
+            picture: "/public/img/kitchen/mdf +frizer.jpg",
+            name: "Кухня МДФ+фрезеровка",
+            type: "Кухни",
+            size: "",
+            description: "Цена зависит от комплектации",
+            price: 40000,
+            quantity: 1
+          },
+          {
+            //здесь сделать слайдер
+            id: "1400",
+            picture: "/public/img/kitchen/radius.jpg",
+            name: "Пластик с радиусными фасадами",
+            type: "Кухни",
+            size: "",
+            description: "",
+            price: "",
+            quantity: 1
           }
         ]
       };

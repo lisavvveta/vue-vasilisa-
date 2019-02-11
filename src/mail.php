@@ -7,6 +7,8 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
+$name.prod = $_POST['product_name'];
+$price $_POST['price'];
 
 
 $mail->isSMTP();
@@ -23,7 +25,7 @@ $mail->addAddress('korol_lev38@mail.ru');     // Кому будет уходи�
 $mail->isHTML(true);
 
 $mail->Subject = 'Заявка на звонок с сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. 'и почта' $email;
+$mail->Body    = ' .$name . ' оставил заявку, его телефон ' .$phone. 'и почта' $email. 'Было заказано' .$name.prod 'в сумме вышло' ';
 $mail->AltBody = '';
 
 

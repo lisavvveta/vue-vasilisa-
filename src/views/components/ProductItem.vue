@@ -1,7 +1,19 @@
 <template>
   <li class="product-item image-prod">
     <h6 class="product-item__title">{{ product.name }}</h6>
-    <img :src="product.picture" alt="product.picture" class="product-item__picture" />
+    <img
+      v-if="Line.picture && Line.picture.length == 1"
+      :src="Line.picture[0]"
+      :alt="Line.title"
+      class="product-item__picture"
+      style="object-fit:contain" />
+
+    <Slider
+      v-if="Line.pictures && Line.pictures.length > 1"
+      :slides="Line.pictures"
+      />
+    <img v-else src="/public/img/placeholder.png" :alt="Line.title" class="product-item__picture" />
+
     <p class="product-item__size">{{ product.size }}</p><br>
     <p class="product-item__description">{{ product.description }}</p><br>
     <p class="product-item__price">от {{ product.price }} ₽ </p><br>
@@ -10,11 +22,21 @@
 </template>
 
 <script>
+
+  import Slider from "../components/Slider.vue";
+
 export default {
-  name: "Product-Item",
+  name: 'Slider',
+  components: {
+    Slider
+  },
   props: {
     product: {
       type: Object,
+      required: true
+    } ,
+    Line: {
+      type: Array,
       required: true
     }
   },

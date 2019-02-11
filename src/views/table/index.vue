@@ -39,7 +39,7 @@
             type: "Столы",
             size: " 1000x680+500 ",
             description: "раздвижной с поворотным механизмом",
-            price: 16000,
+            price: 17500,
             quantity: 1
           },
           {
@@ -49,8 +49,8 @@
             name: "Паук",
             type: "Столы",
             size: "1100x700",
-            description: "не раздвижной",
-            price: 14300,
+            description: "Может быть раздвижной и не раздвижной",
+            price: 11400,
             quantity: 1
           },
           {
@@ -61,7 +61,7 @@
             type: "Столы",
             size: "",
             description: "может быть раздвижным и не раздвижным вставка +300",
-            price: 9000,
+            price: 9700,
             quantity: 1
           },
           {
@@ -72,7 +72,7 @@
             type: "Столы",
             size: "1200x800+400",
             description: "раздвижной",
-            price: 17500,
+            price: 19300,
             quantity: 1
           },
           {
@@ -83,7 +83,7 @@
             type: "Столы",
             size: "1000x700+300",
             description: "раздвижной",
-            price: 14500,
+            price: 15500,
             quantity: 1
           },
           {
@@ -94,7 +94,7 @@
             type: "Столы",
             size: "900x600+300",
             description: "раздвижной",
-            price: 15000,
+            price: 16500,
             quantity: 1
           },
           {
@@ -105,7 +105,7 @@
             type: "Столы",
             size: "900х600+300",
             description: "раздвижной",
-            price: 13400,
+            price: 15000,
             quantity: 1
           },
           {
