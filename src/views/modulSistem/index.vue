@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in ModulSistem" :key="product.id" :product="product" />
+      <Product-Item v-for="product in ModulSistem" :key="product.id" :product="product"  :Line="ModulSistem"/>
     </ul>
   </main>
 </template>

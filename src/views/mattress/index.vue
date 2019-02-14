@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in mattress" :key="product.id" :product="product" />
+      <Product-Item v-for="product in mattress" :key="product.id" :product="product"  :Line="mattress"/>
     </ul>
   </main>
 </template>

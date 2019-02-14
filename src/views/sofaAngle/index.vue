@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in sofaAngle" :key="product.id" :product="product" />
+      <Product-Item v-for="product in sofaAngle" :key="product.id" :product="product"  :Line="sofaAngle"/>
     </ul>
   </main>
 </template>
@@ -42,9 +42,14 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "02000000",
-            picture: "/img/sofa-angle/elvira4-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa-angle/elvira4-1.jpg",
+              "/img/sofa-angle/elvira4-2.jpg",
+              "/img/sofa-angle/elvira4-3.jpg",
+              "/img/sofa-angle/elvira4-4.jpg",
+            ],
             name: "Диван угловой Эльвира",
             type: "Диваны угловые",
             size: "1740х1120х940",
@@ -53,7 +58,6 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "03000000",
             picture: "/img/sofa-angle/melisa.jpg",
             name: "Диван угловой Мелиса",
@@ -64,9 +68,12 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "04000000",
-            picture: "/img/sofa-angle/veronica.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa-angle/veronica.jpg",
+              "/img/sofa-angle/veronica2.jpg",
+            ],
             name: "Диван угловой Вероника",
             type: "Диваны угловые",
             size: "2900х1050х1500",

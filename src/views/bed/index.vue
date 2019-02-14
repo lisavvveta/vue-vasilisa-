@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <main>
     <section class="navigatiion">
       <ul class="navigation">
@@ -25,20 +25,20 @@
 <script>
 
   import ProductItem from "../components/ProductItem.vue";
-  import Slider from "../components/Slider.vue";
 
 export default {
-  name: 'ProdItem',
+  name: 'Bed',
   components: {
     ProductItem
   },
     data() {
       return {
-        bed: [{
+        bed: [
+          {
             id: "001",
             picture: null,
             pictures: [
-              "/img/bed/bruno.jpg",
+              "/img/bed/bruno.jpg"
             ],
             name: "Бруно 1,4",
             type: "Кровати",
@@ -193,7 +193,7 @@ export default {
           {
             id: "013",
             picture: null,
-            picture: [
+            pictures: [
               "/img/bed/muza.jpg"
             ],
             name: "Муза",

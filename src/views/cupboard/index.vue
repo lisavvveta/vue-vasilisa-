@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" />
+      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" :Line="cupboard"/>
     </ul>
   </main>
 </template>
@@ -31,10 +31,14 @@
     },
     data() {
       return {
-        cupboard: [{
-            // slider
+        cupboard: [
+          {
             id: "00000001",
-            picture: "/img/cupboard/br-4.png",
+            picture: null,
+            pictures:[
+              "/img/cupboard/br-4.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "БР-4",
             type: "Шкафы",
             size: "2215x800x560",
@@ -43,9 +47,12 @@
             quantity: 1
           },
           {
-            // slider
             id: "00000002",
-            picture: "/img/cupboard/br-5.png",
+            picture: null,
+            pictures:[
+              "/img/cupboard/br-5.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "БР-5",
             type: "Шкафы",
             size: "2215x800x560",

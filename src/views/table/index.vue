@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in table" :key="product.id" :product="product" />
+      <Product-Item v-for="product in table" :key="product.id" :product="product"  :Line="table"/>
     </ul>
   </main>
 </template>
@@ -31,10 +31,14 @@
     },
     data() {
       return {
-        table: [{
-            // здесь должен быть слайдер
+        table: [
+          {
             id: "010000000",
-            picture: "/img/table/table-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/table/table-1.jpg",
+              "/img/table/table-2.jpg",
+            ],
             name: "Столы из массивного дерева",
             type: "Столы",
             size: " 1000x680+500 ",
@@ -43,9 +47,12 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "020000000",
-            picture: "/img/table/pauk.jpg",
+            picture: null,
+            pictures: [
+              "/img/table/pauk.jpg",
+              "/img/table/pauk-2.jpg",
+            ],
             name: "Паук",
             type: "Столы",
             size: "1100x700",
@@ -54,9 +61,13 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "030000000",
-            picture: "/img/table/salut-d-800.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/salut-d-800.jpg",
+              "/img/table/salut-d-800-2.jpg",
+              "/img/table/salut-d-800-3.jpg",
+            ],
             name: "Салют d-800",
             type: "Столы",
             size: "",
@@ -65,9 +76,13 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "040000000",
-            picture: "/img/table/bariton-1.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-1.jpg",
+              "/img/table/bariton-2.jpg",
+              "/img/table/bariton-3.jpg",
+            ],
             name: "Баритон",
             type: "Столы",
             size: "1200x800+400",
@@ -76,9 +91,15 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "050000000",
-            picture: "/img/table/oda-s-1.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/oda-s-1.jpg",
+              "/img/table/oda-s-2.jpg",
+              "/img/table/oda-s-3.jpg",
+              "/img/table/oda-s-4.jpg",
+              "/img/table/oda-s-5.jpg",
+            ],
             name: "Ода-С",
             type: "Столы",
             size: "1000x700+300",
@@ -87,9 +108,15 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "060000000",
-            picture: "/img/table/bariton-900-1.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-900-1.jpg",
+              "/img/table/bariton-900-2.jpg",
+              "/img/table/bariton-900-3.jpg",
+              "/img/table/bariton-900-5.jpg",
+              "/img/table/bariton-900-6.jpg",
+            ],
             name: "Баритон",
             type: "Столы",
             size: "900x600+300",
@@ -98,9 +125,12 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "070000000",
-            picture: "/img/table/oda-s-900-1.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/oda-s-900-1.jpg",
+              "/img/table/oda-s-900-.jpg",
+            ],
             name: "Ода-С",
             type: "Столы",
             size: "900х600+300",
@@ -109,7 +139,6 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер?
             id: "080000000",
             picture: "/img/table/transformer.jpg",
             name: "Стол трансформер",
@@ -120,9 +149,15 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "090000000",
-            picture: "/img/table/bariton-1100-1.jpg",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-1100-1.jpg",
+              "/img/table/bariton-1100-2.jpg",
+              "/img/table/bariton-1100-3.jpg",
+              "/img/table/bariton-1100-4.jpg",
+              "/img/table/bariton-1100-5.jpg",
+            ],
             name: "Баритон",
             type: "Кухни",
             size: "Размеры 1100х700+300 ",

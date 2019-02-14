@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-       <Product-Item v-for="product in bench" :key="product.id" :product="product" />
+       <Product-Item v-for="product in bench" :key="product.id" :product="product"  :Line="bench"/>
     </ul>
   </main>
 </template>
@@ -32,8 +32,8 @@
     },
     data() {
       return {
-        bench: [{
-          // slider
+        bench: [
+          {
           id: "0001",
           picture: "/img/bench/trio.jpg",
           name: "Диванчик трио плюс",
