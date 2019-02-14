@@ -17,13 +17,12 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in table" :key="product.id" :product="product" />
+      <Product-Item v-for="product in table" :key="product.id" :product="product"  :Line="table"/>
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -32,86 +31,115 @@
     },
     data() {
       return {
-        table: [{
-            // здесь должен быть слайдер
-            id: "02",
-            picture: "/img/table/table-1.jpg",
+        table: [
+          {
+            id: "010000000",
+            picture: null,
+            pictures: [
+              "/img/table/table-1.jpg",
+              "/img/table/table-2.jpg",
+            ],
             name: "Столы из массивного дерева",
             type: "Столы",
             size: " 1000x680+500 ",
             description: "раздвижной с поворотным механизмом",
-            price: 16000,
-            quantity: 1
-          },
-          {
-            // здесь должен быть слайдер
-            id: "03",
-            picture: "/img/table/pauk.jpg",
-            name: "Паук",
-            type: "Столы",
-            size: "1100x700",
-            description: "не раздвижной",
-            price: 14300,
-            quantity: 1
-          },
-          {
-            // здесь должен быть слайдер
-            id: "04",
-            picture: "/img/table/salut-d-800.jpg",
-            name: "Салют d-800",
-            type: "Столы",
-            size: "",
-            description: "может быть раздвижным и не раздвижным вставка +300",
-            price: 9000,
-            quantity: 1
-          },
-          {
-            // здесь должен быть слайдер
-            id: "05",
-            picture: "/img/table/bariton-1.jpg",
-            name: "Баритон",
-            type: "Столы",
-            size: "1200x800+400",
-            description: "раздвижной",
             price: 17500,
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
-            id: "06",
-            picture: "/img/table/oda-s-1.jpg",
+            id: "020000000",
+            picture: null,
+            pictures: [
+              "/img/table/pauk.jpg",
+              "/img/table/pauk-2.jpg",
+            ],
+            name: "Паук",
+            type: "Столы",
+            size: "1100x700",
+            description: "Может быть раздвижной и не раздвижной",
+            price: 11400,
+            quantity: 1
+          },
+          {
+            id: "030000000",
+            picture: null,
+            pictures:[
+              "/img/table/salut-d-800.jpg",
+              "/img/table/salut-d-800-2.jpg",
+              "/img/table/salut-d-800-3.jpg",
+            ],
+            name: "Салют d-800",
+            type: "Столы",
+            size: "",
+            description: "может быть раздвижным и не раздвижным вставка +300",
+            price: 9700,
+            quantity: 1
+          },
+          {
+            id: "040000000",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-1.jpg",
+              "/img/table/bariton-2.jpg",
+              "/img/table/bariton-3.jpg",
+            ],
+            name: "Баритон",
+            type: "Столы",
+            size: "1200x800+400",
+            description: "раздвижной",
+            price: 19300,
+            quantity: 1
+          },
+          {
+            id: "050000000",
+            picture: null,
+            pictures:[
+              "/img/table/oda-s-1.jpg",
+              "/img/table/oda-s-2.jpg",
+              "/img/table/oda-s-3.jpg",
+              "/img/table/oda-s-4.jpg",
+              "/img/table/oda-s-5.jpg",
+            ],
             name: "Ода-С",
             type: "Столы",
             size: "1000x700+300",
             description: "раздвижной",
-            price: 14500,
+            price: 15500,
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
-            id: "07",
-            picture: "/img/table/bariton-900-1.jpg",
+            id: "060000000",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-900-1.jpg",
+              "/img/table/bariton-900-2.jpg",
+              "/img/table/bariton-900-3.jpg",
+              "/img/table/bariton-900-5.jpg",
+              "/img/table/bariton-900-6.jpg",
+            ],
             name: "Баритон",
             type: "Столы",
             size: "900x600+300",
+            description: "раздвижной",
+            price: 16500,
+            quantity: 1
+          },
+          {
+            id: "070000000",
+            picture: null,
+            pictures:[
+              "/img/table/oda-s-900-1.jpg",
+              "/img/table/oda-s-900-.jpg",
+            ],
+            name: "Ода-С",
+            type: "Столы",
+            size: "900х600+300",
             description: "раздвижной",
             price: 15000,
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
-            id: "08",
-            picture: "/img/table/oda-s-900-1.jpg",
-            name: "Ода-С",
-            type: "Столы",
-            size: "900х600+300",
-            description: "раздвижной",
-            price: 13400,
-            quantity: 1
-          },
-          {
-            // здесь должен быть слайдер?
-            id: "08",
+            id: "080000000",
             picture: "/img/table/transformer.jpg",
             name: "Стол трансформер",
             type: "Столы",
@@ -121,9 +149,15 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
-            id: "09",
-            picture: "/img/table/bariton-1100-1.jpg",
+            id: "090000000",
+            picture: null,
+            pictures:[
+              "/img/table/bariton-1100-1.jpg",
+              "/img/table/bariton-1100-2.jpg",
+              "/img/table/bariton-1100-3.jpg",
+              "/img/table/bariton-1100-4.jpg",
+              "/img/table/bariton-1100-5.jpg",
+            ],
             name: "Баритон",
             type: "Кухни",
             size: "Размеры 1100х700+300 ",

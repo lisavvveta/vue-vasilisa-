@@ -10,13 +10,16 @@
   "dependencies": {
     "animated-number-vue": "^0.1.4",
     "node-modules": "^1.0.1",
+    "swiper": "^4.4.6",
     "v-mask": "^1.3.3",
     "vue": "^2.5.17",
+    "vue-awesome-swiper": "^3.1.3",
     "vue-bus": "^1.2.0",
     "vue-router": "^3.0.1",
     "vue-slide-up-down": "^1.6.0",
     "vue-the-mask": "^0.11.1",
-    "vue2-transitions": "^0.2.3"
+    "vue2-transitions": "^0.2.3",
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",

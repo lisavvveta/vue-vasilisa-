@@ -12,7 +12,7 @@
       </thead>
       <tbody>
         <tr v-for="product in order" :key="product.id">
-          <td>{{ product.name }}</td>
+          <td name="product_name" >{{ product.name }}</td>
           <td>{{ product.quantity }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.quantity * product.price }}</td>
@@ -24,28 +24,47 @@
     </table>
 
     <p>Итого:
-      <b>{{ summary }}</b>
+      <b name="price">{{ summary }}</b>
     </p>
     <button @click="show = !show" type="button">Заказать</button>
     <transition name="fade">
       <div class="hidden" id="hidden_content">
-        <form class="hidden" v-if="show">
+        <form class="hidden" v-if="show" action="mail.php" method="POST">
           <fieldset>
             <legend>Имя *</legend>
-            <input id="form_name" v-model="form.name" name="name" type="text" placeholder="Имя" required>
+            <input
+            @blur="$v.email.$touch()"
+            id="name"
+            name="name"
+            type="text"
+            pattern="[a-zA-Zа-яА-Я]{4,}"
+            placeholder="Имя"
+            v-model="name"
+            required>
           </fieldset>
 
           <fieldset>
             <legend>E-mail *</legend>
-            <input v-model="form.email" name="email" type="email" placeholder="E-mail *" required>
+            <input
+            id="email"
+            @blur="$v.email.$touch()"
+            name="email"
+            type="email"
+            placeholder="E-mail *"
+            v-model="email"
+            required>
           </fieldset>
 
-          <fieldset>
+          <!-- <fieldset>
             <legend>Телефон *</legend>
-            <input v-model="form.phone" name="phone" type="tel" placeholder="Телефон *" required>
-          </fieldset>
+            <input
+            v-model="phone"
+            name="phone"
+            type="tel"
+            placeholder="Телефон *"
+            required>
+          </fieldset> -->
           <br>
-
           <button class="bth" type="submit">Оставить заявку</button>
         </form>
       </div>
@@ -57,6 +76,7 @@
 <script>
 import { mask } from "vue-the-mask";
 import AnimatedNumber from "animated-number-vue";
+import { required, email } from 'vuelidate/lib/validators';
 
 export default {
   name: "Cart",
@@ -66,16 +86,32 @@ export default {
   components: {
     AnimatedNumber
   },
+  name: 'form_order',
+  props: {
+    email: {
+      // type: Object,
+      // required: true
+    },
+    name: {
+      // type: Object,
+      // required: true
+    }
+  },
+
   data: () => ({
     show: false,
     order: [],
-    form: {
-      name: "",
-      email: "",
-      phone: ""
+    return: {
+      email: '',
+      name: ''
     }
   }),
-
+  validations: {
+    email: {
+      required,
+      email
+    }
+  },
   computed: {
     summary() {
       const summs = this.order

@@ -17,13 +17,12 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" />
+      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" :Line="cupboard"/>
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -32,10 +31,14 @@
     },
     data() {
       return {
-        cupboard: [{
-            // slider
-            id: "01",
-            picture: "/img/cupboard/br-4.png",
+        cupboard: [
+          {
+            id: "00000001",
+            picture: null,
+            pictures:[
+              "/img/cupboard/br-4.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "БР-4",
             type: "Шкафы",
             size: "2215x800x560",
@@ -44,9 +47,12 @@
             quantity: 1
           },
           {
-            // slider
-            id: "02",
-            picture: "/img/cupboard/br-5.png",
+            id: "00000002",
+            picture: null,
+            pictures:[
+              "/img/cupboard/br-5.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "БР-5",
             type: "Шкафы",
             size: "2215x800x560",

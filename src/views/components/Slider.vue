@@ -1,7 +1,7 @@
 <template>
   <swiper
     :options="swiperOption"
-    class="">
+    class="product-item__picture">
     <swiper-slide
       v-for="( slide , index ) in slides"
       :key="index">
@@ -18,30 +18,39 @@
 </template>
 
 <script>
-export default {
-  props: {
-    title: {
-      type: String,
-      default: ""
+  import 'swiper/dist/css/swiper.css';
+  import { swiper, swiperSlide } from 'vue-awesome-swiper';
+
+  export default {
+    components: {
+      swiper,
+      swiperSlide
     },
-    slides: {
-      type: Array,
-      required: true
-    }
-  },
-  data: () => ({
-    swiperOption: {
-      grabCursor: true,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+
+    name: 'SliderProps',
+    props: {
+      'title': {
+        type: String,
+        default: '',
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      }
-    }
-  })
-};
+      'slides': {
+        type: Array,
+        required: true,
+      },
+    },
+    data: () => ({
+      swiperOption: {
+        grabCursor: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+      },
+    }),
+  };
 </script>

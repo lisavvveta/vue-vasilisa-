@@ -17,14 +17,14 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in hollway" :key="product.id" :product="product" />
+      <Product-Item v-for="product in hollway" :key="product.id" :product="product" :Line="hollway"/>
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
+
 
   export default {
     components: {
@@ -32,11 +32,15 @@
     },
     data() {
       return {
-        hollway: [{
-            // Здесь должен быть слайдер
-            //Сюда запихнуть все рамиры, так как это один рамир, а не несколько
-            id: "01",
-            picture: "/img/hallway/ramir.jpg",
+        hollway: [
+          {
+            id: "000000000001",
+            picture: null,
+            pictures:[
+              "/img/hallway/ramir.jpg",
+              "/img/hallway/ramir-2.jpg",
+              "/img/hallway/ramir-s.jpg",
+            ],
             name: "Пpихожая со шкафом Рамир",
             type: "Прихожая",
             size: "1202х2100х504",
@@ -45,8 +49,11 @@
             quantity: 1
           },
           {
-            id: "02",
-            picture: "/img/hallway/nota-4.jpg",
+            id: "000000000002",
+            picture: null,
+            pictures: [
+              "/img/hallway/nota-4.jpg",
+            ],
             name: "Прихожая Нота 4",
             type: "Прихожая",
             size: "2115х1000х350",
@@ -55,9 +62,14 @@
             quantity: 1
           },
           {
-            // здесь будет слайдер
-            id: "03",
-            picture: "/img/hallway/nota-3-1.jpg",
+            id: "000000000003",
+            picture: null,
+            pictures:[
+              "/img/hallway/nota-3-1.jpg",
+              "/img/hallway/nota-3-2.jpg",
+              "/img/hallway/nota-3-3.jpg",
+              "/img/hallway/nota-3-4.jpg",
+            ],
             name: "Прихожая Нота 3",
             type: "Прихожая",
             size: "1823x400х2114",

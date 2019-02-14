@@ -17,7 +17,7 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in sofa" :key="product.id" :product="product" />
+      <Product-Item v-for="product in sofa" :key="product.id" :product="product" :Line="sofa" />
     </ul>
   </main>
 </template>
@@ -25,38 +25,55 @@
 <script>
 
   import ProductItem from "../components/ProductItem.vue";
+  import Slider from "../components/Slider.vue";
 
   export default {
-    components: {
+  name: 'ProdItem',
+  components: {
       ProductItem
     },
     data() {
       return {
-        sofa: [{
-            // здесь должен быть слайдер
+        sofa: [
+          {
             id: "01",
-            picture: "/img/sofa/veronica-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/veronica-1.jpg",
+              "/img/sofa/veronica-2.jpg",
+              "/img/sofa/veronica-3.jpg",
+              "/img/sofa/veronica-4.jpg",
+              "/img/sofa/veronica-5.jpg",
+              "/img/sofa/veronica-6.jpg",
+            ],
             name: "Вероника",
             type: "Диваны",
-            size: "2220х1050х1010 ",
+            size: "2220х1050х1010",
             description: "Спальное место 1500х2000. Механизм раскладывания тик-так. Подлокотники из МДФ, в комплекте 3 подушки",
             price: 34300,
             quantity: 1
           },
           {
             id: "02",
-            picture: "/img/sofa/melisa.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/melisa.jpg",
+            ],
             name: "Мелиса",
             type: "Диваны",
             size: "2320х1100х930",
-            description: "Спальное место 1500х2000. Механизм раскладки тик-так. ПРужинны  блок, деревянный каркас.",
+            description: "Спальное место 1500х2000. Механизм раскладки тик-так. Пружинны  блок, деревянный каркас.",
             price: 32200,
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "03",
-            picture: "/img/sofa/brigantina-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/brigantina-1.jpg",
+              "/img/sofa/brigantina-2.jpg",
+              "/img/sofa/brigantina-3.jpg"
+            ],
             name: "Бригантина",
             type: "Диваны",
             size: "1970х850х920",
@@ -65,9 +82,14 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "04",
-            picture: "/img/sofa/tahta-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/tahta-1.jpg",
+              "/img/sofa/tahta-2.jpg",
+              "/img/sofa/tahta-3.jpg",
+              "/img/sofa/tahta-4.jpg",
+            ],
             name: "Тахта",
             type: "Диваны",
             size: "2010х950х1000",
@@ -76,9 +98,12 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "05",
-            picture: "/img/sofa/mango-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/mango-1.jpg",
+              "/img/sofa/mango-2.jpg"
+            ],
             name: "Манго на металлокаркасе",
             type: "Диваны",
             size: "2020x1080x970",
@@ -87,9 +112,12 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "06",
-            picture: "/img/sofa/kalipso-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/kalipso-1.jpg",
+              "/img/sofa/kalipsio-2.jpg"
+            ],
             name: "Колипсио на металлокарксе",
             type: "Диваны",
             size: "1740х1120х940",
@@ -98,9 +126,15 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "07",
-            picture: "/img/sofa/uyut.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/uyut.jpg",
+              "/img/sofa/uyut-2.jpg",
+              "/img/sofa/uyut-3.jpg",
+              "/img/sofa/uyut-4.jpg",
+              "/img/sofa/uyut-5.jpg"
+            ],
             name: "Уют",
             type: "Диваны",
             size: "2300х800х900",
@@ -109,9 +143,14 @@
             quantity: 1
           },
           {
-            // здесь должен быть слайдер
             id: "08",
-            picture: "/img/sofa/2mdf.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/2mdf.jpg",
+              "/img/sofa/2mdf-2.jpg",
+              "/img/sofa/2mdf-3.jpg",
+              "/img/sofa/2mdf-4.jpg",
+            ],
             name: "2МДФ",
             type: "Диваны",
             size: "2140х920х920",
@@ -121,12 +160,28 @@
           },
           {
             id: "09",
-            picture: "/img/sofa/elvira-1.jpg",
+            picture: null,
+            pictures: [
+              "/img/sofa/elvira-1.jpg",
+            ],
             name: "Эльвира 4",
             type: "Диваны",
             size: "2300х1600",
             description: "Спальное место 2000х1400. Деревянный каркас, зависимый пружинный блок, механизм трансформации венеция. Угол не меняется. Внутри очень болшой ящик для хранения белья.",
             price: 32200,
+            quantity: 1
+          },
+          {
+            id: "10",
+            picture: null,
+            pictures: [
+               "/img/sofa/Kreslo-Veronika.jpg",
+            ],
+            name: "Кресло Вероника",
+            type: "Диваны",
+            size: "2300х1600",
+            description: "Спальное место 2000х1400. Деревянный каркас, зависимый пружинный блок, механизм трансформации венеция. Угол не меняется. Внутри очень болшой ящик для хранения белья.",
+            price: "",
             quantity: 1
           }
         ]
@@ -136,6 +191,6 @@
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
+@import "../../stylesheets/layout.scss";
+@import "../../stylesheets/product.scss";
 </style>

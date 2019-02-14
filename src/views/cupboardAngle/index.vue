@@ -17,13 +17,12 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in cupboardAngle" :key="product.id" :product="product" />
+      <Product-Item v-for="product in cupboardAngle" :key="product.id" :product="product" :Line="cupboardAngle"/>
     </ul>
   </main>
 </template>
 
 <script>
-
   import ProductItem from "../components/ProductItem.vue";
 
   export default {
@@ -33,9 +32,12 @@
     data() {
       return {
         cupboardAngle: [{
-            // slider
-            id: "01",
-            picture: "/img/cupboard-angle/br-6.png",
+            id: "000000001",
+            picture: null,
+            pictures:[
+              "/img/cupboard-angle/br-6.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "БР-6",
             type: "Шкафы",
             size: "2215x904x904",
@@ -44,9 +46,12 @@
             quantity: 1
           }, ,
           {
-            // здесь должен быть слайлер
-            id: "02",
-            picture: "/img/comod/br-10.png",
+            id: "000000002",
+            picture: null,
+            pictures: [
+              "/img/comod/br-10.png",
+              "/img/modul-sistem/bravo.jpg"
+            ],
             name: "Комод БР-10",
             type: "Комоды",
             size: "1182x1116x355",
@@ -55,8 +60,11 @@
             quantity: 1
           },
           {
-            id: "03",
-            picture: "/img/bed/SP-121-124.jpg",
+            id: "000000003",
+            picture: null,
+            pictures:[
+              "/img/bed/SP-121-124.jpg"
+            ],
             name: "Комод СП-123",
             type: "Комоды",
             size: "1000х810х435",
