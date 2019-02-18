@@ -84,10 +84,10 @@
 </template>
 
 <script>
-  export default {};
+export default {};
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/catalog.scss";
+@import "../../stylesheets/layout.scss";
+@import "../../stylesheets/catalog.scss";
 </style>

@@ -17,38 +17,39 @@
       </ul>
     </section>
     <ul class="product">
-       <Product-Item v-for="product in bench" :key="product.id" :product="product"  :Line="bench"/>
+       <Product-Item v-for="product in bench" :key="product.id" :product="product"/>
     </ul>
   </main>
 </template>
 
 <script>
+import ProductItem from "../components/ProductItem.vue";
 
-  import ProductItem from "../components/ProductItem.vue";
-
-  export default {
-    components: {
-      ProductItem
-    },
-    data() {
-      return {
-        bench: [
-          {
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      bench: [
+        {
           id: "0001",
-          picture: "/img/bench/trio.jpg",
+          picture: null,
+          pictures: ["/img/bench/trio.jpg",],
           name: "Диванчик трио плюс",
           type: "Скамьи",
           size: "РАЗМЕРЫ: ДЛИНА-1000, ШИРИНА-680, ВЫСОТА-600",
           description: "",
           price: 12000,
           quantity: 1
-        }]
-      };
-    }
-  };
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
+@import "../../stylesheets/layout.scss";
+@import "../../stylesheets/product.scss";
 </style>

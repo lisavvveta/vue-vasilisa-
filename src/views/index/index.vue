@@ -44,6 +44,5 @@ export default {};
 
 <style lang="scss">
 @import "../../stylesheets/layout.scss";
-@import "../../stylesheets/product.scss";
 @import "../../stylesheets/slide_index.scss";
 </style>

@@ -76,7 +76,7 @@
 <script>
 import { mask } from "vue-the-mask";
 import AnimatedNumber from "animated-number-vue";
-import { required, email } from 'vuelidate/lib/validators';
+import { required, email } from "vuelidate/lib/validators";
 
 export default {
   name: "Cart",
@@ -86,7 +86,7 @@ export default {
   components: {
     AnimatedNumber
   },
-  name: 'form_order',
+  name: "form_order",
   props: {
     email: {
       // type: Object,
@@ -102,8 +102,8 @@ export default {
     show: false,
     order: [],
     return: {
-      email: '',
-      name: ''
+      email: "",
+      name: ""
     }
   }),
   validations: {

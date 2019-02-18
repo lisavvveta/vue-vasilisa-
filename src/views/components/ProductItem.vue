@@ -1,44 +1,48 @@
 <template>
   <li class="product-item image-prod">
     <h6 class="product-item__title">{{ product.name }}</h6>
-    <img
-      v-if="Line.picture.length ==1"
-      :src="Line.picture"
-      :alt="Line.title"
-      class="product-item__picture" />
+    <template v-if="product.pictures">
+      <img
+        v-if="product.pictures.length == 1"
+        :src="product.pictures[0]"
+        :alt="product.title"
+        class="product-item__picture"
+      >
 
-    <!-- <Slider
-      v-if="Line.pictures.length > 1"
-      :slides="Line.pictures"
-      /> -->
-    <img v-else src="/img/placeholder.png" :alt="Line.title" class="product-item__picture" />
+      <Slider
+        v-else-if="product.pictures.length > 1"
+        :slides="product.pictures"
+        class="product-item__picture"/>
 
-    <p class="product-item__size">{{ product.size }}</p><br>
-    <p class="product-item__description">{{ product.description }}</p><br>
-    <p class="product-item__price">от {{ product.price }} ₽ </p><br>
+      <img
+        v-else
+        :alt="product.title"
+        src="/img/placeholder.png"
+        class="product-item__picture"
+        />
+    </template>
+
+    <p class="product-item__size">{{ product.size }}</p>
+    <br>
+    <p class="product-item__description">{{ product.description }}</p>
+    <br>
+    <p class="product-item__price">от {{ product.price }} ₽</p>
+    <br>
     <button type="button" @click="addToCart" class="product-item__button">В корзину</button>
-
-<p>{{ Line.pictures }}</p>
-
   </li>
 </template>
 
 <script>
-
-  import Slider from "../components/Slider.vue";
+import Slider from "../components/Slider.vue";
 
 export default {
-  name: "Slider",
+  name: "Product-Item",
   components: {
     Slider
   },
   props: {
     product: {
       type: Object,
-      required: true
-    },
-    Line: {
-      type: Array,
       required: true
     }
   },
@@ -53,4 +57,95 @@ export default {
 </script>
 
 <style lang="scss">
+.picture {
+  display: inline-block;
+  vertical-align: top;
+  border: solid 5px #29a329;
+  width: 400px;
+  max-height: 150px;
+  text-align: center;
+  margin: 0, 5px;
+  padding: 1px;
+  z-index: 1;
+}
+
+.picture p {
+  text-align: center;
+  margin: 2px;
+}
+
+.product-item {
+  flex: 1 1;
+  min-width: 400px;
+  min-height: 400px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  transition: box-shadow 0.2s ease;
+  box-shadow:
+    0 2px 20px 0 rgba(0, 0, 0, 0.5),
+    0 2px 20px 0px rgba(40, 140, 220, 0.5);
+  &._fill {
+    flex-basis: 48.4%;
+    width: auto;
+  }
+  &:hover {
+    box-shadow:
+      0 2px 20px 0 rgba(0, 0, 0, 1),
+      0 2px 20px 0px rgba(40, 140, 220, 1);
+  }
+  &__picture {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;          //????????????
+    object-position: top;
+  }
+  &__title {
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__description {
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    color: #373535;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 15px;
+  }
+
+  &__button {
+    padding: 13px 16px 11px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #29a329;
+    border: 1px solid #1e90ff;
+    border-radius: 8px;
+    touch-action: manipulation;
+    outline: none;
+    transition: all 0.15s ease;
+    &:active {
+      background-color: #191970;
+    }
+  }
+}
 </style>
