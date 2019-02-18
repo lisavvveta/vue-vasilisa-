@@ -6,13 +6,14 @@
         v-if="product.pictures.length == 1"
         :src="product.pictures[0]"
         :alt="product.title"
-        class="product-item__picture"
+        class="picture"
       >
 
       <Slider
         v-else-if="product.pictures.length > 1"
         :slides="product.pictures"
-        class="product-item__picture"/>
+        class="product-item__picture"
+        />
 
       <img
         v-else
@@ -57,21 +58,8 @@ export default {
 </script>
 
 <style lang="scss">
-.picture {
-  display: inline-block;
-  vertical-align: top;
-  border: solid 5px #29a329;
-  width: 400px;
-  max-height: 150px;
-  text-align: center;
-  margin: 0, 5px;
-  padding: 1px;
-  z-index: 1;
-}
-
-.picture p {
-  text-align: center;
-  margin: 2px;
+img {
+  width: 100%;
 }
 
 .product-item {
@@ -87,21 +75,25 @@ export default {
   box-shadow:
     0 2px 20px 0 rgba(0, 0, 0, 0.5),
     0 2px 20px 0px rgba(40, 140, 220, 0.5);
+
   &._fill {
     flex-basis: 48.4%;
     width: auto;
   }
+
   &:hover {
     box-shadow:
       0 2px 20px 0 rgba(0, 0, 0, 1),
       0 2px 20px 0px rgba(40, 140, 220, 1);
   }
+
   &__picture {
     width: 100%;
-    height: 500px;
-    object-fit: cover;          //????????????
-    object-position: top;
+    height: 350px;
+    object-fit: contain;
+    object-position: 50% 50%;
   }
+
   &__title {
     margin-bottom: 5px;
     font-family: "Montserrat", sans-serif;
@@ -143,6 +135,7 @@ export default {
     touch-action: manipulation;
     outline: none;
     transition: all 0.15s ease;
+
     &:active {
       background-color: #191970;
     }

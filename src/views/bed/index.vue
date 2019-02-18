@@ -50,17 +50,6 @@ export default {
         {
           id: "002",
           picture: null,
-          pictures: ["/img/bed/Venera.png"],
-          name: "Бруно 1,6",
-          type: "Кровати",
-          size: "1100x1852x2064",
-          description: "",
-          price: 15850,
-          quantity: 1
-        },
-        {
-          id: "003",
-          picture: null,
           pictures: ["/img/bed/bruno.jpg"],
           name: "Бруно 1,8",
           type: "Кровати",
@@ -70,7 +59,29 @@ export default {
           quantity: 1
         },
         {
+          id: "003",
+          picture: null,
+          pictures: ["/img/bed/Venera.png"],
+          name: "Бруно 1,6",
+          type: "Кровати",
+          size: "1100x1852x2064",
+          description: "",
+          price: 15850,
+          quantity: 1
+        },
+        {
           id: "004",
+          picture: null,
+          pictures: ["/img/bed/sicilia.jpg"],
+          name: "Сицилия",
+          type: "Кровати",
+          size: "1820х2480х1210",
+          description: "Ортопедическое основание или механизм подъема.",
+          price: 48500,
+          quantity: 1
+        },
+        {
+          id: "005",
           picture: null,
           pictures: ["/img/bed/fortuna.jpg"],
           name: "Фортуна 1,4",
@@ -82,7 +93,7 @@ export default {
           quantity: 1
         },
         {
-          id: "005",
+          id: "006",
           picture: null,
           pictures: ["/img/bed/fortuna.jpg"],
           name: "Фортуна 1,6",
@@ -91,17 +102,6 @@ export default {
           description:
             "Ортопедические основание. Спинка металл черный. Ножки на выбор: массивное дерево (шоколад махагон), или металлическими",
           price: 19500,
-          quantity: 1
-        },
-        {
-          id: "006",
-          picture: null,
-          pictures: ["/img/bed/sicilia.jpg"],
-          name: "Сицилия",
-          type: "Кровати",
-          size: "1820х2480х1210",
-          description: "Ортопедическое основание или механизм подъема.",
-          price: 48500,
           quantity: 1
         },
         {
@@ -291,7 +291,7 @@ export default {
           id: "022",
           picture: null,
           pictures: [
-            "/img/bed/br-116.jpg",
+            "/img/bed/br-116-1.jpg",
             "/img/bed/br-116-2.jpg"
           ],
           name: "БР-116",

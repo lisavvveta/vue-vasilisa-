@@ -29,10 +29,6 @@
         <label for="slider2_2"></label>
         <div><img class="img1" src="/img/slider/2.jpg" /></div>
         <label for="slider2_3"></label>
-        <input type="radio" name="slider2" id="slider2_3" />
-        <label for="slider2_3"></label>
-        <div><img class="img1" src="" /></div>
-        <label for="slider2_4"></label>
       </div>
     </section>
   </main>

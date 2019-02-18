@@ -9,7 +9,6 @@
         :key="index"
         :src="slide"
         :alt="title"
-
         class="picture_slide" />
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
@@ -50,10 +49,3 @@ export default {
   })
 };
 </script>
-
-<style lang="scss">
-.picture_slider{
-  width: 100%;
-  max-height: 100%;
-}
-</style>
