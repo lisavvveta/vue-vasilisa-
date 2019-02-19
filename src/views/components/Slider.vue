@@ -55,6 +55,10 @@ export default {
   margin-left: -150px;
   object-fit: contain;
   padding: 0;
+  width: 100%;
+  // min-height: 400px;
+  height: auto;
 }
+
 </style>
 
