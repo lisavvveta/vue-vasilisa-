@@ -17,97 +17,98 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in colouring" :key="product.id" :product="product" :Line="colouring"/>
+      <Product-Item v-for="product in colouring" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
-  import ProductItem from "../components/ProductItem.vue";
+import ProductItem from "../components/ProductItem.vue";
 
-  export default {
-    components: {
-      ProductItem
-    },
-    data() {
-      return {
-        colouring: [{
-            id: "000001",
-            picture: "/img/colouring/pink.jpg",
-            name: "Розовый",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000002",
-            picture: "/img/colouring/blue.jpg",
-            name: "Синий",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000003",
-            picture: "/img/colouring/oal-sonoma.jpg",
-            name: "Дуб Сонома",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000004",
-            picture: "/img/colouring/oal- milk.jpg",
-            name: "Дуб Молочный или Дуб белый",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000005",
-            picture: "/img/colouring/venge.jpg",
-            name: "Венге",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000006",
-            picture: "/img/colouring/shimo-white.jpg",
-            name: "Шимо светлый",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          },
-          {
-            id: "000007",
-            picture: "/img/colouring/shimo-dark.jpg",
-            name: "Шимо темный",
-            type: "Цвета",
-            size: "",
-            description: "",
-            price: "",
-            quantity: 1
-          }
-        ]
-      };
-    }
-  };
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      colouring: [
+        {
+          id: "000001",
+          pictures: ["/img/colouring/pink.jpg"],
+          name: "Розовый",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000002",
+          pictures: ["/img/colouring/blue.jpg"],
+          name: "Синий",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000003",
+          pictures: ["/img/colouring/oal-sonoma.jpg"],
+          name: "Дуб Сонома",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000004",
+          pictures: ["/img/colouring/oal- milk.jpg"],
+          name: "Дуб Молочный или Дуб белый",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000005",
+          pictures: ["/img/colouring/venge.jpg"],
+          name: "Венге",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000006",
+          pictures: ["/img/colouring/shimo-white.jpg"],
+          name: "Шимо светлый",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        },
+        {
+          id: "000007",
+          pictures: ["/img/colouring/shimo-dark.jpg"],
+          name: "Шимо темный",
+          type: "Цвета",
+          size: "",
+          description: "",
+          price: "",
+          quantity: 1
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
+@import "../../stylesheets/layout.scss";
+@import "../../stylesheets/product.scss";
 </style>

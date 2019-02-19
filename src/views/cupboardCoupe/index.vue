@@ -17,81 +17,70 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in coupe" :key="product.id" :product="product" :Line="cupboardCoupe"/>
+      <Product-Item v-for="product in coupe" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
+import ProductItem from "../components/ProductItem.vue";
 
-  import ProductItem from "../components/ProductItem.vue";
-
-  export default {
-    components: {
-      ProductItem
-    },
-    data() {
-      return {
-        coupe: [
-          {
-            id: "00000000001",
-            picture: null,
-            pictures: [
-              "/img/bed/SP-121-124.jpg",
-            ],
-            name: "СП-121",
-            type: "Шкафы-купе",
-            size: "1435x550x2100",
-            description: "Цвета: венге, дуб беленый",
-            price: 16000,
-            quantity: 1
-          },
-          {
-            id: "00000000002",
-            picture: null,
-            pictures:[
-              "/public/img/cupboardCoupe/shkaf s picture.jpg",
-            ],
-            name: "Шкаф-купе с пескоструйным рисунком",
-            type: "Шкафы-купе",
-            size: "",
-            description: "Цвета: любые",
-            price: 30000,
-            quantity: 1
-          },
-          {
-            id: "00000000003",
-            picture: null,
-            pictures:[
-              "/public/img/cupboardCoupe/shkaf s picture.jpg",
-            ],
-            name: "Шкаф-купе  с цветным пескоструем",
-            type: "Шкафы-купе",
-            size: "",
-            description: "Цвета: любые",
-            price: 65000,
-            quantity: 1
-          },
-          {
-            id: "00000000004",
-            picture: null,
-            pictures:[
-              "/public/img/cupboardCoupe/foto-print.jpg",
-            ],
-            name: "Шкаф-купе с фотопечатью",
-            type: "Шкафы-купе",
-            size: "",
-            description: "",
-            price: 45000,
-            quantity: 1
-          }
-        ]
-      };
-    }
-  };
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      coupe: [
+        {
+          id: "00000000001",
+          picture: null,
+          pictures: ["/img/bed/SP-121-124.jpg"],
+          name: "СП-121",
+          type: "Шкафы-купе",
+          size: "1435x550x2100",
+          description: "Цвета: венге, дуб беленый",
+          price: 16000,
+          quantity: 1
+        },
+        {
+          id: "00000000002",
+          picture: null,
+          pictures: ["/img/cupboardCoupe/shkaf s picture.jpg"],
+          name: "Шкаф-купе с пескоструйным рисунком",
+          type: "Шкафы-купе",
+          size: "",
+          description: "Цвета: любые",
+          price: 30000,
+          quantity: 1
+        },
+        {
+          id: "00000000003",
+          picture: null,
+          pictures: ["/img/cupboardCoupe/coupe-picture-color.jpg"],
+          name: "Шкаф-купе  с цветным пескоструем",
+          type: "Шкафы-купе",
+          size: "",
+          description: "Цвета: любые",
+          price: 65000,
+          quantity: 1
+        },
+        {
+          id: "00000000004",
+          picture: null,
+          pictures: ["/img/cupboardCoupe/foto-print.jpg"],
+          name: "Шкаф-купе с фотопечатью",
+          type: "Шкафы-купе",
+          size: "",
+          description: "",
+          price: 45000,
+          quantity: 1
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
 </style>

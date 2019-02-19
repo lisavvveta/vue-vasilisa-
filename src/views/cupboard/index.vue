@@ -17,56 +17,48 @@
       </ul>
     </section>
     <ul class="product">
-      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" :Line="cupboard"/>
+      <Product-Item v-for="product in cupboard" :key="product.id" :product="product" />
     </ul>
   </main>
 </template>
 
 <script>
-  import ProductItem from "../components/ProductItem.vue";
+import ProductItem from "../components/ProductItem.vue";
 
-  export default {
-    components: {
-      ProductItem
-    },
-    data() {
-      return {
-        cupboard: [
-          {
-            id: "00000001",
-            picture: null,
-            pictures:[
-              "/img/cupboard/br-4.png",
-              "/img/modul-sistem/bravo.jpg"
-            ],
-            name: "БР-4",
-            type: "Шкафы",
-            size: "2215x800x560",
-            description: "Этот шкаф относится к модульной системе Браво.",
-            price: '',
-            quantity: 1
-          },
-          {
-            id: "00000002",
-            picture: null,
-            pictures:[
-              "/img/cupboard/br-5.png",
-              "/img/modul-sistem/bravo.jpg"
-            ],
-            name: "БР-5",
-            type: "Шкафы",
-            size: "2215x800x560",
-            description: "Этот шкаф относится к модульной системе Браво.",
-            price: '',
-            quantity: 1
-          }
-        ]
-      };
-    }
-  };
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      cupboard: [
+        {
+          id: "00000001",
+          picture: null,
+          pictures: ["/img/modul-sistem/bravo.jpg"],
+          name: "БР-4",
+          type: "Шкафы",
+          size: "2215x800x560",
+          description: "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
+          price: "8600",
+          quantity: 1
+        },
+        {
+          id: "00000002",
+          picture: null,
+          pictures: ["/img/modul-sistem/bravo.jpg"],
+          name: "БР-5",
+          type: "Шкафы",
+          size: "2215x800x560",
+          description: "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
+          price: "10000",
+          quantity: 1
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
 </style>

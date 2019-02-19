@@ -22,27 +22,21 @@
 </template>
 
 <script>
+import ProductItem from "../components/ProductItem.vue";
 
-  import ProductItem from "../components/ProductItem.vue";
-
-  export default {
-    components: {
-      ProductItem
-    },
-     data() {
-      return {
-        table: [
-          {
-            id: "010000000",
-            name: "Товара в этом разделе пока нет, но в скором времени добавится",
-          },
-        ]
-      }
-     }
-  };
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      table: [
+        {
+          id: "010000000",
+          name: "Товара в этом разделе пока нет, но в скором времени добавится"
+        }
+      ]
+    };
+  }
+};
 </script>
-
-<style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
-</style>

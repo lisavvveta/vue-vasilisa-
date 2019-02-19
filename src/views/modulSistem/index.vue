@@ -23,41 +23,39 @@
 </template>
 
 <script>
-  import ProductItem from "../components/ProductItem.vue";
+import ProductItem from "../components/ProductItem.vue";
 
-  export default {
-    components: {
-      ProductItem
-    },
-    data() {
-      return {
-        ModulSistem: [{
-            id: "010000",
-            picture: "/img/modul-sistem/bravo.jpg",
-            name: "Модульная система Браво",
-            type: "Модульная система",
-            size: "1200х4300",
-            description: "",
-            price: 61500,
-            quantity: 1
-          },
-          {
-            id: "020000",
-            picture: "/img/modul-sistem/lion.png",
-            name: "Модульная система Лион",
-            type: "Комоды",
-            size: "1182x1116x355",
-            description: "",
-            price: 42300,
-            quantity: 1
-          }
-        ]
-      };
-    }
-  };
+export default {
+  components: {
+    ProductItem
+  },
+  data() {
+    return {
+      ModulSistem: [
+        {
+          id: "010000",
+          picture: null,
+          pictures: ["/img/modul-sistem/bravo.jpg"],
+          name: "Модульная система Браво",
+          type: "Модульная система",
+          size: "1200х4300",
+          description: "",
+          price: 61500,
+          quantity: 1
+        },
+        {
+          id: "020000",
+          picture: null,
+          pictures: ["/img/modul-sistem/lion.png"],
+          name: "Модульная система Лион",
+          type: "Комоды",
+          size: "1182x1116x355",
+          description: "",
+          price: 42300,
+          quantity: 1
+        }
+      ]
+    };
+  }
+};
 </script>
-
-<style lang="scss">
-  @import "../../stylesheets/layout.scss";
-  @import "../../stylesheets/product.scss";
-</style>
