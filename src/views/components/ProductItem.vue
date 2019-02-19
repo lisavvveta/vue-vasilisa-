@@ -12,14 +12,14 @@
       <Slider
         v-else-if="product.pictures.length > 1"
         :slides="product.pictures"
-        class="product-item__picture"
+        class="product-item__picture img_slide"
         />
 
       <img
         v-else
         :alt="product.title"
         src="/img/placeholder.png"
-        class="product-item__picture"
+        class="product-item__picture "
         />
     </template>
 
@@ -76,11 +76,6 @@ img {
     0 2px 20px 0 rgba(0, 0, 0, 0.5),
     0 2px 20px 0px rgba(40, 140, 220, 0.5);
 
-  &._fill {
-    flex-basis: 48.4%;
-    width: auto;
-  }
-
   &:hover {
     box-shadow:
       0 2px 20px 0 rgba(0, 0, 0, 1),
@@ -88,7 +83,6 @@ img {
   }
 
   &__picture {
-    width: 100%;
     height: 350px;
     object-fit: contain;
     object-position: 50% 50%;

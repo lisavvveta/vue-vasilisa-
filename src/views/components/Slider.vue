@@ -49,3 +49,12 @@ export default {
   })
 };
 </script>
+
+<style lang="scss">
+.picture_slide{
+  margin-left: -150px;
+  object-fit: contain;
+  padding: 0;
+}
+</style>
+
