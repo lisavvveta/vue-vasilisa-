@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-.picture_slide{
+.picture_slide {
   margin-left: -150px;
   object-fit: contain;
   padding: 0;
@@ -59,6 +59,4 @@ export default {
   // min-height: 400px;
   height: auto;
 }
-
 </style>
-

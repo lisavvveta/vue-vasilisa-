@@ -278,8 +278,8 @@ export default {
           pictures: [
             "/img/bed/s-podiomnim1.jpg",
             "/img/bed/s-podiomnim2.jpg",
-            "/img/bed/s-podiomnim3.jpg",
-            ],
+            "/img/bed/s-podiomnim3.jpg"
+          ],
           name: "Кровать с подъемным механизмом",
           type: "Кровати",
           size: "890x2058x1766",
@@ -290,10 +290,7 @@ export default {
         {
           id: "022",
           picture: null,
-          pictures: [
-            "/img/bed/br-116-1.jpg",
-            "/img/bed/br-116-2.jpg"
-          ],
+          pictures: ["/img/bed/br-116-1.jpg", "/img/bed/br-116-2.jpg"],
           name: "БР-116",
           type: "Кровати",
           size: "1932x880",

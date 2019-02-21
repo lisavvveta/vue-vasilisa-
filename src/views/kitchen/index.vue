@@ -89,10 +89,7 @@ export default {
         {
           id: "0500",
           picture: null,
-          pictures: [
-            "/img/kitchen/ariana-2.jpg",
-            "/img/kitchen/ariana.jpg"
-          ],
+          pictures: ["/img/kitchen/ariana-2.jpg", "/img/kitchen/ariana.jpg"],
           name: "Ариана",
           type: "Кухни",
           size: "Размеры: от 1м ",
@@ -198,10 +195,7 @@ export default {
         {
           id: "1200",
           picture: null,
-          pictures: [
-            "/img/kitchen/kosa-1.jpg",
-            "/img/kitchen/kosa-2.jpg"
-          ],
+          pictures: ["/img/kitchen/kosa-1.jpg", "/img/kitchen/kosa-2.jpg"],
           name: "Кухня Коса патина рамка",
           type: "Кухни",
           size: "",

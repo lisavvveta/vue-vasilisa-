@@ -24,7 +24,6 @@
 
 <script>
 import ProductItem from "../components/ProductItem.vue";
-import Slider from "../components/Slider.vue";
 
 export default {
   name: "ProdItem",
@@ -101,10 +100,7 @@ export default {
         {
           id: "05",
           picture: null,
-          pictures: [
-            "/img/sofa/mango-1.jpg",
-            "/img/sofa/mango-2.jpg"
-          ],
+          pictures: ["/img/sofa/mango-1.jpg", "/img/sofa/mango-2.jpg"],
           name: "Манго на металлокаркасе",
           type: "Диваны",
           size: "2020x1080x970",
@@ -116,10 +112,7 @@ export default {
         {
           id: "06",
           picture: null,
-          pictures: [
-            "/img/sofa/kalipso-1.jpg",
-            "/img/sofa/kalipsio-2.jpg"
-          ],
+          pictures: ["/img/sofa/kalipso-1.jpg", "/img/sofa/kalipsio-2.jpg"],
           name: "Колипсио на металлокарксе",
           type: "Диваны",
           size: "1740х1120х940",
@@ -180,4 +173,3 @@ export default {
   }
 };
 </script>
-

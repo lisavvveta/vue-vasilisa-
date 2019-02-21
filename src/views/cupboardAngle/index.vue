@@ -42,30 +42,27 @@ export default {
           name: "БР-6",
           type: "Шкафы",
           size: "2215x904x904",
-          description: "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
+          description:
+            "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
           price: "11700",
           quantity: 1
         },
         {
           id: "000000002",
           picture: null,
-          pictures: [
-            "/img/modul-sistem/bravo.jpg"
-          ],
+          pictures: ["/img/modul-sistem/bravo.jpg"],
           name: "БР-6 со стеклом",
           type: "Шкафы",
           size: "2215x904x904",
-          description: "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
+          description:
+            "Этот шкаф относится к модульной системе Браво. В рамке дороже.",
           price: "15000",
           quantity: 1
         },
         {
           id: "00000003",
           picture: null,
-          pictures: [
-            "/img/comod/br-10.png",
-            "/img/modul-sistem/bravo.jpg"
-          ],
+          pictures: ["/img/comod/br-10.png", "/img/modul-sistem/bravo.jpg"],
           name: "Комод БР-10",
           type: "Шкафы",
           size: "1182x1116x355",

@@ -35,7 +35,7 @@ export default {
         {
           id: "0001",
           picture: null,
-          pictures: ["/img/bench/trio.jpg",],
+          pictures: ["/img/bench/trio.jpg"],
           name: "Диванчик трио плюс",
           type: "Скамьи",
           size: "РАЗМЕРЫ: ДЛИНА-1000, ШИРИНА-680, ВЫСОТА-600",
