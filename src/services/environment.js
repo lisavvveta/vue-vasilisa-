@@ -1,8 +1,8 @@
-const productionApiURL = "https://api.komfort124.ru";
+const productionApiURL = "мебельвасилиса.рф";
 const developmentApiURL = "http://localhost:3000";
 const testApiURL = "http://127.0.0.1:3000";
 
-const productionWebSocketURL = "wss://api.komfort124.com";
+const productionWebSocketURL = "мебельвасилиса.рф";
 const developmentWebSocketURL = "ws://localhost:3000";
 const testWebSocketURL = "ws://127.0.0.1:3000";
 

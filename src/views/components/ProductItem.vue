@@ -72,13 +72,11 @@ img {
   margin-bottom: 20px;
   background-color: white;
   transition: box-shadow 0.2s ease;
-  box-shadow:
-    0 2px 20px 0 rgba(0, 0, 0, 0.5),
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5),
     0 2px 20px 0px rgba(40, 140, 220, 0.5);
 
   &:hover {
-    box-shadow:
-      0 2px 20px 0 rgba(0, 0, 0, 1),
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 1),
       0 2px 20px 0px rgba(40, 140, 220, 1);
   }
 

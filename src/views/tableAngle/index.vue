@@ -17,7 +17,6 @@
       </ul>
     </section>
       <Product-Item v-for="product in tableAngle" :key="product.id" :product="product" />
-    </ul>
   </main>
 </template>
 

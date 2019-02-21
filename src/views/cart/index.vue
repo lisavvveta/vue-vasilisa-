@@ -86,7 +86,6 @@ export default {
   components: {
     AnimatedNumber
   },
-  name: "form_order",
   props: {
     email: {
       // type: Object,

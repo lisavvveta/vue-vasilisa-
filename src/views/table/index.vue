@@ -35,10 +35,7 @@ export default {
         {
           id: "010000000",
           picture: null,
-          pictures: [
-            "/img/table/table-1.jpg",
-            "/img/table/table-2.jpg"
-          ],
+          pictures: ["/img/table/table-1.jpg", "/img/table/table-2.jpg"],
           name: "Столы из массивного дерева",
           type: "Столы",
           size: " 1000x680+500 ",
@@ -49,10 +46,7 @@ export default {
         {
           id: "020000000",
           picture: null,
-          pictures: [
-            "/img/table/pauk.jpg",
-            "/img/table/pauk-2.jpg"
-          ],
+          pictures: ["/img/table/pauk.jpg", "/img/table/pauk-2.jpg"],
           name: "Паук",
           type: "Столы",
           size: "1100x700",
@@ -127,10 +121,7 @@ export default {
         {
           id: "070000000",
           picture: null,
-          pictures: [
-            "/img/table/oda-s-900-1.jpg",
-            "/img/table/oda-s-900-.jpg"
-          ],
+          pictures: ["/img/table/oda-s-900-1.jpg", "/img/table/oda-s-900-.jpg"],
           name: "Ода-С",
           type: "Столы",
           size: "900х600+300",
@@ -173,4 +164,3 @@ export default {
   }
 };
 </script>
-
